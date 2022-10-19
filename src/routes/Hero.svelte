@@ -1,14 +1,14 @@
 <script>
-	let title;
-    let subcontent;
+	export let title = "";
+    export let subcontent = "";
+    export let imageRef = "";
 </script>
 
 <div class="hero_container">
-    <div class="hero-image">
+    <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({imageRef})">
         <div class="hero-text">
-          <h1 style="font-size:50px">&#x1F3C6; Champions &#x1F3C6;</h1>
-          <p>Your legacy will never die</p>
-          
+          <h1 style="font-size:60px"> {@html title} </h1>
+          <p>{@html subcontent}</p>
         </div>
     </div>
 </div>
@@ -19,7 +19,7 @@
     }
     
     .hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../lib/images/hero_image.png');
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({imageRef});
       min-height: 20rem;
       width:100%;
       background-position: center;

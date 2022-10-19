@@ -15,7 +15,7 @@
 </script>
   
   
-<Hero/>
+<Hero title={"&#x1F3C6; Champions &#x1F3C6;"} subcontent={"<i>Your <b>legacy</b> will never die</i>"} imageRef={"/src/lib/images/hero_image.png"}/>
   <div class="champs">
     
       <!-- <h1>Champions &#x1F3C6;</h1> -->
@@ -28,6 +28,7 @@
         Since September 2022
       </p>
   
+      <!-- need like player images to go here -->
       {#each champions as champion}
         <h2>{champion.title}: {champion.winner}</h2>
       {/each}
