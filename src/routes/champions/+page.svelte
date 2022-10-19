@@ -4,6 +4,7 @@
 </svelte:head>
 
 <script>
+  import Hero from '../Hero.svelte';
   
     let champions = [
       {
@@ -11,12 +12,13 @@
         winner: "Sandy Jiang"
       },  
     ];
-  </script>
+</script>
   
   
+<Hero/>
   <div class="champs">
-      
-      <h1>Champions &#x1F3C6;</h1>
+    
+      <!-- <h1>Champions &#x1F3C6;</h1> -->
     
       <p>
         Champions are crowned after winning their bracket tier.
@@ -38,13 +40,12 @@
       color: #888;
     }
     .champs{
-
+      
       min-height: 20rem;
       max-width: 120rem;
       margin: 0 auto;
       padding-right: 6rem;
       padding-left: 6rem;
-      padding-top: 6rem;
       padding-bottom: 4rem;
       text-align: left;
     }

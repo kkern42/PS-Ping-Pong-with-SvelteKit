@@ -2,7 +2,7 @@
 
   import PSPPLogo from '$lib/images/pingpong.svg';
   import Ghost from '$lib/images/ghost.png';
-
+  
   let title = "PS PING PONG";
 
   let imageLogo = PSPPLogo; 
