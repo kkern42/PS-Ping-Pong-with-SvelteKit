@@ -4,10 +4,10 @@
   
   <div class="navbar">
 	   <!-- <img src={PSPPLogo} class="logo" alt="PS PP Logo" /> -->
-	  <a class="home" href="/"><i class="fa fa-fw fa-home"></i> Home</a> 
+	  <a class="home" href="/"><i></i>PS PP NYC</a> 
 	  <a class:active={$page.url.pathname.startsWith('/champions')} href="/champions"><i class="fa fa-fw fa-search"></i>Champions</a> 
-	  <a href="#"><i class="fa fa-fw fa-envelope"></i>Past Brackets</a> 
-	  <a href="#"><i class="fa fa-fw fa-user"></i>Player Profiles</a>
+	  <a href="/"><i class="fa fa-fw fa-envelope"></i>Past Brackets</a> 
+	  <a href="/"><i class="fa fa-fw fa-user"></i>Player Profiles</a>
 	</div>
   
   <style>
@@ -16,21 +16,27 @@
 	background-color: #333;
 	overflow: auto;
 	position: fixed;
-	height: 4.5rem;
+	height: 3.5rem;
 	z-index: 1;
   }
   
   .navbar a {
   
 	float: left;
-	padding: 1.5rem;
+	padding: 1rem;
 	color: white;
 	text-decoration: none;
 	font-size: 1.1rem;
   }
   
   .navbar a:hover {
-	background-color: #000;
+	/* border-bottom: 1px solid #FE414D ; */
+	background-color: #535252;
+  }
+
+  .navbar .home:hover {
+	/* border-bottom: 1px solid #FE414D ; */
+	background-color: #FE414D;
   }
   
   .home {

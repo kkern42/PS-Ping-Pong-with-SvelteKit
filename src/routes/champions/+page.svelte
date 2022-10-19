@@ -15,7 +15,7 @@
 </script>
   
   
-<Hero title={"&#x1F3C6; Champions &#x1F3C6;"} subcontent={"<i>Your <b>legacy</b> will never die</i>"} imageRef={"/src/lib/images/hero_image.png"}/>
+<Hero title={"&#x1F3C6;Champions&#x1F3C6;"} subcontent={"<i>Your <b>legacy</b> will never die</i>"} imageRef={"/src/lib/images/hero_image_ashley_ayush.png"}/>
   <div class="champs">
     
       <!-- <h1>Champions &#x1F3C6;</h1> -->
