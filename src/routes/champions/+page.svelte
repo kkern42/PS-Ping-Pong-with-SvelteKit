@@ -8,9 +8,17 @@
   
     let champions = [
       {
-        title: "Tier 1 Bracket - August 2022",
-        winner: "Sandy Jiang"
+        title: "August 2022 - Tier 1 Bracket",
+        winner: "Sandy Jiang",
+        runnerUp: "Ashley Kim",
+        score: "21-19"
       },  
+      {
+        title: "August 2022 - Tier 2 Bracket",
+        winner: "Sandy Jiang",
+        runnerUp: "Ashley Kim",
+        score: "21-19"
+      }, 
     ];
 </script>
   
@@ -21,7 +29,7 @@
       <!-- <h1>Champions &#x1F3C6;</h1> -->
     
       <p>
-        Champions are crowned after winning their bracket tier.
+        *Champions are crowned after winning their bracket tier.
       </p>
       
       <p class="read-the-docs">
@@ -30,7 +38,14 @@
   
       <!-- need like player images to go here -->
       {#each champions as champion}
-        <h2>{champion.title}: {champion.winner}</h2>
+        <div>
+          <h2>{champion.title}</h2>
+          <div class="champDetails">
+            <h3>Winner: {champion.winner}</h3>
+            <h4>Runner Up: {champion.runnerUp}</h4>
+            <p>Final Score: {champion.score}</p>
+          </div>
+        </div>
       {/each}
     
     </div>
@@ -49,6 +64,17 @@
       padding-left: 6rem;
       padding-bottom: 4rem;
       text-align: left;
+    }
+    h3{
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .champDetails{
+      margin-left: 1.8rem;
     }
   </style>
   
