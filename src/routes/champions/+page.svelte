@@ -5,21 +5,24 @@
 
 <script>
   import Hero from '../Hero.svelte';
+  // import Data from './data.json';
+  // let champions = JSON.parse(Data);
   
-    let champions = [
-      {
-        title: "August 2022 - Tier 1 Bracket",
-        winner: "Sandy Jiang",
-        runnerUp: "Ashley Kim",
-        score: "21-19"
-      },  
-      {
-        title: "August 2022 - Tier 2 Bracket",
-        winner: "Kevin Kern",
-        runnerUp: "Abe Lincoln",
-        score: "42-40"
-      }, 
-    ];
+  let champions = [
+    {
+      title: "August 2022 - Tier 1 Bracket",
+      winner: "Sandy Jiang",
+      runnerUp: "Ashley Kim",
+      score: "21-19"
+    },  
+    {
+      title: "August 2022 - Tier 2 Bracket",
+      winner: "Kevin Kern",
+      runnerUp: "Abe Lincoln",
+      score: "42-40"
+    }, 
+  ];
+
 </script>
   
   
