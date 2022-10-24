@@ -1,9 +1,19 @@
+
+
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
+
 </svelte:head>
 
-<div class="app">
+<script>
+	
+	import kevin from '$lib/images/kevin.png';
+	import ashley from '$lib/images/ashley.png';
+	import jd from '$lib/images/jd.png';
+</script>
+
+<div class="about">
 	<h1>About this app</h1>
 
 	<p>
@@ -23,4 +33,80 @@
 		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
 		using it with JavaScript disabled!
 	</p>
+
+	<p>
+		It's important to have fun!
+	</p>
+
+	<div class="team">
+		<div class="profile">
+			<img src={ashley}/>
+			<p class="name">Ashley Kim</p>
+			<div class="title">PS Ping Pong Commitee Member</div>
+		</div>
+
+		<div class="profile">
+			<img src={ashley}/>
+			<p class="name">JD Pablo</p>
+			<div class="title">PS Ping Pong Commitee Member</div>
+		</div>
+
+		<div class="profile">
+			<img src={kevin}/>
+			<p class="name">Kevin Kern</p>
+			<div class="title">PS Ping Pong Commitee Member</div>
+		</div>
+		
+	</div>
+	
+
 </div>
+
+<style>
+	
+	.about{
+      
+      min-height: 20rem;
+      max-width: 120rem;
+      margin: 0 auto;
+      padding-right: 9.5rem;
+	padding-left: 9.5rem;
+	padding-top: 4rem;
+	padding-bottom:4rem;
+      text-align: center;
+    }
+
+    h3{
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+	.team{
+		display:flex;
+		font-weight: bold;
+	}
+
+	.name{
+		color: #FE414D;
+	}
+
+	.title{
+		font-size: .9rem;
+	}
+
+
+	.profile{
+		padding: 3rem;
+		
+	}
+
+	img{
+		width:100%;
+		border-radius: 50%;
+	}
+		
+	</style>

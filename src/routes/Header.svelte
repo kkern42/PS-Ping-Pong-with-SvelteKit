@@ -6,8 +6,9 @@
 	   <!-- <img src={PSPPLogo} class="logo" alt="PS PP Logo" /> -->
 	  <a class="home" href="/"><i></i>PS PP NYC</a> 
 	  <a class:active={$page.url.pathname.startsWith('/champions')} href="/champions"><i class="fa fa-fw fa-search"></i>Champions</a> 
-	  <a href="/"><i class="fa fa-fw fa-envelope"></i>Past Brackets</a> 
-	  <a href="/"><i class="fa fa-fw fa-user"></i>Player Profiles</a>
+	  <a class:active={$page.url.pathname.startsWith('/about')} href="/about"><i class="fa fa-fw fa-search"></i>About</a> 
+	  <a href="/past-brackets"><i class="fa fa-fw fa-envelope"></i>Past Brackets</a> 
+	  <a href="/player-profiles"><i class="fa fa-fw fa-user"></i>Player Profiles</a>
 	</div>
   
   <style>
