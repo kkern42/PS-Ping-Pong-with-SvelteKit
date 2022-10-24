@@ -1,12 +1,12 @@
 <script>
-    
+    import { page } from '$app/stores';
 </script>
 
 <footer class="footer">
 
 <div class="container">
 <ul class="foote_bottom_ul_amrc">
-<li><a href="http://webenlance.com">About Us</a></li>
+<li><a class:active={$page.url.pathname.startsWith('/about')} href="/about">About Us</a></li>
 <li><a href="http://webenlance.com">Champions</a></li>
 <li><a href="http://webenlance.com">Dates</a></li>
 <li><a href="http://webenlance.com">Blog</a></li>
