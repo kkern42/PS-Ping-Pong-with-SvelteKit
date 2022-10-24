@@ -26,18 +26,18 @@
 </script>
   
   
-<Hero title={"&#x1F3C6;Champions&#x1F3C6;"} subcontent={"<i>Your <b>legacy</b> will never die</i>"} imageRef={"/src/lib/images/hero_image_ashley_ayush.png"}/>
+<Hero title={"&#x1F3C6;Champions&#x1F3C6;"} subcontent={"<i>Your <b>legacy</b> will never die</i>"} imageRef={"/src/lib/images/hero_image_ashley_ayush2.png"}/>
   <div class="champs">
     
       <!-- <h1>Champions &#x1F3C6;</h1> -->
     
-      <p>
+      <!-- <p>
         *Champions are crowned after winning their bracket tier.
       </p>
       
       <p class="read-the-docs">
         Since September 2022
-      </p>
+      </p> -->
   
       <!-- need like player images to go here -->
       {#each champions as champion}
@@ -66,6 +66,7 @@
       padding-right: 6rem;
       padding-left: 6rem;
       padding-bottom: 4rem;
+      padding-top:2rem;
       text-align: left;
     }
     h3{
