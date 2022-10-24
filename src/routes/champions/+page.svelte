@@ -5,6 +5,7 @@
 
 <script>
   import Hero from '../Hero.svelte';
+  import heroImage from '$lib/images/hero_image_ashley_ayush2.png';
   // import Data from './data.json';
   // let champions = JSON.parse(Data);
   
@@ -26,7 +27,7 @@
 </script>
   
   
-<Hero title={"&#x1F3C6;Champions&#x1F3C6;"} subcontent={"<i>Your <b>legacy</b> will never die</i>"} imageRef={"/src/lib/images/hero_image_ashley_ayush2.png"}/>
+<Hero title={"&#x1F3C6;Champions&#x1F3C6;"} subcontent={"<i>Your <b>legacy</b> will never die</i>"} imageRef={heroImage}/>
   <div class="champs">
     
       <!-- <h1>Champions &#x1F3C6;</h1> -->
@@ -55,9 +56,6 @@
   
   <style>
 
-    .read-the-docs {
-      color: #888;
-    }
     .champs{
       
       min-height: 20rem;
@@ -69,6 +67,7 @@
       padding-top:2rem;
       text-align: left;
     }
+
     h3{
       margin-block-start: 0.83em;
       margin-block-end: 0.83em;
@@ -77,6 +76,7 @@
       font-size: 1.8rem;
       font-weight: bold;
     }
+    
     .champDetails{
       margin-left: 1.8rem;
     }
