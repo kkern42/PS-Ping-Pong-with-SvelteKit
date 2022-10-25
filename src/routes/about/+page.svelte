@@ -8,7 +8,7 @@
 
 <script>
 	
-	import kevin from '$lib/images/kevintwocat.png';
+	import kevin from '$lib/images/kevincat.png';
 	import ashley from '$lib/images/ashley.png';
 	import jd from '$lib/images/jdfit.png';
 
