@@ -8,9 +8,9 @@
 
 <script>
 	
-	import kevin from '$lib/images/kevin.png';
+	import kevin from '$lib/images/kevintwocat.png';
 	import ashley from '$lib/images/ashley.png';
-	import jd from '$lib/images/jd.png';
+	import jd from '$lib/images/jdfit.png';
 
 	let members = [
 		{
@@ -20,7 +20,7 @@
 		},
 		{
 			name: "JD Pablo",
-			picture: ashley,
+			picture: jd,
 			title: "PS PP Commitee Member"
 		},
 		{
