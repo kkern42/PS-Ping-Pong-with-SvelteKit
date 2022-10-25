@@ -101,7 +101,7 @@
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     width:50%;
-    background-color: lightgray;
+    background-color: rgb(221, 217, 217);
   }
         
     

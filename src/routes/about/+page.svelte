@@ -1,7 +1,7 @@
 
 
 <svelte:head>
-	<title>About</title>
+	<title>About US</title>
 	<meta name="description" content="About this app" />
 
 </svelte:head>
@@ -11,10 +11,28 @@
 	import kevin from '$lib/images/kevin.png';
 	import ashley from '$lib/images/ashley.png';
 	import jd from '$lib/images/jd.png';
+
+	let members = [
+		{
+			name: "Ashley Kim",
+			picture: ashley,
+			title: "PS PP Commitee Member"
+		},
+		{
+			name: "JD Pablo",
+			picture: ashley,
+			title: "PS PP Commitee Member"
+		},
+		{
+			name: "Kevin Kern",
+			picture: kevin,
+			title: "PS PP Commitee Member"
+		},
+	]
 </script>
 
 <div class="about">
-	<h1>About this app</h1>
+	<h1>About Us</h1>
 
 	<p>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
@@ -39,27 +57,15 @@
 	</p>
 
 	<div class="team">
-		<div class="profile">
-			<img src={ashley}/>
-			<p class="name">Ashley Kim</p>
-			<div class="title">PS Ping Pong Commitee Member</div>
-		</div>
-
-		<div class="profile">
-			<img src={ashley}/>
-			<p class="name">JD Pablo</p>
-			<div class="title">PS Ping Pong Commitee Member</div>
-		</div>
-
-		<div class="profile">
-			<img src={kevin}/>
-			<p class="name">Kevin Kern</p>
-			<div class="title">PS Ping Pong Commitee Member</div>
-		</div>
-		
+		{#each members as member}
+			<div class="profile">
+				<img alt="PS PP Commitee Member" src={member.picture}/>
+				<p class="name">{member.name}</p>
+				<div class="title">{member.title}</div>
+			</div>
+		{/each}
 	</div>
 	
-
 </div>
 
 <style>
