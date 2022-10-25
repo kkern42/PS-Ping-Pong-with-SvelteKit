@@ -43,7 +43,6 @@
             </div> -->
         </div>
     </div>
-    
 </div>
 
 <style>
@@ -91,18 +90,18 @@
     }
 
     .logo {
-    height: 8rem;
-    padding: 1.5rem;
-    will-change: filter;
-  }
+        height: 8rem;
+        padding: 1.5rem;
+        will-change: filter;
+    }
 
 
-  .title{
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    width:50%;
-    background-color: rgb(221, 217, 217);
-  }
+    .title{
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        width:50%;
+        background-color: lightgray;
+    }
         
     
-    </style>
+</style>

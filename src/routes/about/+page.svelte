@@ -20,7 +20,7 @@
 		},
 		{
 			name: "JD Pablo",
-			picture: ashley,
+			picture: jd,
 			title: "PS PP Commitee Member"
 		},
 		{
@@ -75,8 +75,8 @@
       min-height: 20rem;
       max-width: 120rem;
       margin: 0 auto;
-      padding-right: 9.5rem;
-	padding-left: 9.5rem;
+      padding-right: 6rem;
+	padding-left: 6rem;
 	padding-top: 4rem;
 	padding-bottom:4rem;
       text-align: center;
@@ -109,6 +109,29 @@
 		padding: 3rem;
 		
 	}
+
+	@media screen and (min-width: 1400px) {
+        .profile{
+		padding: 5rem;
+		
+		}
+    }
+
+	/* everything 1500 and below */
+    @media screen and (max-width: 1300px) {
+        .profile{
+		padding: 3rem;
+		
+		}
+    }
+
+    /* everything 720 and below */
+    @media screen and (max-width: 1000px) {
+        .profile{
+		padding: 1rem;
+		
+		}
+    }
 
 	img{
 		width:100%;
