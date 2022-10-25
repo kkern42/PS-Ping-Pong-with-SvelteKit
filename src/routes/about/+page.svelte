@@ -20,7 +20,7 @@
 		},
 		{
 			name: "JD Pablo",
-			picture: jd,
+			picture: ashley,
 			title: "PS PP Commitee Member"
 		},
 		{
