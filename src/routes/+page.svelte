@@ -36,7 +36,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>PS Ping Pong</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
