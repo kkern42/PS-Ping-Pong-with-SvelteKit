@@ -35,15 +35,14 @@
 	<h1>About Us</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. I used it to make a website about pinpong
 	</p>
 
-	<pre>npm create svelte@latest</pre>
+	<pre>I don't even really like ping pong all that much but here we are</pre>
 
 	<p>
 		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
+		Because of that, we don't need to load any JavaScript (well actually it has JS I added some). Try viewing the page's source, or opening
 		the devtools network panel and reloading.
 	</p>
 
@@ -72,23 +71,14 @@
 	
 	.about{
       
-      min-height: 20rem;
-      max-width: 120rem;
-      margin: 0 auto;
-      padding-right: 6rem;
-	padding-left: 6rem;
-	padding-top: 4rem;
-	padding-bottom:4rem;
-      text-align: center;
-    }
-
-    h3{
-      margin-block-start: 0.83em;
-      margin-block-end: 0.83em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      font-size: 1.8rem;
-      font-weight: bold;
+		min-height: 20rem;
+		max-width: 120rem;
+		margin: 0 auto;
+		padding-right: 6rem;
+		padding-left: 6rem;
+		padding-top: 4rem;
+		padding-bottom:4rem;
+      	text-align: center;
     }
 
 	.team{
