@@ -7,7 +7,7 @@
     <div class="container">
 
         <ul class="foote_bottom_ul_amrc">
-            <li><a href="/home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/champions">Champions</a></li>
             <li><a class:active={$page.url.pathname.startsWith('/about')} href="/about">About Us</a></li>
             <li><a href="/past-brackets">Past Brackets</a></li>
