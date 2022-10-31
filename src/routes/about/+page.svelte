@@ -38,7 +38,7 @@
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. I used it to make a website about pinpong
 	</p>
 
-	<pre>I don't even really like ping pong all that much but here we are</pre>
+	<pre>Ping Pong is fun!</pre>
 
 	<p>
 		The page you're looking at is purely static HTML, with no client-side interactivity needed.
