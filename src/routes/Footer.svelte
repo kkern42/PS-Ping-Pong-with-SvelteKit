@@ -7,11 +7,11 @@
     <div class="container">
 
         <ul class="foote_bottom_ul_amrc">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/champions">Champions</a></li>
             <li><a class:active={$page.url.pathname.startsWith('/about')} href="/about">About Us</a></li>
-            <li><a href="http://webenlance.com">Champions</a></li>
-            <li><a href="http://webenlance.com">Dates</a></li>
-            <li><a href="http://webenlance.com">Blog</a></li>
-            <li><a href="http://webenlance.com">Contact</a></li>
+            <li><a href="/past-brackets">Past Brackets</a></li>
+            <li><a href="/player-profiles">Player Profiles</a></li>
         </ul>
 
         <div class="bottom_border"></div>

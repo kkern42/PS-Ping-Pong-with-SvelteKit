@@ -10,16 +10,22 @@
   // it would be cool to import data from a JSON
   let champions = [
     {
-      title: "August 2022 - Tier 1 Bracket",
+      title: "Summer 2022 - Tier 1 Bracket",
       winner: "Sandy Jiang",
       runnerUp: "Ashley Kim",
       score: "21-19"
     },  
     {
-      title: "August 2022 - Tier 2 Bracket",
-      winner: "Kevin Kern",
-      runnerUp: "Abe Lincoln",
-      score: "42-40"
+      title: "Fall 2022 - Tier 1 Bracket",
+      winner: "To Be Determined",
+      runnerUp: "To Be Determined",
+      score: "To Be Determined"
+    }, 
+    {
+      title: "Fall 2022 - Tier 2 Bracket",
+      winner: "To Be Determined",
+      runnerUp: "To Be Determined",
+      score: "To Be Determined"
     }, 
   ];
 
