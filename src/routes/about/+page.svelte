@@ -30,25 +30,18 @@
 
 <div class="about">
 	<h1>About Us</h1>
-
-	<p>This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. I used it to make a website about pinpong</p>
 	
-	<pre>Ping Pong is fun!</pre>
+	<pre>Meet the PS Ping Pong Federation</pre>
 
 	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript (well actually it has JS I added some). Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+		The PS Ping Pong Federation (PSPPF) is the governing body for all national table tennis associations. 
+		The role of the PSPPF includes overseeing rules and regulations and seeking technological improvement for the sport of table tennis. 
+		The PSPPF is responsible for the organization of numerous international competitions, including the World Table Tennis Championships that has continued since 1926.
 	</p>
 
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
+	<p>Remember to have fun!</p>
 
-	<p>It's important to have fun!</p>
-
-	<h2>Meet the Team</h2>
+	<h2>Team Members</h2>
 	<div class="team">
 		{#each members as member}
 			<div class="profile">

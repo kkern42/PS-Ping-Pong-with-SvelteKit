@@ -7,7 +7,7 @@
 
 <script>
     import Hero from '../Hero.svelte';
-    import heroImage from '$lib/images/hero_image_ashley_ayush2.png';
+    import heroImage from '$lib/images/jacob-alden-hero.png';
 
 	let brackets = [
 		{
