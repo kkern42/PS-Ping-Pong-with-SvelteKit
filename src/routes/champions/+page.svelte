@@ -26,19 +26,9 @@
 </script>
   
   
-<Hero title={"&#x1F3C6;Champions&#x1F3C6;"} subcontent={"<i>Your <b>legacy</b> will never die</i>"} imageRef={heroImage}/>
+<Hero title={"&#x1F3C6;Champions&#x1F3C6;"} subContent={'*Champions are crowned after winning their bracket tier.'} imageRef={heroImage}/>
+
 <div class="champs">
-    
-  <!-- <h1>Champions &#x1F3C6;</h1> -->
-
-  <!-- <p>
-    *Champions are crowned after winning their bracket tier.
-  </p>
-  
-  <p class="read-the-docs">
-    Since September 2022
-  </p> -->
-
   <!-- need like player images to go here -->
   {#each champions as champion}
     <div>
@@ -50,7 +40,6 @@
       </div>
     </div>
   {/each}
-    
 </div>
   
 <style>
@@ -64,14 +53,14 @@
     text-align: left;
   }
 
-    h3{
-      font-size: 1.8rem;
-      font-weight: bold;
-    }
+  h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
 
-    .champDetails{
-      margin-left: 1.8rem;
-    }
+  .champDetails{
+    margin-left: 1.8rem;
+  }
     
   </style>
   

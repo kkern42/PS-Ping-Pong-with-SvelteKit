@@ -1,5 +1,3 @@
-
-
 <svelte:head>
 	<title>About US</title>
 	<meta name="description" content="About this app" />
@@ -7,10 +5,9 @@
 </svelte:head>
 
 <script>
-	
-	import kevin from '$lib/images/kevincat.png';
-	import ashley from '$lib/images/ashley.png';
-	import jd from '$lib/images/jdfit.png';
+	import kevin from '$lib/images/profile-pictures/kevincat.png';
+	import ashley from '$lib/images//profile-pictures/ashley.png';
+	import jd from '$lib/images//profile-pictures/jdfit.png';
 
 	let members = [
 		{
@@ -34,10 +31,8 @@
 <div class="about">
 	<h1>About Us</h1>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. I used it to make a website about pinpong
-	</p>
-
+	<p>This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. I used it to make a website about pinpong</p>
+	
 	<pre>Ping Pong is fun!</pre>
 
 	<p>
@@ -51,10 +46,9 @@
 		using it with JavaScript disabled!
 	</p>
 
-	<p>
-		It's important to have fun!
-	</p>
+	<p>It's important to have fun!</p>
 
+	<h2>Meet the Team</h2>
 	<div class="team">
 		{#each members as member}
 			<div class="profile">

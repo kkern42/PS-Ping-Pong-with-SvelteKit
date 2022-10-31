@@ -1,7 +1,7 @@
 <script>
     import PSPPLogo from '$lib/images/pingpong.svg';
 	export let title = "";
-    export let subcontent = "";
+    export let subContent = "";
     export let imageRef = "";
 </script>
 
@@ -34,7 +34,7 @@
         <h1 style="font-size: 3rem"> {@html title} </h1>
         <div style="text-align: center;">
             <p>
-                *Champions are crowned after winning their bracket tier.
+                {subContent}
             </p>
               
             <p class="read-the-docs">
