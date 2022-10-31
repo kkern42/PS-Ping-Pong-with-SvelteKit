@@ -38,3 +38,9 @@
         <hr/>
     {/each}
 </div>
+
+<style>
+    .app{
+        padding-top: 1.5rem;
+    }
+</style>

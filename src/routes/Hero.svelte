@@ -31,7 +31,7 @@
           <a href="https://brackethq.com/b/k4n6/" > 
             <img src={PSPPLogo} class="logo" alt="PS PP Logo" />
         </a>
-        <h1 style="font-size: 3rem"> {@html title} </h1>
+        <h1 style="font-size: 3rem;"> {@html title} </h1>
         <div style="text-align: center;">
             <p>
                 {subContent}

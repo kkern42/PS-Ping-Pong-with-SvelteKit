@@ -26,9 +26,10 @@
 </script>
   
   
-<Hero title={"&#x1F3C6;Champions&#x1F3C6;"} subContent={'*Champions are crowned after winning their bracket tier.'} imageRef={heroImage}/>
+<Hero title={"Champions"} subContent={'*Champions are crowned after winning their bracket tier.'} imageRef={heroImage}/>
 
 <div class="champs">
+
   <!-- need like player images to go here -->
   {#each champions as champion}
     <div>
