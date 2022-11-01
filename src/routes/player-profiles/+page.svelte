@@ -12,17 +12,7 @@
   import jd from '$lib/images//profile-pictures/jdfit.png';
   import sandy from '$lib/images//profile-pictures/sandy2.png';
 
-  
-  // it would be cool to import data from a JSON
   let players = [
-    {
-        name: "Sandy Jiang",
-        grip: "Penhold",
-        record: "5-0",
-        strength: "She just good",
-        weakness: "Reece",
-        picture: sandy,
-    },  
     {
         name: "Ashley Kim",
         grip: "Handshake",
@@ -32,6 +22,14 @@
         picture: ashley,
     },  
     {
+        name: "JD Pablo",
+        grip: "Pen Hold",
+        record: "4-3",
+        strength: "That thing he does when he hits it really hard",
+        weakness: "hitting the table & controlling his nerves",
+        picture: jd,
+    }, 
+    {
         name: "Kevin Kern",
         grip: "Handshake",
         record: "6-2",
@@ -40,13 +38,13 @@
         picture: kevin,
     },  
     {
-        name: "JD Pablo",
-        grip: "Pen Hold",
-        record: "4-3",
-        strength: "That thing he does when he hits it really hard",
-        weakness: "hitting the table & controlling his nerves",
-        picture: jd,
-    }, 
+        name: "Sandy Jiang",
+        grip: "Penhold",
+        record: "5-0",
+        strength: "She just good",
+        weakness: "Reece",
+        picture: sandy,
+    },  
   ];
 
 </script>
@@ -62,7 +60,6 @@
 
         <div class="img-container">
             <img alt="PS PP Commitee Member" src={player.picture}/>
-        
         </div>
         <div class="player">
             <h2><span style="border-bottom: 4px solid #FE414D">{player.name}</span> | <span style="font-size:1.8rem">Record: {player.record}</span></h2>

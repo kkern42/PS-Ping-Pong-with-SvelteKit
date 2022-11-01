@@ -63,20 +63,20 @@
 
     <button on:click="{changeImage}">Click for Spooky</button>
     
-    {#each brackets as bracket}
+    {#each brackets as bracket, index}
       <div class="bracket">
         <h2 class="title">{bracket.title}</h2>
         <iframe title={bracket.title} src={bracket.src} width="100%" height="550" frameborder="0"></iframe>
       </div>
     
-      <hr/>
+      {#if index < (brackets.length-1)}<hr/>{/if}
     {/each}
   
     
-    <h3>Change title</h3>
+    <!-- <h3>Change title</h3> -->
     <!-- <input type="text" value="{title}" on:input="{ (e) => { title = e.target.value; }}"/> -->
     <!-- can bind any html properties -->
-    <input type="text" bind:value={title} />
+    <!-- <input type="text" bind:value={title} /> -->
   </div>
 
 <style>
