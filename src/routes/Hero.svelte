@@ -3,6 +3,7 @@
 	export let title = "";
     export let subContent = "";
     export let imageRef = "";
+    export let footer = "";
 </script>
 
 <div class="hero_container">
@@ -38,7 +39,7 @@
             </p>
               
             <p class="read-the-docs">
-                Since September 2022
+                {footer}
             </p>
             </div>
         </div>

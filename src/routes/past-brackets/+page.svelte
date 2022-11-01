@@ -26,7 +26,7 @@
 
 </script>
 
-<Hero title={"Past Brackets"} imageRef={heroImage}/>
+<Hero title={"Past Brackets"} imageRef={heroImage} subContent={"You didn't do as well as you thought"}/>
 
 <div class="app">
     {#each brackets as bracket}

@@ -5,15 +5,24 @@
 
 <script>
   import Hero from '../Hero.svelte';
-  import heroImage from '$lib/images/hero_image_ashley_ayush2.png';
+  import heroImage from '$lib/images/past-bracket-hero3.png';
 
   import kevin from '$lib/images/profile-pictures/kevintwocat.png';
   import ashley from '$lib/images//profile-pictures/ashley.png';
   import jd from '$lib/images//profile-pictures/jdfit.png';
+  import sandy from '$lib/images//profile-pictures/sandy2.png';
 
   
   // it would be cool to import data from a JSON
   let players = [
+    {
+        name: "Sandy Jiang",
+        grip: "Penhold",
+        record: "5-0",
+        strength: "She just good",
+        weakness: "Reece",
+        picture: sandy,
+    },  
     {
         name: "Ashley Kim",
         grip: "Handshake",
@@ -56,8 +65,8 @@
         
         </div>
         <div class="player">
-            <h2>{player.name} | <span style="font-size:1.8rem">Record: {player.record}</span></h2>
-            <div>
+            <h2><span style="border-bottom: 4px solid #FE414D">{player.name}</span> | <span style="font-size:1.8rem">Record: {player.record}</span></h2>
+            <div style="margin-left: 1rem;">
                 <h3>Grip: <span style="">{player.grip}</span></h3>
                 <p>Strength: {player.strength}</p>
                 <p>Weakness: {player.weakness}</p>
@@ -103,6 +112,7 @@
     .img-container{
         
         max-width: 15rem;
+        
     }
     
     

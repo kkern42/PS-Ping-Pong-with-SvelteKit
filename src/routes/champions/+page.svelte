@@ -32,7 +32,7 @@
 </script>
   
   
-<Hero title={"Champions"} subContent={'*Champions are crowned after winning their bracket tier.'} imageRef={heroImage}/>
+<Hero title={"Champions"} subContent={'*Champions are crowned after winning their bracket tier.'} imageRef={heroImage} footer={"Since September 2022"}/>
 
 <div class="champs">
 
@@ -46,6 +46,8 @@
         <p>Final Score: {champion.score}</p>
       </div>
     </div>
+
+    <hr/>
   {/each}
 </div>
   
@@ -66,7 +68,7 @@
   }
 
   .champDetails{
-    margin-left: 1.8rem;
+    margin-left: 1rem;
   }
     
   </style>
