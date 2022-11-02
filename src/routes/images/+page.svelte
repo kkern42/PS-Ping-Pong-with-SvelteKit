@@ -26,7 +26,7 @@
         },  
     ]
 
-    const changeImage = (/** @type {number} */ i)  => () =>{
+    const changeImage = (/** @type {number} */ i) => ()=>{
         if(slideIndex + i > images.length-1){
             slideIndex = 0;
         }
@@ -37,6 +37,10 @@
             slideIndex += i;
         }
 
+    }
+
+    const changeToThumbNail =(/** @type {number} */ i) => () =>{
+        slideIndex = i;
     }
 
 </script>
@@ -55,7 +59,7 @@
     <div class="thumbnails">
         {#each images as image, index}
             <div class="img-container">
-                <img src={image.picture} alt="{image.date}">
+                <img src={image.picture} alt="{image.date}" on:click={changeToThumbNail(index)}>
 
             </div>
         {/each}
