@@ -51,10 +51,24 @@
         </div>
        {/if}
     {/each}
+
+    <div class="thumbnails">
+        {#each images as image, index}
+            <div class="img-container">
+                <img src={image.picture} alt="{image.date}">
+
+            </div>
+        {/each}
+    </div>
     
 </div>
 
 <style>
+    .thumbnails{
+        display: flex;
+        padding: 1rem;
+    }
+
     .images{
         padding: 5.5rem 4rem 2rem 4rem;
     }
