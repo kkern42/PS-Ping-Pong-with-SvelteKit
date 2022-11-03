@@ -18,12 +18,24 @@
         },  
         {
             date: "",
-            picture: jd,
+            picture: kevin,
         }, 
         {
             date: "",
             picture: kevin,
+        },
+        {
+            date: "",
+            picture: ashley,
         },  
+        {
+            date: "",
+            picture: kevin,
+        }, 
+        {
+            date: "",
+            picture: ashley,
+        }, 
     ]
 
     const changeImage = (/** @type {number} */ i) => ()=>{
@@ -59,6 +71,7 @@
     <div class="thumbnails">
         {#each images as image, index}
             <div class="img-container">
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <img src={image.picture} alt="{image.date}" on:click={changeToThumbNail(index)}>
 
             </div>
@@ -80,11 +93,6 @@
 		width:100%;
 	}
 
-  /* .img-container{
-
-       
-    } */
-    
     button{
         color: white;
         background-color: black;

@@ -29,13 +29,14 @@
 <Hero title={"Past Brackets"} imageRef={heroImage} subContent={"You didn't do as well as you thought"}/>
 
 <div class="app">
-    {#each brackets as bracket}
+    {#each brackets as bracket, index}
         <div class="bracket">
         <h2 class="title">{bracket.title}</h2>
         <iframe title={bracket.title} src={bracket.src} width="100%" height="550" frameborder="0"></iframe>
         </div>
-
-        <hr/>
+        {#if index != brackets.length -1}
+            <hr/>
+        {/if}
     {/each}
 </div>
 

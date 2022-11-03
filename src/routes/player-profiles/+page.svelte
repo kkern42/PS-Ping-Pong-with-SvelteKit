@@ -20,6 +20,8 @@
         strength: "Tennis forehand",
         weakness: "Powerful returns",
         picture: ashley,
+        reverse: "reverse",
+        margin: "right",
     },  
     {
         name: "JD Pablo",
@@ -28,6 +30,7 @@
         strength: "That thing he does when he hits it really hard",
         weakness: "hitting the table & controlling his nerves",
         picture: jd,
+        margin: "left",
     }, 
     {
         name: "Kevin Kern",
@@ -36,6 +39,8 @@
         strength: "Playing the angles",
         weakness: "Top competition",
         picture: kevin,
+        reverse: "reverse",
+        margin: "right",
     },  
     {
         name: "Sandy Jiang",
@@ -44,24 +49,25 @@
         strength: "She just good",
         weakness: "Reece",
         picture: sandy,
+        margin: "left",
     },  
   ];
 
 </script>
   
   
-<Hero title={"Player Profiles"} subContent={'Know Thy Enemy'} imageRef={heroImage}/>
+<Hero title={"Player Profiles"} subContent={'Know thy enemy'} imageRef={heroImage}/>
 
 <div class="player-profiles">
 
   <!-- need like player images to go here -->
-  {#each players as player}
-    <div class="player-container">
-
+  {#each players as player, index}
+    <div class="player-container {player.reverse}">
+      
         <div class="img-container">
             <img alt="PS PP Commitee Member" src={player.picture}/>
         </div>
-        <div class="player">
+        <div class="player {player.margin}">
             <h2><span style="border-bottom: 4px solid #FE414D">{player.name}</span> | <span style="font-size:1.8rem">Record: {player.record}</span></h2>
             <div style="margin-left: 1rem;">
                 <h3>Grip: <span style="">{player.grip}</span></h3>
@@ -82,7 +88,6 @@
     padding-left: 6rem;
     padding-bottom: 4rem;
     padding-top:2rem;
-    text-align: left;
   }
 
   h3{
@@ -93,24 +98,32 @@
 
   .player-container{
     display:flex;
+    justify-content: center;
     align-items: center;
     padding: 1.5rem;
   }
 
+  .reverse{
+    flex-direction: row-reverse
+    
+  }
+
   img{
-		width:100%;
-		border-radius: 50%;
-	}
+    width:100%;
+    border-radius: 50%;
+  }
 
-    .player{
-       margin-left: 3rem;
-    }
+  .left{
+      margin-left: 3rem;
+  }
 
-    .img-container{
-        
-        max-width: 15rem;
-        
-    }
+  .right{
+      margin-right: 3rem;
+  }
+
+  .img-container{
+      max-width: 15rem;
+  }
     
     
   </style>

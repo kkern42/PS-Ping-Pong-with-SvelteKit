@@ -94,7 +94,7 @@
   img{
 		width:100%;
 		border-radius: 50%;
-    border: 4px solid lightgray;
+    /* border: 4px solid lightgray; */
 	}
   .img-container{
         
