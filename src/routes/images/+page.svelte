@@ -38,7 +38,7 @@
         }, 
     ]
 
-    const changeImage = (/** @type {number} */ i) => ()=>{
+    function changeImage(/** @type {number} */ i) {
         if(slideIndex + i > images.length-1){
             slideIndex = 0;
         }
@@ -51,7 +51,7 @@
 
     }
 
-    const changeToThumbNail =(/** @type {number} */ i) => () =>{
+    function changeToThumbNail(/** @type {number} */ i){
         slideIndex = i;
     }
 
@@ -62,8 +62,8 @@
        {#if index == slideIndex}
         <div class="img-container">
             <img src={image.picture} alt="{image.date}">
-            <button class="prev" on:click={changeImage(-1)}>❮</button>
-            <button class="next" on:click={changeImage(1)}>❯</button>
+            <button class="prev" on:click={() => changeImage(-1)}>❮</button>
+            <button class="next" on:click={() => changeImage(1)}>❯</button>
         </div>
        {/if}
     {/each}
@@ -72,7 +72,7 @@
         {#each images as image, index}
             <div class="img-container">
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <img src={image.picture} alt="{image.date}" on:click={changeToThumbNail(index)}>
+                <img src={image.picture} alt="{image.date}" on:click={()=>changeToThumbNail(index)}>
 
             </div>
         {/each}
