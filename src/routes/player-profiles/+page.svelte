@@ -11,6 +11,7 @@
   import ashley from '$lib/images//profile-pictures/ashley.png';
   import jd from '$lib/images//profile-pictures/jdfit.png';
   import sandy from '$lib/images//profile-pictures/sandy2.png';
+  import nia from '$lib/images//profile-pictures/nia.png';
 
   let players = [
     {
@@ -43,13 +44,23 @@
         margin: "right",
     },  
     {
+        name: "Nia Washington",
+        grip: "Handshake",
+        record: "7-2",
+        strength: "Consistent smart play",
+        weakness: "Crowd noise",
+        picture: nia,
+        margin: "left",
+    },  
+    {
         name: "Sandy Jiang",
         grip: "Penhold",
         record: "5-0",
         strength: "She just good",
         weakness: "Reece",
         picture: sandy,
-        margin: "left",
+        reverse: "reverse",
+        margin: "right",
     },  
   ];
 

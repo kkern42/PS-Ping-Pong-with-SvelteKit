@@ -7,6 +7,7 @@
   import Hero from '../Hero.svelte';
   import heroImage from '$lib/images/hero_image_ashley_ayush2.png';
   import sandy from '$lib/images/profile-pictures/sandy2.png';
+  import nia from '$lib/images/profile-pictures/nia.png';
   import icon from '$lib/images/profile-pictures/icon.png';
 
   // it would be cool to import data from a JSON
@@ -25,7 +26,7 @@
       winner: "Nia Washington",
       runnerUp: "Sophie Reck",
       score: "21-18",
-      picture: icon,
+      picture: nia,
     }, 
     {
       date: "Fall 2022",
@@ -82,7 +83,7 @@
   }
 
   .champDetails{
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
   }
     
   .champ-container{

@@ -11,6 +11,12 @@
 
     let slideIndex = 0;
 
+    let displayImage = kevin;
+
+    const nextImage = () => {
+    displayImage = ashley;  
+  }
+
     let images = [
         {
             date: "",
@@ -86,7 +92,7 @@
 </script>
 
 <div class="images">
-    {#each images as image, index}
+    <!-- {#each images as image, index}
        {#if index == slideIndex}
         <div class="img-container">
             <img src={image.picture} alt="{image.date}">
@@ -94,7 +100,13 @@
             <button type="button" class="next" on:click="{right}">❯</button>
         </div>
        {/if}
-    {/each}
+    {/each} -->
+
+    <div class="img-container">
+        <img src={displayImage} alt="ping pong office">
+        <button type="button" class="prev" on:click="{nextImage}">❮</button>
+        <button type="button" class="next" on:click="{nextImage}">❯</button>
+    </div>
 
     <div class="thumbnails">
         {#each images as image, index}
