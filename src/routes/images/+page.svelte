@@ -90,8 +90,8 @@
        {#if index == slideIndex}
         <div class="img-container">
             <img src={image.picture} alt="{image.date}">
-            <button class="prev" on:click={left}>❮</button>
-            <button class="next" on:click={right}>❯</button>
+            <button type="button" class="prev" on:click="{left}">❮</button>
+            <button type="button" class="next" on:click="{right}">❯</button>
         </div>
        {/if}
     {/each}
@@ -100,7 +100,7 @@
         {#each images as image, index}
             <div class="img-container">
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <img src={image.picture} alt="{image.date}" on:click={()=>changeToThumbNail(index)}>
+                <img src={image.picture} alt="{image.date}" on:click="{()=>changeToThumbNail(index)}">
 
             </div>
         {/each}
