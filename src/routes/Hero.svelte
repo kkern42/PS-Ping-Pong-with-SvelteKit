@@ -7,28 +7,8 @@
 </script>
 
 <div class="hero_container">
-
-    <!-- <div class="title">
-        <a href="https://brackethq.com/b/k4n6/" > 
-            <img src={PSPPLogo} class="logo" alt="PS PP Logo" />
-        </a>
-        <h1 style="font-size: 3rem"> {@html title} </h1>
-        <div style="text-align: center;">
-            <p>
-                *Champions are crowned after winning their bracket tier.
-            </p>
-              
-            <p class="read-the-docs">
-                Since September 2022
-            </p>
-        </div>
-    </div> -->
-
     <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({imageRef})">
         <div class="hero-text">
-            <!-- it was 60px -->
-          <!-- <h1 style="font-size: 60px"> {@html title} </h1> -->
-          <!-- <p>{@html subcontent}</p> -->
           <a href="https://brackethq.com/b/k4n6/" > 
             <img src={PSPPLogo} class="logo" alt="PS PP Logo" />
         </a>

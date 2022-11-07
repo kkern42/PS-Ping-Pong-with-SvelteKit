@@ -112,7 +112,8 @@
     <div class="thumbnails">
         {#each images as image, index}
             <div class="img-container">
-                <img src={image.picture} alt="{image.date}" on:click="{()=>changeToThumbNail(index)}">
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <img class="subImages" src={image.picture} alt="{image.date}" on:click="{()=>changeToThumbNail(index)}">
 
             </div>
         {/each}
@@ -124,6 +125,11 @@
     .thumbnails{
         display: flex;
         padding: 1rem;
+    }
+
+    .subImages:hover{
+        cursor: pointer;
+        filter: brightness(75%);
     }
 
     .images{
