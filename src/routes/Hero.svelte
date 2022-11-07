@@ -70,10 +70,26 @@
         }
     }
 
+    @keyframes fade-in-up-key {
+    from {
+      opacity: 0;
+      transform: translate(0, 20%)
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(0)
+    }
+  }
+
     .logo {
         height: 8rem;
         padding: 1.5rem;
         will-change: filter;
+
+        /* animation */
+        will-change: transform,opacity;
+        animation: fade-in-up-key .75s forwards;
     }
 
 
