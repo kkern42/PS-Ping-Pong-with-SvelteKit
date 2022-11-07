@@ -12,9 +12,10 @@
     let slideIndex = 0;
 
     let displayImage = kevin;
+    let otherImage = ashley;
 
     const nextImage = () => {
-    displayImage = ashley;  
+    displayImage = otherImage;  
   }
 
     let images = [
@@ -108,23 +109,22 @@
         <button type="button" class="next" on:click="{nextImage}">❯</button>
     </div>
 
-    <div class="thumbnails">
+    <!-- <div class="thumbnails">
         {#each images as image, index}
             <div class="img-container">
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <img src={image.picture} alt="{image.date}" on:click="{()=>changeToThumbNail(index)}">
 
             </div>
         {/each}
-    </div>
+    </div> -->
     
 </div>
 
 <style>
-    .thumbnails{
+    /* .thumbnails{
         display: flex;
         padding: 1rem;
-    }
+    } */
 
     .images{
         padding: 5.5rem 4rem 2rem 4rem;
@@ -138,7 +138,7 @@
         background-color: black;
     }
 
-    .prev{
+    /* .prev{
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -155,5 +155,5 @@
         right: 4rem;
         border-radius: 3px 0 0 3px;
         position: absolute;
-    }
+    } */
 </style>

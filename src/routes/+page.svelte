@@ -57,7 +57,7 @@
       </p>
       
       <p class="read-the-docs">
-        Reach out to Ashely Kim, JD Pablo or Kevin Kern to learn more
+        Reach out to Ashley Kim, JD Pablo or Kevin Kern to learn more
       </p>
     </div>
 
