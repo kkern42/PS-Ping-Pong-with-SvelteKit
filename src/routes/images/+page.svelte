@@ -65,6 +65,8 @@
         else{
             slideIndex += 1;
         }
+        images = images;
+        console.log("Image selection change");
     }
 
     function left(){
@@ -77,6 +79,8 @@
         else{
             slideIndex += (-1);
         }
+        images = images;
+        console.log("Image selection change");
     }
 
 </script>
