@@ -83,7 +83,22 @@
 	.logo {
     height: 9em;
     padding: 1.5em;
-    will-change: filter;
+
+    /* animation */
+    will-change: transform,opacity;
+    animation: fade-in-up-key .75s forwards
+  }
+
+  @keyframes fade-in-up-key {
+    from {
+      opacity: 0;
+      transform: translate(0, 20%)
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(0)
+    }
   }
   /* .logo:hover {
     filter: drop-shadow(0 0 2em #ff3e00aa);

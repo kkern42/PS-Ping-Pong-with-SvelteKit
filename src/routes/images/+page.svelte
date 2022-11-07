@@ -21,11 +21,11 @@
     let images = [
         {
             date: "",
-            picture: ashley,
+            picture: kevin,
         },  
         {
             date: "",
-            picture: kevin,
+            picture: ashley,
         }, 
         {
             date: "",
@@ -44,19 +44,6 @@
             picture: ashley,
         }, 
     ]
-
-    function changeImage(/** @type {number} */ i) {
-        if(slideIndex + i > images.length-1){
-            slideIndex = 0;
-        }
-        else if(slideIndex + i < 0){
-            slideIndex= images.length-1;
-        }
-        else{
-            slideIndex += i;
-        }
-
-    }
 
     function changeToThumbNail(/** @type {number} */ i){
         slideIndex = i;
