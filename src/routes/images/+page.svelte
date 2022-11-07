@@ -9,7 +9,7 @@
     import ashley from '$lib/images/jacob-alden-hero.png';
     import jd from '$lib/images/past-bracket-hero3.png';
 
-    let slideIndex = 1;
+    let slideIndex = 0;
 
     let images = [
         {
@@ -55,6 +55,30 @@
         slideIndex = i;
     }
 
+    function right(){
+        if(slideIndex + 1 > images.length-1){
+            slideIndex = 0;
+        }
+        else if(slideIndex + 1 < 0){
+            slideIndex= images.length-1;
+        }
+        else{
+            slideIndex += 1;
+        }
+    }
+
+    function left(){
+        if(slideIndex + (-1) > images.length-1){
+            slideIndex = 0;
+        }
+        else if(slideIndex + (-1) < 0){
+            slideIndex= images.length-1;
+        }
+        else{
+            slideIndex += (-1);
+        }
+    }
+
 </script>
 
 <div class="images">
@@ -62,8 +86,8 @@
        {#if index == slideIndex}
         <div class="img-container">
             <img src={image.picture} alt="{image.date}">
-            <button class="prev" on:click={() => changeImage(-1)}>❮</button>
-            <button class="next" on:click={() => changeImage(1)}>❯</button>
+            <button class="prev" on:click={left}>❮</button>
+            <button class="next" on:click={right}>❯</button>
         </div>
        {/if}
     {/each}

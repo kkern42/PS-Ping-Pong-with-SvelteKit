@@ -54,8 +54,8 @@
       <div style="margin-left: 3rem">
         <h2><span style="border-bottom: 4px solid #FE414D">{champion.date} </span>- Tier {champion.tier} Bracket</h2>
         <div class="champDetails">
-          <h3>Winner: <span>{champion.winner} &#x1f947;</span></h3>
-          <h4>Runner Up: {champion.runnerUp} &#x1f948;</h4>
+          <h3>&#x1f947; Winner: <span>{champion.winner}</span></h3>
+          <h4>&#x1f948; Runner Up: {champion.runnerUp}</h4>
           <p>Final Score: {champion.score}</p>
         </div>
       </div>
