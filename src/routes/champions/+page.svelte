@@ -81,10 +81,6 @@
     font-size: 1.8rem;
     font-weight: bold;
   }
-
-  .champDetails{
-    /* margin-left: 1rem; */
-  }
     
   .champ-container{
     display: flex;
@@ -102,6 +98,27 @@
         max-width: 15rem;
         
     }
+
+  @media screen and (max-width: 500px) {
+    h2{
+      font-size: 1.9rem;
+    }
+
+    h3{
+      font-size: 1.4rem;
+    }
+
+    .champs{
+      padding: 2rem 3.5rem 4rem 3.5rem;
+      text-align: center;
+    }
+
+    .champ-container{
+      display: block;
+      padding: 1.5rem;
+      align-items: center;
+    }
+  }
     
   </style>
   

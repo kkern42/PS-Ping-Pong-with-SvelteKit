@@ -4,7 +4,7 @@
   
   <div class="navbar">
 	   <!-- <img src={PSPPLogo} class="logo" alt="PS PP Logo" /> -->
-	  <a class="home" href="/" style="font-size: 1.3rem;">PS PP NYC</a> 
+	  <a href="/" style="background-color: #FE414D;"><span class="home">PS PP NYC</span></a> 
 	  <a class:active={$page.url.pathname.startsWith('/champions')} href="/champions"><i class="fa fa-fw fa-search"></i>Champions</a> 
 	  <a class:active={$page.url.pathname.startsWith('/past-brackets')} href="/past-brackets"><i class="fa fa-fw fa-envelope"></i>Past Brackets</a> 
 	  <a class:active={$page.url.pathname.startsWith('/player-profiles')} href="/player-profiles"><i class="fa fa-fw fa-user"></i>Player Profiles</a>
@@ -42,12 +42,15 @@
   }
   
   .home {
-	background-color: #FE414D;
+	font-size: 1.1rem;
   }
+  
   @media screen and (max-width: 500px) {
 	.navbar a {
-	  float: none;
-	  display: block;
+	  font-size: .8rem;
+	}
+	.home{
+		font-size: 1rem;
 	}
   }
   </style>

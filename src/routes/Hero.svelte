@@ -14,13 +14,8 @@
         </a>
         <h1 style="font-size: 3rem;"> {@html title} </h1>
         <div style="text-align: center;">
-            <p>
-                {subContent}
-            </p>
-              
-            <p class="read-the-docs">
-                {footer}
-            </p>
+            <p> {subContent} </p>
+            <p class="read-the-docs"> {footer} </p>
             </div>
         </div>
     </div>
@@ -69,18 +64,6 @@
             color: white;
         }
     }
-
-    @keyframes fade-in-up-key {
-    from {
-      opacity: 0;
-      transform: translate(0, 20%)
-    }
-
-    to {
-      opacity: 1;
-      transform: translate(0)
-    }
-  }
 
     .logo {
         height: 8rem;

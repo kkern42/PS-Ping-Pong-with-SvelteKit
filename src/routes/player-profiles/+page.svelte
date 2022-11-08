@@ -80,7 +80,7 @@
         </div>
         <div class="player {player.margin}">
             <h2><span style="border-bottom: 4px solid #FE414D">{player.name}</span> | <span style="font-size:1.8rem">Record: {player.record}</span></h2>
-            <div style="margin-left: 1rem;">
+            <div class="details" style="margin-left: 1rem;">
                 <h3>Grip: <span style="">{player.grip}</span></h3>
                 <p>Strength: {player.strength}</p>
                 <p>Weakness: {player.weakness}</p>
@@ -112,6 +112,12 @@
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
+  }
+
+  .details{
+    /* animation */
+    will-change: transform,opacity;
+    animation: fade-in-up-key .75s forwards;
   }
 
   .reverse{
