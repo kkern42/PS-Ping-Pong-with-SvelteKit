@@ -52,7 +52,7 @@
         <img alt="PS PP Commitee Member" src={champion.picture}/>
       </div>
 
-      <div style="margin-left: 3rem">
+      <div class="info">
         <h2><span style="border-bottom: 4px solid #FE414D">{champion.date} </span>- Tier {champion.tier} Bracket</h2>
         <div class="champDetails">
           <h3>&#x1f947; Winner: <span>{champion.winner}</span></h3>
@@ -77,6 +77,10 @@
     text-align: left;
   }
 
+  .info{
+    margin-left:3rem;
+  }
+
   h3{
     font-size: 1.8rem;
     font-weight: bold;
@@ -94,18 +98,22 @@
     /* border: 4px solid lightgray; */
 	}
   .img-container{
-        
-        max-width: 15rem;
-        
+    width: 25%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .img-container{
+        width: 60%;
     }
+  }
 
   @media screen and (max-width: 500px) {
     h2{
-      font-size: 1.9rem;
+      font-size: 1.5rem;
     }
 
     h3{
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     .champs{
@@ -117,6 +125,22 @@
       display: block;
       padding: 1.5rem;
       align-items: center;
+    }
+
+    .img-container{
+        
+        /* max-width: 15rem; */
+        width: 100%;
+    }
+
+    img{
+      width:80%;
+      border-radius: 50%;
+      /* border: 4px solid lightgray; */
+    }
+
+    .info{
+      margin-left:0rem;
     }
   }
     
