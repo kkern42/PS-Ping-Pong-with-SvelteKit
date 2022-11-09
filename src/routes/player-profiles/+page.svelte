@@ -79,8 +79,8 @@
             <img alt="PS PP Commitee Member" src={player.picture}/>
         </div>
         <div class="player {player.margin}">
-            <h2><span style="border-bottom: 4px solid #FE414D">{player.name}</span> | <span style="font-size:1.8rem">Record: {player.record}</span></h2>
-            <div class="details" style="margin-left: 1rem;">
+            <h2><span style="border-bottom: 4px solid #FE414D">{player.name}</span> | <span class="record">Record: {player.record}</span></h2>
+            <div class="details">
                 <h3>Grip: <span style="">{player.grip}</span></h3>
                 <p>Strength: {player.strength}</p>
                 <p>Weakness: {player.weakness}</p>
@@ -115,6 +115,8 @@
   }
 
   .details{
+    margin-left: 1rem;
+
     /* animation */
     will-change: transform,opacity;
     animation: fade-in-up-key .75s forwards;
@@ -139,9 +141,71 @@
   }
 
   .img-container{
-      max-width: 15rem;
+      width: 25%;
   }
     
+  .record{
+    font-size:1.8rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .img-container{
+        width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    h2{
+      font-size: 1.5rem;
+    }
+
+    h3{
+      font-size: 1.3rem;
+    }
+
+    .player-profiles{
+      padding: 2rem 3.5rem 4rem 3.5rem;
+      text-align: center;
+    }
+
+    .player-container{
+      display: block;
+      padding: 1.5rem;
+      align-items: center;
+    }
+
+    .img-container{
+        
+        /* max-width: 15rem; */
+        width: 100%;
+    }
+
+    img{
+      width:80%;
+      border-radius: 50%;
+      /* border: 4px solid lightgray; */
+    }
+
+    .record{
+      font-size:1.8rem;
+    }
+
+    .left{
+      margin-left: 0rem;
+    }
+
+    .right{
+      margin-right: 0rem;
+    }
+
+    .details{
+      margin-left: 0rem;
+    }
+
+    .record{
+      font-size: 1.3rem;
+    }
+  }
     
   </style>
   

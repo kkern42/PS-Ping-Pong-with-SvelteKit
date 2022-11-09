@@ -114,6 +114,7 @@
 </div>
 
 <style>
+    
     .thumbnails{
         display: flex;
         padding: 1rem;
@@ -129,7 +130,7 @@
         
     }
      img{
-		width: 100%; 
+		width:100%;
 	}
 
     button{
@@ -147,7 +148,6 @@
         cursor: pointer;  
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
-        
     }
 
     .next {
@@ -155,4 +155,5 @@
         transition: 0.6s ease;
         border-radius: 3px 0 0 3px;
     }
+
 </style>
