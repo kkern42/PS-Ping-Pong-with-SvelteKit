@@ -88,8 +88,8 @@
        {#if index == slideIndex}
 
         <div class="img-container">
-            <img src={image.picture} alt="{image.date}">
             <button type="button" class="prev" on:click="{left}">❮</button>
+            <img src={image.picture} alt="{image.date}">
             <button type="button" class="next" on:click="{right}">❯</button>
         </div>
        {/if}
@@ -137,23 +137,21 @@
         background-color: black;
     }
 
+    .img-container{
+       display: flex;
+    }
+
 
     .prev{
-        cursor: pointer;
-        position: absolute;
-        top: 40rem;
+        cursor: pointer;  
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
-        user-select: none;
-        left: 4rem;
+        
     }
 
     .next {
         cursor: pointer;
         transition: 0.6s ease;
-        top: 40rem;
-        right: 4rem;
         border-radius: 3px 0 0 3px;
-        position: absolute;
     }
 </style>
