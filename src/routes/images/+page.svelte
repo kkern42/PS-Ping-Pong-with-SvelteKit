@@ -125,7 +125,8 @@
     }
 
     .images{
-        padding: 5.5rem 4rem 2rem 4rem;
+        padding: 4rem;
+        text-align: center;
         
     }
      img{
@@ -139,6 +140,8 @@
 
     .img-container{
        display: flex;
+       width: 100%;
+       justify-content: center;
     }
 
 
