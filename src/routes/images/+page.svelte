@@ -4,6 +4,8 @@
 </svelte:head>
 
 <script>
+    import { fade } from 'svelte/transition';
+
 	import Counter from "../Counter.svelte";
     import kevin from '$lib/images/hero_image_ashley_ayush2.png';
     import ashley from '$lib/images/jacob-alden-hero.png';
@@ -83,6 +85,10 @@
     {#each images as image, index}
        {#if index == slideIndex}
         <div class="img-container">
+        <!-- {#key slideIndex}
+	            <div transition:fade><img src={image.picture} alt="{image.date}"></div>
+            {/key} -->
+
             <img src={image.picture} alt="{image.date}">
             <button type="button" class="prev" on:click="{left}">❮</button>
             <button type="button" class="next" on:click="{right}">❯</button>
@@ -109,6 +115,7 @@
 </div>
 
 <style>
+    
     .thumbnails{
         display: flex;
         padding: 1rem;
@@ -122,7 +129,8 @@
     .images{
         padding: 5.5rem 4rem 2rem 4rem;
     }
-     img{
+
+    img{
 		width:100%;
 	}
 
@@ -149,4 +157,5 @@
         border-radius: 3px 0 0 3px;
         position: absolute;
     }
+
 </style>
