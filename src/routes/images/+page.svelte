@@ -4,6 +4,8 @@
 </svelte:head>
 
 <script>
+    import Hero from '../Hero.svelte';
+    import heroImage from '$lib/images/hero-imagespg.png';
 	import Counter from "../Counter.svelte";
     import kevin from '$lib/images/hero_image_ashley_ayush2.png';
     import ashley from '$lib/images/jacob-alden-hero.png';
@@ -79,9 +81,12 @@
 
 </script>
 
+<Hero title={"Photo Gallery"} subContent={'JD needs to take more pics'} imageRef={heroImage}/>
+
 <div class="images">
     {#each images as image, index}
        {#if index == slideIndex}
+
         <div class="img-container">
             <img src={image.picture} alt="{image.date}">
             <button type="button" class="prev" on:click="{left}">❮</button>
@@ -121,6 +126,7 @@
 
     .images{
         padding: 5.5rem 4rem 2rem 4rem;
+        
     }
      img{
 		width:100%;
@@ -131,10 +137,11 @@
         background-color: black;
     }
 
+
     .prev{
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 40rem;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
@@ -144,7 +151,7 @@
     .next {
         cursor: pointer;
         transition: 0.6s ease;
-        top: 50%;
+        top: 40rem;
         right: 4rem;
         border-radius: 3px 0 0 3px;
         position: absolute;
