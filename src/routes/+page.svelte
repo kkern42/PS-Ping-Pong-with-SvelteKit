@@ -8,6 +8,8 @@
   let imageLogo = PSPPLogo; 
   let nextImage = Ghost;
   let buttonText = 'Click for Spooky'; 
+  let psText = 'Click for PS'; 
+
 
   // If image changes this will rerun only dependent on if statment
   $: if (imageLogo === Ghost){
@@ -21,7 +23,10 @@
     let temp = imageLogo;
     imageLogo = nextImage;
     nextImage = temp;    
-    buttonText = 'Click for PS';
+
+    let currText = buttonText; 
+    buttonText = psText; 
+    psText = currText; 
   }
 
 
