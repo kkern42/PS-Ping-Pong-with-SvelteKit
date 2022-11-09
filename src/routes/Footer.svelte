@@ -21,8 +21,9 @@
 
 </footer>
 
-  <style>
-    
+<!-- change footer to flex box not a ul -->
+<style>
+
     footer { 
         width:100%; 
         background-color:#333; 
@@ -58,5 +59,5 @@
     .text-center{
         text-align: center;
     }
-    
-  </style>
+
+</style>

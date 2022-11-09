@@ -31,9 +31,9 @@
     {
       date: "Fall 2022",
       tier: "1",
-      winner: "To Be Determined",
-      runnerUp: "To Be Determined",
-      score: "To Be Determined",
+      winner: "TBD",
+      runnerUp: "TBD",
+      score: "TBD",
       picture: icon,
     }, 
   ];
@@ -49,7 +49,7 @@
     <div class="champ-container">
 
       <div class="img-container">
-        <img alt="PS PP Commitee Member" src={champion.picture}/>
+        <img alt="PS PP Champion {champion.winner}" src={champion.picture}/>
       </div>
 
       <div class="info">
@@ -94,13 +94,32 @@
 		border-radius: 50%;
     /* border: 4px solid lightgray; */
 	}
+  
   .img-container{
     width: 25%;
   }
 
+  /* This is a little inconsistent */
   @media screen and (max-width: 1000px) {
+    .champs{
+      padding: 2rem 3rem 4rem 3rem;
+    }
+
+    .champ-container{
+      padding: 3rem 1.5rem 3rem 1.5rem;
+    }
+
     .img-container{
-        width: 60%;
+        width: 45%;
+    }
+
+    h2{
+      font-size: 1.5rem;
+    }
+
+    h3{
+      font-size: 1.3rem;
+      font-weight: bold;
     }
   }
 
