@@ -70,10 +70,7 @@
 
   .champs{
     margin: 0 auto;
-    padding-right: 6rem;
-    padding-left: 6rem;
-    padding-bottom: 4rem;
-    padding-top:2rem;
+    padding: 2rem 6rem 4rem 6rem;
     text-align: left;
   }
 
