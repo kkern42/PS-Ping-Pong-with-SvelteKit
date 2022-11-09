@@ -125,12 +125,11 @@
     }
 
     .images{
-        padding: 4rem;
-        text-align: center;
+        padding: 5.5rem 10rem 4rem 10rem;
         
     }
      img{
-		width:100%;
+		width: 100%; 
 	}
 
     button{
@@ -139,8 +138,7 @@
     }
 
     .img-container{
-       display: flex;
-       width: 100%;
+       display: flex; 
        justify-content: center;
     }
 
