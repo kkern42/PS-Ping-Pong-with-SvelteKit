@@ -34,12 +34,13 @@
 <div class="about">
 	<h1>About Us</h1>
 	
-	<pre>Meet the PS Ping Pong Federation</pre>
+	<pre>Meet the PS Ping Pong Commitee</pre>
 
 	<p>
-		The PS Ping Pong Federation (PSPPF) is the governing body for all national table tennis associations. 
-		The role of the PSPPF includes overseeing rules and regulations and seeking technological improvement for the sport of table tennis. 
-		The PSPPF is responsible for the organization of numerous international competitions, including the World Table Tennis Championships that has continued since 1926.
+		The PS Ping Pong Commitee (PSPPC) is the governing body for all Publicis Sapient Ping Pong events. 
+		The PSPPC was born out of a need to have a little more fun in the office :) .
+		The PSPPF is responsible for the organization of office wide competitions, including quaterly Office Ping Pong Championships that has continued since the Summer of 2022.
+		The PSPPC oversee all rules and regulations pretaining to competitions held in office. 
 	</p>
 
 	<p>Remember to have fun!</p>
@@ -61,14 +62,10 @@
 <style>
 	
 	.about{
-      
 		min-height: 20rem;
 		max-width: 120rem;
 		margin: 0 auto;
-		padding-right: 6rem;
-		padding-left: 6rem;
-		padding-top: 4rem;
-		padding-bottom:4rem;
+		padding: 4rem 6rem 4rem 6rem;
       	text-align: center;
     }
 
@@ -89,7 +86,6 @@
 
 	.profile{
 		padding: 3rem;
-		
 	}
 
 	img{

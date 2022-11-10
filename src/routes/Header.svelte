@@ -2,8 +2,8 @@
 	import { page } from '$app/stores';
   </script>
   
+  <!-- maybe change to flex -->
   <div class="navbar">
-	   <!-- <img src={PSPPLogo} class="logo" alt="PS PP Logo" /> -->
 	  <a href="/" style="background-color: #FE414D;"><span class="home">PS PP NYC</span></a> 
 	  <a class:active={$page.url.pathname.startsWith('/champions')} href="/champions"><i class="fa fa-fw fa-search"></i>Champions</a> 
 	  <a class:active={$page.url.pathname.startsWith('/past-brackets')} href="/past-brackets"><i class="fa fa-fw fa-envelope"></i>Past Brackets</a> 
@@ -13,12 +13,11 @@
   
   <style>
 	.navbar {
-	width: 100%;
-	background-color: #333;
-	overflow: auto;
-	position: fixed;
-	height: 3.5rem;
-	z-index: 1;
+		width: 100%;
+		background-color: #333;
+		position: fixed;
+		height: 3.5rem;
+		z-index: 1;
   }
   
   .navbar a {
@@ -44,7 +43,7 @@
   .home {
 	font-size: 1.1rem;
   }
-  
+
   @media screen and (max-width: 500px) {
 	.navbar a {
 	  font-size: .8rem;
