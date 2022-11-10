@@ -12,6 +12,7 @@
   import jd from '$lib/images//profile-pictures/jdfit.png';
   import sandy from '$lib/images//profile-pictures/sandy2.png';
   import nia from '$lib/images//profile-pictures/nia.png';
+  import jacob from '$lib/images//profile-pictures/jacob.png';
 
   let players = [
     {
@@ -27,16 +28,16 @@
     {
         name: "JD Pablo",
         grip: "Pen Hold",
-        record: "4-3",
-        strength: "That thing he does when he hits it really hard",
-        weakness: "hitting the table & controlling his nerves",
+        record: "4-4",
+        strength: "When he hits it really hard",
+        weakness: "hitting the table & getting nervous",
         picture: jd,
         margin: "left",
     }, 
     {
         name: "Kevin Kern",
         grip: "Handshake",
-        record: "6-2",
+        record: "6-4",
         strength: "Playing the angles",
         weakness: "Top competition",
         picture: kevin,
@@ -61,7 +62,16 @@
         picture: sandy,
         reverse: "reverse",
         margin: "right",
-    },  
+    }, 
+    {
+        name: "Jacob Lagmay",
+        grip: "Handshake",
+        record: "2-4",
+        strength: "Pressure makes Diamonds",
+        weakness: "Being ahead",
+        picture: jacob,
+        margin: "left",
+    },
   ];
 
 </script>
@@ -146,6 +156,10 @@
     
   .record{
     font-size:1.8rem;
+  }
+  
+  .details p{
+    margin: .8rem 0 0 0;
   }
 
   @media screen and (max-width: 1000px) {
