@@ -13,17 +13,20 @@
 		{
 			name: "Ashley Kim",
 			picture: ashley,
-			title: "PS PP Commitee Member"
+			title: "PS PP Commitee Member",
+			job: "Associate Software Engineer",
 		},
 		{
 			name: "JD Pablo",
 			picture: jd,
-			title: "PS PP Commitee Member"
+			title: "PS PP Commitee Member",
+			job: "Associate Software Engineer",
 		},
 		{
 			name: "Kevin Kern",
 			picture: kevin,
-			title: "PS PP Commitee Member"
+			title: "PS PP Commitee Member",
+			job: "Associate Software Engineer",
 		},
 	]
 </script>
@@ -48,6 +51,7 @@
 				<img alt="PS PP Commitee Member" src={member.picture}/>
 				<p class="name">{member.name}</p>
 				<div class="title">{member.title}</div>
+				<div style="font-size: .8rem">{member.job}</div>
 			</div>
 		{/each}
 	</div>
@@ -75,6 +79,7 @@
 
 	.name{
 		color: #FE414D;
+		margin: 1rem 0 0 0;
 	}
 
 	.title{
@@ -85,6 +90,11 @@
 	.profile{
 		padding: 3rem;
 		
+	}
+
+	img{
+		width:100%;
+		border-radius: 50%;
 	}
 
 	@media screen and (min-width: 1400px) {
@@ -110,9 +120,11 @@
 		}
     }
 
-	img{
-		width:100%;
-		border-radius: 50%;
+	@media screen and (max-width: 500px) {
+		.team{
+			display: block;
+		}
+
 	}
 		
 	</style>
