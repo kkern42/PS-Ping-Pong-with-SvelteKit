@@ -46,10 +46,10 @@
 
   @media screen and (max-width: 500px) {
 	.navbar a {
-	  font-size: .8rem;
+	  font-size: .7rem;
 	}
 	.home{
-		font-size: 1rem;
+		font-size: .9rem;
 	}
   }
   </style>
