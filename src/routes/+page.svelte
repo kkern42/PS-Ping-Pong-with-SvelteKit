@@ -7,6 +7,9 @@
 
   let imageLogo = PSPPLogo; 
   let nextImage = Ghost;
+  let buttonText = 'Click for Spooky'; 
+  let psText = 'Click for PS'; 
+
 
   // If image changes this will rerun only dependent on if statment
   $: if (imageLogo === Ghost){
@@ -20,7 +23,12 @@
     let temp = imageLogo;
     imageLogo = nextImage;
     nextImage = temp;    
+
+    let currText = buttonText; 
+    buttonText = psText; 
+    psText = currText; 
   }
+
 
   let brackets = [
     {
@@ -61,7 +69,7 @@
       </p>
     </div>
 
-    <button on:click="{changeImage}">Click for Spooky</button>
+    <button on:click="{changeImage}">{buttonText}</button>
     
     {#each brackets as bracket, index}
       <div class="bracket">

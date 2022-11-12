@@ -13,6 +13,8 @@
   import sandy from '$lib/images//profile-pictures/sandy2.png';
   import nia from '$lib/images//profile-pictures/nia.png';
   import jacob from '$lib/images//profile-pictures/jacob.png';
+  import anthony from '$lib/images//profile-pictures/anthonyp.png';
+  import reece from '$lib/images//profile-pictures/reecep.png';
 
   let players = [
     {
@@ -67,9 +69,28 @@
         name: "Jacob Lagmay",
         grip: "Handshake",
         record: "2-4",
-        strength: "Pressure makes Diamonds",
+        strength: "Pressure makes diamonds",
         weakness: "Being ahead",
         picture: jacob,
+        margin: "left",
+    },
+    {
+        name: "Anthony Pizzulli",
+        grip: "Handshake",
+        record: "idk",
+        strength: "Talking to Reece",
+        weakness: "Winning",
+        picture: anthony,
+        reverse: "reverse",
+        margin: "right",
+    },
+    {
+        name: "Reece Eberhardt",
+        grip: "Handshake",
+        record: "10-0",
+        strength: "Saying \"Reece\" after every point",
+        weakness: "Losing",
+        picture: reece,
         margin: "left",
     },
   ];

@@ -4,8 +4,8 @@
 </svelte:head>
 
 <script>
-    import { fade } from 'svelte/transition';
-
+    import Hero from '../Hero.svelte';
+    import heroImage from '$lib/images/hero-imagespg.png';
 	import Counter from "../Counter.svelte";
     import kevin from '$lib/images/hero_image_ashley_ayush2.png';
     import ashley from '$lib/images/jacob-alden-hero.png';
@@ -81,16 +81,15 @@
 
 </script>
 
+<Hero title={"Photo Gallery"} subContent={'JD needs to take more pics'} imageRef={heroImage}/>
+
 <div class="images">
     {#each images as image, index}
        {#if index == slideIndex}
-        <div class="img-container">
-        <!-- {#key slideIndex}
-	            <div transition:fade><img src={image.picture} alt="{image.date}"></div>
-            {/key} -->
 
-            <img src={image.picture} alt="{image.date}">
+        <div class="img-container">
             <button type="button" class="prev" on:click="{left}">❮</button>
+            <img src={image.picture} alt="{image.date}">
             <button type="button" class="next" on:click="{right}">❯</button>
         </div>
        {/if}
@@ -127,10 +126,10 @@
     }
 
     .images{
-        padding: 5.5rem 4rem 2rem 4rem;
+        padding: 5.5rem 10rem 4rem 10rem;
+        
     }
-
-    img{
+     img{
 		width:100%;
 	}
 
@@ -139,23 +138,22 @@
         background-color: black;
     }
 
+    .img-container{
+       display: flex; 
+       justify-content: center;
+    }
+
+
     .prev{
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
+        cursor: pointer;  
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
-        user-select: none;
-        left: 4rem;
     }
 
     .next {
         cursor: pointer;
         transition: 0.6s ease;
-        top: 50%;
-        right: 4rem;
         border-radius: 3px 0 0 3px;
-        position: absolute;
     }
 
 </style>

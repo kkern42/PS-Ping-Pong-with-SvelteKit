@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>About US</title>
+	<title>About Us</title>
 	<meta name="description" content="About this app" />
 
 </svelte:head>
