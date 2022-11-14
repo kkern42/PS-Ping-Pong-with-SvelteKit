@@ -87,7 +87,7 @@
     {
         name: "Reece Eberhardt",
         grip: "Handshake",
-        record: "10-0",
+        record: "8-0",
         strength: "Saying \"Reece\" after every point",
         weakness: "Losing",
         picture: reece,
