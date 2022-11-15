@@ -12,6 +12,7 @@
             <a class:active={$page.url.pathname.startsWith('/about')} href="/about">About Us</a>
             <a href="/past-brackets">Past Brackets</a>
             <a href="/player-profiles">Player Profiles</a>
+            <a href="/FAQ">FAQ</a>
         </div>
 
         <div class="bottom_border"></div>

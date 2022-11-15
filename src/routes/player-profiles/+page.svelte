@@ -16,7 +16,7 @@
   import anthony from '$lib/images//profile-pictures/anthonyp.png';
   import reece from '$lib/images//profile-pictures/reecep.png';
 
-  let players = [
+  let engineering = [
     {
         name: "Ashley Kim",
         grip: "Handshake",
@@ -24,7 +24,7 @@
         strength: "Tennis forehand",
         weakness: "Powerful returns",
         picture: ashley,
-        reverse: "reverse",
+        reverse: "",
         margin: "right",
     },  
     {
@@ -34,6 +34,7 @@
         strength: "When he hits it really hard",
         weakness: "hitting the table & getting nervous",
         picture: jd,
+        reverse: "",
         margin: "left",
     }, 
     {
@@ -43,9 +44,32 @@
         strength: "Playing the angles",
         weakness: "Top competition",
         picture: kevin,
-        reverse: "reverse",
+        reverse: "",
         margin: "right",
-    },  
+    }, 
+    {
+        name: "Anthony Pizzulli",
+        grip: "Handshake",
+        record: "0-4",
+        strength: "Talking to Reece while winning for other people",
+        weakness: "Winning for his matches",
+        picture: anthony,
+        reverse: "",
+        margin: "right",
+    },
+    {
+        name: "Reece Eberhardt",
+        grip: "Handshake",
+        record: "7-1",
+        strength: "Saying \"Reece\" after every point",
+        weakness: "Losing",
+        picture: reece,
+        reverse: "",
+        margin: "left",
+    },
+  ];
+
+  let experience = [
     {
         name: "Nia Washington",
         grip: "Handshake",
@@ -53,17 +77,8 @@
         strength: "Consistent smart play",
         weakness: "Crowd noise",
         picture: nia,
+        reverse: "",
         margin: "left",
-    },  
-    {
-        name: "Sandy Jiang",
-        grip: "Penhold",
-        record: "5-0",
-        strength: "She just good",
-        weakness: "Reece",
-        picture: sandy,
-        reverse: "reverse",
-        margin: "right",
     }, 
     {
         name: "Jacob Lagmay",
@@ -72,38 +87,77 @@
         strength: "Pressure makes diamonds",
         weakness: "Being ahead",
         picture: jacob,
+        reverse: "",
         margin: "left",
-    },
-    {
-        name: "Anthony Pizzulli",
-        grip: "Handshake",
-        record: "idk",
-        strength: "Talking to Reece",
-        weakness: "Winning",
-        picture: anthony,
-        reverse: "reverse",
-        margin: "right",
-    },
-    {
-        name: "Reece Eberhardt",
-        grip: "Handshake",
-        record: "8-0",
-        strength: "Saying \"Reece\" after every point",
-        weakness: "Losing",
-        picture: reece,
-        margin: "left",
-    },
+    }
   ];
 
+  let product = [
+    {
+        name: "Sandy Jiang",
+        grip: "Penhold",
+        record: "5-0",
+        strength: "She just good",
+        weakness: "Reece",
+        picture: sandy,
+        reverse: "",
+        margin: "right",
+    }, 
+
+  ];
+
+  let players = engineering;
+
+  let enginClass = "underline"
+  let prodClass = ""
+  let expClass = ""
+
+  /**
+	 * @param {{name: string;grip: string;record: string;strength: string;weakness: string;picture: string;margin: string;reverse: string;}[]} capList
+	 * @param {string} name
+	 */
+  function switchPLayers(capList, name){
+        players = capList
+
+        if(name == 'prod'){
+          enginClass = ""
+          prodClass = "underline"
+          expClass = ""
+
+        }
+        else if(name == 'exp'){
+          enginClass = ""
+          prodClass = ""
+          expClass = "underline"
+        }
+        else{
+          enginClass = "underline"
+          prodClass = ""
+          expClass = ""
+        }
+    }
+let classrev = ""
 </script>
   
   
 <Hero title={"Player Profiles"} subContent={'Know thy enemy'} imageRef={heroImage}/>
 
 <div class="player-profiles">
+  <div class="capabilities">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <h2 on:click="{()=>switchPLayers(experience, 'exp')}" class={expClass}>Experience</h2>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <h2 on:click="{()=>switchPLayers(product, 'prod')}" class={prodClass}>Product</h2> 
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <h2 on:click="{()=>switchPLayers(engineering, 'engin')}" class={enginClass}>Engineering</h2> 
+  </div>
+
+  <hr>
 
   <!-- need like player images to go here -->
   {#each players as player, index}
+  {#if (index%2) == 0} <div style="display: none;">{player.reverse = "reverse"} {player.margin = "right"}</div> {:else}  <div style="display: none;">{player.margin = "left"}</div> {/if}
+
     <div class="player-container {player.reverse}">
       
         <div class="img-container">
@@ -151,6 +205,26 @@
     /* animation */
     will-change: transform,opacity;
     animation: fade-in-up-key .75s forwards;
+  }
+
+  .capabilities{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem 1.5rem 0rem;
+  }
+  
+  .capabilities h2{
+    margin: 0rem 1.5rem .5rem 1.5rem;
+  }
+
+  .capabilities h2:hover{
+    cursor: pointer;
+  }
+
+
+
+  .capabilities .underline{
+    border-bottom: 4px solid #FE414D;
   }
 
   .reverse{
