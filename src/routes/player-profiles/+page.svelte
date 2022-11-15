@@ -243,11 +243,11 @@ let classrev = ""
   }
 
   .left{
-      margin-left: 3rem;
+      margin-left: 5rem;
   }
 
   .right{
-      margin-right: 3rem;
+      margin-right: 5rem;
   }
 
   .img-container{
