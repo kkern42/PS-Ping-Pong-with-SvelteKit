@@ -47,6 +47,26 @@
         reverse: "",
         margin: "right",
     }, 
+    {
+        name: "Anthony Pizzulli",
+        grip: "Handshake",
+        record: "idk",
+        strength: "Talking to Reece while winning for other people",
+        weakness: "Winning for his matches",
+        picture: anthony,
+        reverse: "",
+        margin: "right",
+    },
+    {
+        name: "Reece Eberhardt",
+        grip: "Handshake",
+        record: "10-0",
+        strength: "Saying \"Reece\" after every point",
+        weakness: "Losing",
+        picture: reece,
+        reverse: "",
+        margin: "left",
+    },
   ];
 
   let experience = [
@@ -85,88 +105,7 @@
     }, 
   ];
 
-  let players = [
-    {
-        name: "Ashley Kim",
-        grip: "Handshake",
-        record: "8-4",
-        strength: "Tennis forehand",
-        weakness: "Powerful returns",
-        picture: ashley,
-        reverse: "",
-        margin: "right",
-    },  
-    {
-        name: "JD Pablo",
-        grip: "Pen Hold",
-        record: "4-4",
-        strength: "When he hits it really hard",
-        weakness: "hitting the table & getting nervous",
-        picture: jd,
-        reverse: "",
-        margin: "left",
-    }, 
-    {
-        name: "Kevin Kern",
-        grip: "Handshake",
-        record: "6-4",
-        strength: "Playing the angles",
-        weakness: "Top competition",
-        picture: kevin,
-        reverse: "",
-        margin: "right",
-    },  
-    {
-        name: "Nia Washington",
-        grip: "Handshake",
-        record: "7-2",
-        strength: "Consistent smart play",
-        weakness: "Crowd noise",
-        picture: nia,
-        reverse: "",
-        margin: "left",
-    },  
-    {
-        name: "Sandy Jiang",
-        grip: "Penhold",
-        record: "5-0",
-        strength: "She just good",
-        weakness: "Reece",
-        picture: sandy,
-        reverse: "",
-        margin: "right",
-    }, 
-    {
-        name: "Jacob Lagmay",
-        grip: "Handshake",
-        record: "2-4",
-        strength: "Pressure makes diamonds",
-        weakness: "Being ahead",
-        picture: jacob,
-        reverse: "",
-        margin: "left",
-    },
-    {
-        name: "Anthony Pizzulli",
-        grip: "Handshake",
-        record: "idk",
-        strength: "Talking to Reece while winning for other people",
-        weakness: "Winning for his matches",
-        picture: anthony,
-        reverse: "",
-        margin: "right",
-    },
-    {
-        name: "Reece Eberhardt",
-        grip: "Handshake",
-        record: "10-0",
-        strength: "Saying \"Reece\" after every point",
-        weakness: "Losing",
-        picture: reece,
-        reverse: "",
-        margin: "left",
-    },
-  ];
+  let players = engineering;
 
   let enginClass = "underline"
   let prodClass = ""
