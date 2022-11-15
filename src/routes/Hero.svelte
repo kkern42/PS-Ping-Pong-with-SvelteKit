@@ -78,14 +78,6 @@
         will-change: transform,opacity;
         animation: fade-in-up-key .75s forwards;
     }
-
-
-    .title{
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-        width:50%;
-        background-color: lightgray;
-    }
         
     
 </style>
