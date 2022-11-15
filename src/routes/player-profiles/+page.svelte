@@ -143,16 +143,18 @@ let classrev = ""
 <Hero title={"Player Profiles"} subContent={'Know thy enemy'} imageRef={heroImage}/>
 
 <div class="player-profiles">
-  <div class="capabilities">
+  <div class="capabilities" >
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <h2 on:click="{()=>switchPLayers(experience, 'exp')}" class={expClass}>Experience</h2>
+    <h2 on:click="{()=>switchPLayers(experience, 'exp')}" class={expClass}>Experience</h2> 
+    <h2  style="color: darkgrey;">|</h2>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <h2 on:click="{()=>switchPLayers(product, 'prod')}" class={prodClass}>Product</h2> 
+    <h2 style="color: darkgrey;">|</h2>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <h2 on:click="{()=>switchPLayers(engineering, 'engin')}" class={enginClass}>Engineering</h2> 
   </div>
 
-  <hr>
+  <hr/>
 
   <!-- need like player images to go here -->
   {#each players as player, index}
@@ -211,17 +213,17 @@ let classrev = ""
     display: flex;
     justify-content: center;
     padding: 1rem 0rem 1.5rem 0rem;
+    
   }
   
   .capabilities h2{
-    margin: 0rem 1.5rem .5rem 1.5rem;
+    margin: 0rem 1.5rem 1rem 1.5rem;
   }
 
   .capabilities h2:hover{
     cursor: pointer;
+    /* border-bottom: 4px solid #FE414D; */
   }
-
-
 
   .capabilities .underline{
     border-bottom: 4px solid #FE414D;
@@ -250,16 +252,28 @@ let classrev = ""
   }
     
   .record{
-    font-size:1.8rem;
+    font-size: 1.8rem;
   }
   
   .details p{
     margin: .8rem 0 0 0;
   }
 
+  hr{
+      width: 80%;
+    }
+
   @media screen and (max-width: 1000px) {
     .img-container{
         width: 60%;
+    }
+
+    hr{
+      width: 100%;
+    }
+
+    .capabilities h2{
+      margin: 0rem .6rem 1rem .6rem;
     }
   }
 
@@ -270,6 +284,10 @@ let classrev = ""
 
     h3{
       font-size: 1.3rem;
+    }
+    
+    hr{
+      display: none;
     }
 
     .player-profiles{
@@ -313,6 +331,10 @@ let classrev = ""
 
     .record{
       font-size: 1.3rem;
+    }
+
+    .capabilities h2{
+      margin: 0rem .4rem 1rem .4rem;
     }
   }
     
