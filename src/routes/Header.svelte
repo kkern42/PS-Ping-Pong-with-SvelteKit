@@ -4,7 +4,7 @@
   
   <!-- maybe change to flex -->
   <div class="navbar">
-	  <a href="/" style="background-color: #FE414D;"><span class="home">PS PP NYC</span></a> 
+	  <a href="/" style="background-color: #FE414D;" class="home"><span class="home">PS PP NYC</span></a> 
 	  <a class:active={$page.url.pathname.startsWith('/champions')} href="/champions"><i class="fa fa-fw fa-search"></i>Champions</a> 
 	  <a class:active={$page.url.pathname.startsWith('/past-brackets')} href="/past-brackets"><i class="fa fa-fw fa-envelope"></i>Past Brackets</a> 
 	  <a class:active={$page.url.pathname.startsWith('/player-profiles')} href="/player-profiles"><i class="fa fa-fw fa-user"></i>Player Profiles</a>
@@ -48,6 +48,7 @@
   @media screen and (max-width: 500px) {
 	.navbar a {
 	  font-size: .7rem;
+	  padding: 1rem .7rem 1rem .7rem;
 	}
 	.home{
 		font-size: .9rem;
