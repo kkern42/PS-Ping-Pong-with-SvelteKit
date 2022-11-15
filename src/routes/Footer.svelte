@@ -57,7 +57,12 @@
 
     @media screen and (max-width: 500px) {
         .footer_bottom_container a{
-            font-size: .8rem;
+            font-size: .7rem;
+        }
+
+        .footer_bottom_container a{
+        padding: .5rem 1rem .5rem 1rem;
+
         }
     }
 

@@ -166,9 +166,9 @@ let classrev = ""
             <img alt="PS PP Commitee Member" src={player.picture}/>
         </div>
         <div class="player {player.margin}">
-            <h2><span style="border-bottom: 4px solid #FE414D">{player.name}</span> | <span class="record">Record: {player.record}</span></h2>
+            <h2>{player.name} <span style="color:#FE414D;">|</span> <span class="record">Record: {player.record}</span></h2>
             <div class="details">
-                <h3>Grip: <span style="">{player.grip}</span></h3>
+                <h3>Grip: {player.grip}</h3>
                 <p>Strength: {player.strength}</p>
                 <p>Weakness: {player.weakness}</p>
             </div>
@@ -237,6 +237,9 @@ let classrev = ""
   img{
     width:100%;
     border-radius: 50%;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
   }
 
   .left{
@@ -260,7 +263,7 @@ let classrev = ""
   }
 
   hr{
-      width: 80%;
+      width: 100%;
     }
 
   @media screen and (max-width: 1000px) {
