@@ -40,6 +40,10 @@
       background-size: cover;
       position: relative;
     }
+
+    h1{
+        margin-top: 1rem;
+    }
     
     
     /* everything 720 and above */
@@ -67,7 +71,7 @@
 
     .logo {
         height: 8rem;
-        padding: 1.5rem;
+        padding: 2rem  1.5rem 1.5rem 1.5rem;
         will-change: filter;
 
         /* animation */

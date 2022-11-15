@@ -50,7 +50,7 @@
     {
         name: "Anthony Pizzulli",
         grip: "Handshake",
-        record: "idk",
+        record: "0-4",
         strength: "Talking to Reece while winning for other people",
         weakness: "Winning for his matches",
         picture: anthony,
@@ -60,7 +60,7 @@
     {
         name: "Reece Eberhardt",
         grip: "Handshake",
-        record: "10-0",
+        record: "7-1",
         strength: "Saying \"Reece\" after every point",
         weakness: "Losing",
         picture: reece,
