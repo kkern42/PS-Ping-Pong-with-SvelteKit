@@ -12,7 +12,7 @@
 	 * @param {number} m
 	 */
 	function modulo(n, m) {
-		// handle negative numbers
+		// handle negative numbers 
 		return ((n % m) + m) % m;
 	}
 </script>

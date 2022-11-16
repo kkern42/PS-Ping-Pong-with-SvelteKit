@@ -156,14 +156,12 @@ let classrev = ""
 
   <hr/>
 
-  <!-- need like player images to go here -->
   {#each players as player, index}
   {#if (index%2) == 0} <div style="display: none;">{player.reverse = "reverse"} {player.margin = "right"}</div> {:else}  <div style="display: none;">{player.margin = "left"}</div> {/if}
 
     <div class="player-container {player.reverse}">
-      
         <div class="img-container">
-            <img alt="PS PP Commitee Member" src={player.picture}/>
+            <img alt="PS PP Commitee Member" src={player.picture} class="profile-picture"/>
         </div>
         <div class="player {player.margin}">
             <h2>{player.name} <span style="color:#FE414D;">|</span> <span class="record">Record: {player.record}</span></h2>
@@ -203,7 +201,6 @@ let classrev = ""
 
   .details{
     margin-left: 1rem;
-
     /* animation */
     will-change: transform,opacity;
     animation: fade-in-up-key .75s forwards;
@@ -213,7 +210,6 @@ let classrev = ""
     display: flex;
     justify-content: center;
     padding: 1rem 0rem 1.5rem 0rem;
-    
   }
   
   .capabilities h2{
@@ -222,7 +218,6 @@ let classrev = ""
 
   .capabilities h2:hover{
     cursor: pointer;
-    /* border-bottom: 4px solid #FE414D; */
   }
 
   .capabilities .underline{
@@ -231,27 +226,18 @@ let classrev = ""
 
   .reverse{
     flex-direction: row-reverse
-    
-  }
-
-  img{
-    width:100%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
   }
 
   .left{
-      margin-left: 5rem;
+    margin-left: 5rem;
   }
 
   .right{
-      margin-right: 5rem;
+    margin-right: 5rem;
   }
 
   .img-container{
-      width: 25%;
+    width: 25%;
   }
     
   .record{
@@ -263,12 +249,12 @@ let classrev = ""
   }
 
   hr{
-      width: 100%;
-    }
+    width: 100%;
+  }
 
   @media screen and (max-width: 1000px) {
     .img-container{
-        width: 60%;
+      width: 60%;
     }
 
     hr{
@@ -305,15 +291,12 @@ let classrev = ""
     }
 
     .img-container{
-        
-        /* max-width: 15rem; */
-        width: 100%;
+      width: 100%;
     }
 
     img{
       width:80%;
       border-radius: 50%;
-      /* border: 4px solid lightgray; */
     }
 
     .record{
@@ -340,6 +323,5 @@ let classrev = ""
       margin: 0rem .4rem 1rem .4rem;
     }
   }
-    
-  </style>
+</style>
   

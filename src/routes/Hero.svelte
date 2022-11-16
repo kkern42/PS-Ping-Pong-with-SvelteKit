@@ -9,13 +9,13 @@
 <div class="hero_container">
     <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({imageRef})">
         <div class="hero-text">
-          <a href="https://brackethq.com/b/k4n6/" > 
-            <img src={PSPPLogo} class="logo" alt="PS PP Logo" />
-        </a>
-        <h1 style="font-size: 3rem;"> {@html title} </h1>
-        <div style="text-align: center;">
-            <p> {subContent} </p>
-            <p class="read-the-docs"> {footer} </p>
+            <a href="https://brackethq.com/b/k4n6/" > 
+                <img src={PSPPLogo} class="logo" alt="PS PP Logo" />
+            </a>
+            <h1 style="font-size: 3rem;"> {@html title} </h1>
+            <div style="text-align: center;">
+                <p> {subContent} </p>
+                <p class="read-the-docs"> {footer} </p>
             </div>
         </div>
     </div>
@@ -23,7 +23,6 @@
 
 <style>
     .hero_container{
-        /* this has to be height of the header */
         padding-top: 3.5rem;
         text-align: center;
         display: flex;
@@ -31,20 +30,18 @@
     }
     
     .hero-image {
-      /* background-image: linear-gradient(-45deg, rgba(229, 93, 135, 0.7), rgba(95, 195, 228, 0.7)), url({imageRef}); */
-      background-image: linear-gradient(-45deg, rgba(226, 122, 122, 0.7), rgba(0, 0, 0, 0.5)), url({imageRef});
-      min-height: 25rem;
-      width:100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
+        background-image: linear-gradient(-45deg, rgba(226, 122, 122, 0.7), rgba(0, 0, 0, 0.5)), url({imageRef});
+        min-height: 25rem;
+        width:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
     }
 
     h1{
         margin-top: 1rem;
     }
-    
     
     /* everything 720 and above */
     @media screen and (min-width: 720px) {
@@ -73,7 +70,6 @@
         height: 8rem;
         padding: 2rem  1.5rem 1.5rem 1.5rem;
         will-change: filter;
-
         /* animation */
         will-change: transform,opacity;
         animation: fade-in-up-key .75s forwards;

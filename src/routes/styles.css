@@ -13,13 +13,13 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
-  }
+}
   
-  a {
+a {
 	font-weight: 500;
 	color: #646cff;
 	text-decoration: inherit;
-  }
+}
   a:hover {
 	color: #535bf2;
   }
@@ -93,6 +93,15 @@
     border: .1px solid darkgray;
 	background-color: darkgrey;
 	}
+
+.profile-picture{
+	width:100%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
   
   @media (prefers-color-scheme: light) {
 	:root {
@@ -119,7 +128,7 @@
     }
   }
 
-  @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 	h1{
 		font-size: 2.2rem;
 	}
@@ -131,6 +140,6 @@
 	.app{
 		padding: 4rem 4.5rem 4rem 4.5rem;
 	}
-  }
+}
   
   

@@ -2,7 +2,6 @@
 <svelte:head>
 	<title>Past Brackets</title>
 	<meta name="description" content="Past Ping Pong Brackets" />
-
 </svelte:head>
 
 <script>
@@ -22,8 +21,7 @@
             title: "Fall 2022 - Tier 2",
             src: "https://brackethq.com/b/x6n6/embed/"
         },
-	]
-
+	];
 </script>
 
 <Hero title={"Past Brackets"} imageRef={heroImage} subContent={"You didn't do as well as you thought"}/>

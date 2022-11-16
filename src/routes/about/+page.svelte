@@ -1,7 +1,6 @@
 <svelte:head>
 	<title>About Us</title>
 	<meta name="description" content="About this app" />
-
 </svelte:head>
 
 <script>
@@ -28,17 +27,16 @@
 			title: "PS PP Commitee Member",
 			job: "Associate Software Engineer",
 		},
-	]
+	];
 </script>
 
 <div class="about">
 	<h1>About Us</h1>
-	
 	<pre>Meet the PS Ping Pong Commitee</pre>
 
 	<p>
 		The PS Ping Pong Commitee (PSPPC) is the governing body for all Publicis Sapient Ping Pong events. 
-		The PSPPC was born out of a need to have a little more fun in the office :) .
+		The PSPPC was born out of a need to have a little more fun in the office :)
 		The PSPPF is responsible for the organization of office wide competitions, including quaterly Office Ping Pong Championships that has continued since the Summer of 2022.
 		The PSPPC oversee all rules and regulations pretaining to competitions held in office. 
 	</p>
@@ -49,14 +47,13 @@
 	<div class="team">
 		{#each members as member}
 			<div class="profile">
-				<img alt="PS PP Commitee Member" src={member.picture}/>
+				<img alt="PS PP Commitee Member" src={member.picture} class="profile-picture"/>
 				<p class="name">{member.name}</p>
 				<div class="title">{member.title}</div>
 				<div style="font-size: .8rem">{member.job}</div>
 			</div>
 		{/each}
 	</div>
-	
 </div>
 
 <style>
@@ -83,36 +80,27 @@
 		font-size: .9rem;
 	}
 
-
 	.profile{
 		padding: 3rem;
 	}
 
-	img{
-		width:100%;
-		border-radius: 50%;
-	}
-
 	@media screen and (min-width: 1400px) {
         .profile{
-		padding: 5rem;
-		
+			padding: 5rem;
 		}
     }
 
 	/* everything 1500 and below */
     @media screen and (max-width: 1300px) {
         .profile{
-		padding: 3rem;
-		
+			padding: 3rem;
 		}
     }
 
     /* everything 720 and below */
     @media screen and (max-width: 1000px) {
         .profile{
-		padding: 1rem;
-		
+			padding: 1rem;
 		}
     }
 
@@ -120,7 +108,6 @@
 		.team{
 			display: block;
 		}
-
 	}
 		
-	</style>
+</style>
