@@ -31,6 +31,13 @@
 			marcel: "https://marcel.ai/kevinkern"
 		},
 	];
+
+	/**
+	 * @param {string} link
+	 */
+	function marcelLink (link){
+		window.location.href = link;
+	}
 </script>
 
 <div class="about">
@@ -51,7 +58,8 @@
 		{#each members as member}
 			<div class="profile">
 				<img alt="PS PP Commitee Member" src={member.picture} class="profile-picture"/>
-				<p class="name"><a href={member.marcel}><span style="border-bottom: 2px solid #FE414D">{member.name}</span></a></p>
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<p class="name" on:click="{() => marcelLink(member.marcel)}"><span style="border-bottom: 2px solid #FE414D;">{member.name}</span></p>
 				<div class="title">{member.title}</div>
 				<div style="font-size: .8rem">{member.job}</div>
 			</div>
@@ -78,7 +86,10 @@
 		margin: 1rem 0 0 0;
 	}
 
-	
+	.name:hover{
+		cursor: pointer;
+		font-weight: 800;
+	}
 
 	.title{
 		font-size: .9rem;
@@ -86,16 +97,6 @@
 
 	.profile{
 		padding: 3rem;
-	}
-
-	 a{
-		color: #213547;
-		text-decoration: none;
-	}
-
-	a:hover{
-		color: black;
-		font-weight: 800;
 	}
 
 	@media screen and (min-width: 1400px) {
