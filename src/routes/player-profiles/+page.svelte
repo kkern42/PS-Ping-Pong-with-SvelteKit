@@ -188,7 +188,6 @@
     font-weight: bold;
   }
 
-
   .player-container{
     display:flex;
     justify-content: center;
