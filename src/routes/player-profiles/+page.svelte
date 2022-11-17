@@ -117,26 +117,25 @@
 	 * @param {string} name
 	 */
   function switchPLayers(capList, name){
-        players = capList
+    players = capList
 
-        if(name == 'prod'){
-          enginClass = ""
-          prodClass = "underline"
-          expClass = ""
+    if(name == 'prod'){
+      enginClass = ""
+      prodClass = "underline"
+      expClass = ""
 
-        }
-        else if(name == 'exp'){
-          enginClass = ""
-          prodClass = ""
-          expClass = "underline"
-        }
-        else{
-          enginClass = "underline"
-          prodClass = ""
-          expClass = ""
-        }
     }
-let classrev = ""
+    else if(name == 'exp'){
+      enginClass = ""
+      prodClass = ""
+      expClass = "underline"
+    }
+    else{
+      enginClass = "underline"
+      prodClass = ""
+      expClass = ""
+    }
+  }
 </script>
   
   
@@ -158,7 +157,6 @@ let classrev = ""
 
   {#each players as player, index}
   {#if (index%2) == 0} <div style="display: none;">{player.reverse = "reverse"} {player.margin = "right"}</div> {:else}  <div style="display: none;">{player.margin = "left"}</div> {/if}
-
     <div class="player-container {player.reverse}">
         <div class="img-container">
             <img alt="PS PP Commitee Member" src={player.picture} class="profile-picture"/>
@@ -171,7 +169,6 @@ let classrev = ""
                 <p>Weakness: {player.weakness}</p>
             </div>
         </div>
-
     </div>
   {/each}
 </div>
