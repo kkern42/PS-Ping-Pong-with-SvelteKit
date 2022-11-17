@@ -48,7 +48,7 @@
 		{#each members as member}
 			<div class="profile">
 				<img alt="PS PP Commitee Member" src={member.picture} class="profile-picture"/>
-				<p class="name">{member.name}</p>
+				<p class="name"><a href="https://marcel.ai/app/myaccount"><span style="border-bottom: 2px solid #FE414D">{member.name}</span></a></p>
 				<div class="title">{member.title}</div>
 				<div style="font-size: .8rem">{member.job}</div>
 			</div>
@@ -72,8 +72,11 @@
 	}
 
 	.name{
-		color: #FE414D;
 		margin: 1rem 0 0 0;
+	}
+
+	.name a{
+		color: #213547;
 	}
 
 	.title{

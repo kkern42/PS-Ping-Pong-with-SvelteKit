@@ -32,64 +32,56 @@
 		width: 100%;
 		background-color: #333;
 		position: fixed;
-		height: 3.5rem;
 		z-index: 1;
-  }
+  	}
   
-  .navbar a {
+  	.navbar a {
+		float: left;
+		padding: 1rem;
+		color: white;
+		font-size: 1rem;
+		font-weight: 700;
+  	}
   
-	float: left;
-	padding: 1rem;
-	color: white;
-	text-decoration: none;
-	font-size: 1rem;
-	font-weight: 700;
-  }
-  
-  .navbar a:hover {
-	/* border-bottom: 1px solid #FE414D ; */
-	background-color: #535252;
-  }
+  	.navbar a:hover {
+		background-color: #535252;
+  	}
 
-  .navbar .home:hover {
-	/* border-bottom: 1px solid #FE414D ; */
-	background-color: #FE414D;
-  }
   
-  .home {
-	font-size: 1.1rem;
-  }
+  	.home {
+		font-size: 1.1rem;
+  	}
 
-  .icon {
-  	display: none;
-  }
+  	.icon {
+  		display: none;
+  	}
 
-  @media screen and (max-width: 500px) {
-	.navbar a {
-	  display:none;
+	@media screen and (max-width: 500px) {
+		.navbar a {
+			display:none;
+		}
+
+		a.home{
+			font-size: .9rem;
+			display: block;
+		}
+
+		a.icon {
+			float: right;
+			display: block;
+		}	
+
+		.navbar.responsive .icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.navbar.responsive a {
+			float: none;
+			display: block;
+			background-color: #333;
+		}
+
+		
 	}
-
-	a.home{
-		font-size: .9rem;
-		display: block;
-	}
-
-	a.icon {
-    	float: right;
-    	display: block;
-  	}	
-
-	  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    background-color: #333;
-  }
-
-	
-  }
-  </style>
+</style>

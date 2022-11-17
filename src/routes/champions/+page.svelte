@@ -10,7 +10,7 @@
   import nia from '$lib/images/profile-pictures/nia.png';
   import reece from '$lib/images/profile-pictures/Reece.png';
 
-  // it would be cool to import data from a JSON
+  // add feild that has the bracket links, and red undelrine indicates clickable 
   let champions = [
     {
       date: "Summer 2022",
