@@ -14,18 +14,21 @@
 			picture: ashley,
 			title: "PS PP Commitee Member",
 			job: "Associate Software Engineer",
+			marcel: "https://marcel.ai/ashleykim"
 		},
 		{
 			name: "JD Pablo",
 			picture: jd,
 			title: "PS PP Commitee Member",
 			job: "Associate Software Engineer",
+			marcel: "https://marcel.ai/jdpablo"
 		},
 		{
 			name: "Kevin Kern",
 			picture: kevin,
 			title: "PS PP Commitee Member",
 			job: "Associate Software Engineer",
+			marcel: "https://marcel.ai/kevinkern"
 		},
 	];
 </script>
@@ -48,7 +51,7 @@
 		{#each members as member}
 			<div class="profile">
 				<img alt="PS PP Commitee Member" src={member.picture} class="profile-picture"/>
-				<p class="name"><a href="https://marcel.ai/app/myaccount"><span style="border-bottom: 2px solid #FE414D">{member.name}</span></a></p>
+				<p class="name"><a href={member.marcel}><span style="border-bottom: 2px solid #FE414D">{member.name}</span></a></p>
 				<div class="title">{member.title}</div>
 				<div style="font-size: .8rem">{member.job}</div>
 			</div>
@@ -75,9 +78,7 @@
 		margin: 1rem 0 0 0;
 	}
 
-	.name a{
-		color: #213547;
-	}
+	
 
 	.title{
 		font-size: .9rem;
@@ -85,6 +86,16 @@
 
 	.profile{
 		padding: 3rem;
+	}
+
+	 a{
+		color: #213547;
+		text-decoration: none;
+	}
+
+	a:hover{
+		color: black;
+		font-weight: 800;
 	}
 
 	@media screen and (min-width: 1400px) {

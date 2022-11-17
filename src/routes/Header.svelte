@@ -39,6 +39,7 @@
 		float: left;
 		padding: 1rem;
 		color: white;
+		text-decoration: none;
 		font-size: 1rem;
 		font-weight: 700;
   	}
