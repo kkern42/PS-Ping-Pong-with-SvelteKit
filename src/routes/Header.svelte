@@ -4,7 +4,8 @@
 	import { page } from '$app/stores';
 	let classNext = "responsive";
 	let classDisplay = ""
-	function myFunction() {
+
+	function switchToResponsive() {
   		let temp = classDisplay;
 		classDisplay = classNext;
 		classNext = temp;
@@ -21,7 +22,7 @@
 	  <a class:active={$page.url.pathname.startsWith('/about')} href="/about" on:click="{() =>myFunction()}"><i class="fa fa-fw fa-newspaper" ></i> About</a> 
 	  <a class:active={$page.url.pathname.startsWith('/FAQ')} href="/FAQ" on:click="{() =>myFunction()}"><i class="fa fa-fw fa-question-circle"></i> FAQ</a> 
 
-	  <a href="javascript:void(0);" class="icon" on:click="{() =>myFunction()}">
+	  <a href="javascript:void(0);" class="icon" on:click="{() => switchToResponsive()}">
 		<i class="fa fa-bars"></i>
 	  </a>
 
