@@ -8,13 +8,14 @@
   import heroImage from '$lib/images/past-bracket-hero3.png';
 
   import kevin from '$lib/images/profile-pictures/kevintwocat.png';
-  import ashley from '$lib/images//profile-pictures/ashley.png';
-  import jd from '$lib/images//profile-pictures/jdfit.png';
-  import sandy from '$lib/images//profile-pictures/sandy2.png';
-  import nia from '$lib/images//profile-pictures/nia.png';
-  import jacob from '$lib/images//profile-pictures/jacob.png';
-  import anthony from '$lib/images//profile-pictures/anthonyp.png';
-  import reece from '$lib/images//profile-pictures/reecep.png';
+  import ashley from '$lib/images/profile-pictures/ashley.png';
+  import jd from '$lib/images/profile-pictures/jdfit.png';
+  import sandy from '$lib/images/profile-pictures/sandy2.png';
+  import nia from '$lib/images/profile-pictures/nia.png';
+  import jacob from '$lib/images/profile-pictures/jacob.png';
+  import anthony from '$lib/images/profile-pictures/anthonyp.png';
+  import reece from '$lib/images/profile-pictures/reecep.png';
+  import icon from '$lib/images/profile-pictures/icon.png';
 
   let engineering = [
     {
@@ -48,25 +49,105 @@
         margin: "right",
     }, 
     {
-        name: "Anthony Pizzulli",
-        grip: "Handshake",
-        record: "0-4",
-        strength: "Talking to Reece while winning for other people",
-        weakness: "Winning for his matches",
-        picture: anthony,
-        reverse: "",
-        margin: "right",
+      name: "Ayush Saxena",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Ensar Dogrusoz",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Kevin Garlepp",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Kelly Buchanan",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "SJ Clarke",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Tushar Arora",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Reece Eberhardt",
+      grip: "Handshake",
+      record: "7-1",
+      strength: "Saying \"Reece\" after every point",
+      weakness: "Losing",
+      picture: reece,
+      reverse: "",
+      margin: "left",
     },
     {
-        name: "Reece Eberhardt",
-        grip: "Handshake",
-        record: "7-1",
-        strength: "Saying \"Reece\" after every point",
-        weakness: "Losing",
-        picture: reece,
-        reverse: "",
-        margin: "left",
+      name: "Jasmyne Jean-Remy",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Anthony Pizzulli",
+      grip: "Handshake",
+      record: "0-4",
+      strength: "Talking to Reece while winning for other people",
+      weakness: "Winning for his matches",
+      picture: anthony,
+      reverse: "",
+      margin: "right",
     },
+    {
+      name: "Siddharth Bhawalkar",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
   ];
 
   let experience = [
@@ -89,19 +170,110 @@
         picture: jacob,
         reverse: "",
         margin: "left",
-    }
+    },
+    {
+      name: "Jenn He",
+      grip: "Penhold",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Katie So",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Deanna Sagaris",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Sahana Sripadanna",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Sophie Reck",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Sasha Taran",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+     
   ];
 
   let product = [
     {
-        name: "Sandy Jiang",
-        grip: "Penhold",
-        record: "5-0",
-        strength: "She just good",
-        weakness: "Reece",
-        picture: sandy,
-        reverse: "",
-        margin: "right",
+      name: "Sandy Jiang",
+      grip: "Penhold",
+      record: "5-0",
+      strength: "She just good",
+      weakness: "Reece",
+      picture: sandy,
+      reverse: "",
+      margin: "right",
+    }, 
+    {
+      name: "Alden Aspiras",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Ruby Zheng",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Sophia Huang",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
     }, 
 
   ];
