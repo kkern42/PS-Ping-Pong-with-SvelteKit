@@ -15,6 +15,10 @@
   import jacob from '$lib/images/profile-pictures/jacob.png';
   import anthony from '$lib/images/profile-pictures/anthonyp.png';
   import reece from '$lib/images/profile-pictures/reecep.png';
+  import ayush from '$lib/images/profile-pictures/ayush.png';
+  import alden from '$lib/images/profile-pictures/alden.png';
+  import kelly from '$lib/images/profile-pictures/kelly.png';
+  import keving from '$lib/images/profile-pictures/keving.png';
   import icon from '$lib/images/profile-pictures/icon.png';
 
   let engineering = [
@@ -49,16 +53,6 @@
         margin: "right",
     }, 
     {
-      name: "Ayush Saxena",
-      grip: "handshake",
-      record: "TBD",
-      strength: "Vast Experince",
-      weakness: "No warmup & Reece",
-      picture: icon,
-      reverse: "",
-      margin: "",
-    }, 
-    {
       name: "Ensar Dogrusoz",
       grip: "handshake",
       record: "TBD",
@@ -74,7 +68,7 @@
       record: "TBD",
       strength: "The will to win",
       weakness: "Crumbling under the lights",
-      picture: icon,
+      picture: keving,
       reverse: "",
       margin: "",
     }, 
@@ -84,7 +78,7 @@
       record: "TBD",
       strength: "Strong returns",
       weakness: "Having a lead (pressure makes coal)",
-      picture: icon,
+      picture: kelly,
       reverse: "",
       margin: "",
     }, 
@@ -95,6 +89,16 @@
       strength: "Beating Kevin G.",
       weakness: "John playing as Katie",
       picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Ayush Saxena",
+      grip: "handshake",
+      record: "TBD",
+      strength: "Vast Experince",
+      weakness: "No warmup & Reece",
+      picture: ayush,
       reverse: "",
       margin: "",
     }, 
@@ -251,7 +255,7 @@
       record: "TBD",
       strength: "TBD",
       weakness: "TBD",
-      picture: icon,
+      picture: alden,
       reverse: "",
       margin: "",
     }, 
