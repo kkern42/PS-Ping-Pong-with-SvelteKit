@@ -19,6 +19,7 @@
   import alden from '$lib/images/profile-pictures/alden.png';
   import kelly from '$lib/images/profile-pictures/kelly.png';
   import keving from '$lib/images/profile-pictures/keving.png';
+  import ensar from '$lib/images/profile-pictures/ensar.png';
   import icon from '$lib/images/profile-pictures/icon.png';
 
 
@@ -59,7 +60,7 @@
       record: "TBD",
       strength: "Serving",
       weakness: "Moving, guys like a statue",
-      picture: icon,
+      picture: ensar,
       reverse: "",
       margin: "",
     }, 
