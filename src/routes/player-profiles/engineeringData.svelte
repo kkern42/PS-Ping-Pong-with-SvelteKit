@@ -1,0 +1,145 @@
+<script context="module">
+    import kevin from '$lib/images/profile-pictures/kevintwocat.png';
+  import ashley from '$lib/images/profile-pictures/ashley.png';
+  import jd from '$lib/images/profile-pictures/jdfit.png';
+  import anthony from '$lib/images/profile-pictures/anthonyp.png';
+  import reece from '$lib/images/profile-pictures/reecep.png';
+  import ayush from '$lib/images/profile-pictures/ayush.png';
+  import kelly from '$lib/images/profile-pictures/kelly.png';
+  import keving from '$lib/images/profile-pictures/keving.png';
+  import ensar from '$lib/images/profile-pictures/ensar.png';
+  import icon from '$lib/images/profile-pictures/icon.png';
+
+export let engineering = [
+    {
+        name: "Ashley Kim",
+        grip: "Handshake",
+        record: "8-4",
+        strength: "Tennis forehand",
+        weakness: "Any hard hit shot",
+        picture: ashley,
+        reverse: "",
+        margin: "",
+    },  
+    {
+        name: "JD Pablo",
+        grip: "Pen Hold",
+        record: "4-4",
+        strength: "When he hits it really hard",
+        weakness: "hitting the table & getting nervous",
+        picture: jd,
+        reverse: "",
+        margin: "",
+    }, 
+    {
+        name: "Kevin Kern",
+        grip: "Handshake",
+        record: "6-4",
+        strength: "Playing the angles",
+        weakness: "Top competition",
+        picture: kevin,
+        reverse: "",
+        margin: "",
+    }, 
+    {
+      name: "Ensar Dogrusoz",
+      grip: "handshake",
+      record: "TBD",
+      strength: "Serving",
+      weakness: "Moving, guys like a statue",
+      picture: ensar,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Kevin Garlepp",
+      grip: "handshake",
+      record: "TBD",
+      strength: "The will to win",
+      weakness: "Crumbling under the lights",
+      picture: keving,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Kelly Buchanan",
+      grip: "handshake",
+      record: "TBD",
+      strength: "Strong returns",
+      weakness: "Having a lead (pressure makes coal)",
+      picture: kelly,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "SJ Clarke",
+      grip: "handshake",
+      record: "TBD",
+      strength: "Beating Kevin G.",
+      weakness: "John playing as Katie",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Ayush Saxena",
+      grip: "handshake",
+      record: "TBD",
+      strength: "Vast Experince",
+      weakness: "No warmup & Reece",
+      picture: ayush,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Tushar Arora",
+      grip: "handshake",
+      record: "TBD",
+      strength: "Enthusiasm",
+      weakness: "Shots with spin",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Reece Eberhardt",
+      grip: "Handshake",
+      record: "7-1",
+      strength: "Saying \"Reece\" after every point",
+      weakness: "Losing",
+      picture: reece,
+      reverse: "",
+      margin: "",
+    },
+    {
+      name: "Jasmyne Jean-Remy",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+    {
+      name: "Anthony Pizzulli",
+      grip: "Handshake",
+      record: "0-4",
+      strength: "Talking to Reece while winning for other people",
+      weakness: "Winning his matches",
+      picture: anthony,
+      reverse: "",
+      margin: "",
+    },
+    {
+      name: "Siddharth Bhawalkar",
+      grip: "handshake",
+      record: "TBD",
+      strength: "TBD",
+      weakness: "TBD",
+      picture: icon,
+      reverse: "",
+      margin: "",
+    }, 
+  ];
+</script>
