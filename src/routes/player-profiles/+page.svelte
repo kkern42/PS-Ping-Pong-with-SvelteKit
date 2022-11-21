@@ -21,6 +21,7 @@
   import keving from '$lib/images/profile-pictures/keving.png';
   import icon from '$lib/images/profile-pictures/icon.png';
 
+  
   let engineering = [
     {
         name: "Ashley Kim",
