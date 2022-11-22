@@ -1,5 +1,5 @@
 <script context="module">
-    import kevin from '$lib/images/profile-pictures/kevintwocat.png';
+  import kevin from '$lib/images/profile-pictures/kevintwocat.png';
   import ashley from '$lib/images/profile-pictures/ashley.png';
   import jd from '$lib/images/profile-pictures/jdfit.png';
   import anthony from '$lib/images/profile-pictures/anthonyp.png';
@@ -10,7 +10,7 @@
   import ensar from '$lib/images/profile-pictures/ensar.png';
   import icon from '$lib/images/profile-pictures/icon.png';
 
-export let engineering = [
+  export let engineering = [
     {
         name: "Ashley Kim",
         grip: "Handshake",

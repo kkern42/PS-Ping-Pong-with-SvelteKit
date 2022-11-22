@@ -4,6 +4,7 @@
 </svelte:head>
 
 <script>
+    import { onMount } from "svelte";
     import Hero from '../Hero.svelte';
     import heroImage from '$lib/images/hero-imagespg.png';
 	import Counter from "../Counter.svelte";
@@ -78,6 +79,18 @@
         images = images;
         console.log("Image selection change");
     }
+
+    onMount(async () => {
+    fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+  .then(response => response.json())
+  .then(data => {
+		console.log(data);
+    
+  }).catch(error => {
+    console.log(error);
+    return [];
+  });
+});
 
 </script>
 

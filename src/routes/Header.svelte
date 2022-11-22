@@ -32,7 +32,7 @@
 		width: 100%;
 		background-color: #333;
 		position: fixed;
-		z-index: 1;
+		z-index: 3;
   	}
   
   	.navbar a {

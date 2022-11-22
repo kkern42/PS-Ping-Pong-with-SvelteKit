@@ -4,7 +4,7 @@
 
   import icon from '$lib/images/profile-pictures/icon.png';
 
-export let experience = [
+  export let experience = [
     {
         name: "Nia Washington",
         grip: "Handshake",
@@ -85,6 +85,5 @@ export let experience = [
       reverse: "",
       margin: "",
     }, 
-     
   ];
 </script>

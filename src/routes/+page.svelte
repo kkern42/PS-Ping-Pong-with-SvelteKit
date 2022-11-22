@@ -2,6 +2,7 @@
   import PSPPLogo from '$lib/images/pingpong.svg';
   import Ghost from '$lib/images/ghost.png';
 
+  import circle from '$lib/images/circle.png';
   let title = "PS PING PONG";
   let imageLogo = PSPPLogo; 
   let nextImage = Ghost;
@@ -45,7 +46,10 @@
 </svelte:head>
 
 <div class="app">
-  <div style="background-image:  url()">
+  <!-- <div class="dec">
+    <img class="circle" alt="circle" src={circle}/>
+  </div> -->
+  <div>
     <div>
       <a href="https://brackethq.com/b/k4n6/" > 
         <img src={imageLogo} class="logo" alt="PS PP Logo" />
@@ -83,5 +87,20 @@
 
   /* .logo:hover {
     filter: drop-shadow(0 0 2em #ff3e00aa);
+  } */
+  .app{
+    z-index: 2;
+  }
+  /* .dec{
+   position: absolute;
+    z-index: 0;
+    width: 100%;
+    top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    
+  }
+  .circle{
+    width:80%;
   } */
 </style>

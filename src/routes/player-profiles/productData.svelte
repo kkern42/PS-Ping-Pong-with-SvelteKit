@@ -1,10 +1,10 @@
 <script context="module">
 
-import sandy from '$lib/images/profile-pictures/sandy2.png';
-import alden from '$lib/images/profile-pictures/alden.png';
-import icon from '$lib/images/profile-pictures/icon.png';
+  import sandy from '$lib/images/profile-pictures/sandy2.png';
+  import alden from '$lib/images/profile-pictures/alden.png';
+  import icon from '$lib/images/profile-pictures/icon.png';
 
-export let product = [
+  export let product = [
     {
       name: "Sandy Jiang",
       grip: "Penhold",
@@ -45,6 +45,5 @@ export let product = [
       reverse: "",
       margin: "",
     }, 
-
   ];
 </script>
