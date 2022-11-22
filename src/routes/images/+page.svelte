@@ -80,17 +80,17 @@
         console.log("Image selection change");
     }
 
-    onMount(async () => {
-    fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
-  .then(response => response.json())
-  .then(data => {
-		console.log(data);
-    
-  }).catch(error => {
-    console.log(error);
-    return [];
-  });
-});
+    const getPlayers = async () => {
+            fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?name=kevin&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            
+            }).catch(error => {
+                console.log(error);
+                return [];
+            });
+        };
 
 </script>
 
