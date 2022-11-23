@@ -3,17 +3,17 @@
   const Ghost = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/ghost.png?alt=media&token=f515a3fc-034e-4c3f-8505-8083b81c3a3b';
 
   import circle from '$lib/images/circle.png';
-  let title = "PS PING PONG";
+  let title = "PING PONG";
   let imageLogo = PSPPLogo; 
   let nextImage = Ghost;
   let buttonText = 'Click for Spooky'; 
   let psText = 'Click for PS'; 
 
   $: if (imageLogo === Ghost){
-    title = "The Spooky"
+    title = "Spooky"
   }
   else {
-    title = "PS PING PONG"
+    title = "PING PONG"
   }
 
   const changeImage = () => {
@@ -52,10 +52,10 @@
   <div>
     <div>
       <a href="https://brackethq.com/b/k4n6/" > 
-        <img src={imageLogo} class="logo" alt="PS PP Logo" />
+        <img src={imageLogo} class="logo" alt="PS PP Logo" loading="lazy"/>
       </a>
     </div>
-    <h1>{title} Tournament</h1>
+    <h1>PS {title} Tournament</h1>
     <p>Check out <a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8" target="">PS PP NYC</a>, the official Teams channel for NYC PING PONG!</p>
     <p class="read-the-docs">Reach out to Ashley Kim, JD Pablo or Kevin Kern to learn more</p>
   </div>
