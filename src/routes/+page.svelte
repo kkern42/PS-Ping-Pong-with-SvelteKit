@@ -1,6 +1,6 @@
 <script>
   import PSPPLogo from '$lib/images/pingpong.svg';
-  import Ghost from '$lib/images/ghost.png';
+  const Ghost = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/ghost.png?alt=media&token=f515a3fc-034e-4c3f-8505-8083b81c3a3b';
 
   import circle from '$lib/images/circle.png';
   let title = "PS PING PONG";
