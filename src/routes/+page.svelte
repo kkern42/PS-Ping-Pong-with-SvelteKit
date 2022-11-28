@@ -1,5 +1,7 @@
 <script>
   import PSPPLogo from '$lib/images/pingpong.svg';
+  import Comments from './Comments.svelte';
+
   const Ghost = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/ghost.png?alt=media&token=f515a3fc-034e-4c3f-8505-8083b81c3a3b';
   let title = "PING PONG";
   let imageLogo = PSPPLogo; 
