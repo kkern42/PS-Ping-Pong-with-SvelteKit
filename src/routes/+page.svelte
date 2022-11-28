@@ -1,8 +1,6 @@
 <script>
   import PSPPLogo from '$lib/images/pingpong.svg';
   const Ghost = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/ghost.png?alt=media&token=f515a3fc-034e-4c3f-8505-8083b81c3a3b';
-
-  import circle from '$lib/images/circle.png';
   let title = "PING PONG";
   let imageLogo = PSPPLogo; 
   let nextImage = Ghost;
@@ -46,9 +44,6 @@
 </svelte:head>
 
 <div class="app">
-  <!-- <div class="dec">
-    <img class="circle" alt="circle" src={circle}/>
-  </div> -->
   <div>
     <div>
       <a href="https://brackethq.com/b/k4n6/" > 
@@ -97,10 +92,5 @@
     width: 100%;
     top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
-    
-  }
-  .circle{
-    width:80%;
-  } */
+  transform: translate(-50%, -50%);}
 </style>
