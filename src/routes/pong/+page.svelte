@@ -36,7 +36,7 @@
 		height: 100%;
 		width: 100%;
 		border-radius: 100px;
-		box-shadow: inset 0 0 18px black;
+		box-shadow: inset 0 0 20px orange;
 	}
 
 	.paddle {
@@ -52,7 +52,7 @@
 
 	.paddle_2 {
 		right: calc(10vw + 30px);
-		background-color: #FE414D;
+		background-color: black;
 	}
 
 	.title-score{
@@ -136,6 +136,7 @@
 		});
 		}
 	}
+
 	if (gameState == 'play') {
 		if(e.key == 'w') {
             // 0.06 is the speed of the paddle, maybe i should make that a variable
@@ -159,21 +160,27 @@
 	});
 
 	function moveBall(dx, dy, dxd, dyd) {
+        //if hits top
         if(ball_coord.top <= board_coord.top) {
             dyd = 1;
         }
+        //if hits bottom
         if(ball_coord.bottom >= board_coord.bottom) {
             dyd = 0;
         }
+        //if hits left paddle/paddle 1
         if(ball_coord.left <= paddle_1_coord.right && ball_coord.top >= paddle_1_coord.top && ball_coord.bottom <= paddle_1_coord.bottom) {
             dxd = 1;
             dx = Math.floor(Math.random() * 4) + 3;
             dy = Math.floor(Math.random() * 4) + 3;
+            
         }
+        //if hits right paddle/paddle 2
         if(ball_coord.right >= paddle_2_coord.left && ball_coord.top >= paddle_2_coord.top && ball_coord.bottom <= paddle_2_coord.bottom) {
             dxd = 0;
             dx = Math.floor(Math.random() * 4) + 3;
             dy = Math.floor(Math.random() * 4) + 3;
+            
         }
         if(ball_coord.left <= board_coord.left || ball_coord.right >= board_coord.right) {
             if(ball_coord.left <= board_coord.left) {
@@ -184,9 +191,7 @@
             }
 
             gameState = 'start';
-
             ball_coord = initial_ball_coord;
-            ball.style = initial_ball.style;
             message.innerHTML = 'Press Enter to Play Pong';
             return;
         }
