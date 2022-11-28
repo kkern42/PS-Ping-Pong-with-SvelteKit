@@ -13,7 +13,25 @@
 
 		{key:"2",
 		question: "What tier should I be in?",
-		answer: "Some answer"}
+		answer: "Some answer"},
+
+		{key:"3",
+		question: "What are the rules?",
+		answer: "Some answer"},
+
+		{key:"4",
+		question: "How many games do I play?",
+		answer: "Some answer"},
+
+		{key:"5",
+		question: "What is double elimination?",
+		answer: "Some answer"},
+
+		{key:"6",
+		question: "Who can I contact about scheduling issues?",
+		answer: "Some answer"},
+
+
 	]
 
 

@@ -36,7 +36,7 @@
 
 <div class="about">
 	<h1>About Us</h1>
-	<pre>Meet the PS Ping Pong Commitee</pre>
+	<pre><div style="padding: 0 1rem 0 1rem;">Meet the PS Ping Pong Commitee</div></pre>
 
 	<p>
 		The PS Ping Pong Commitee (PSPPC) is the governing body for all Publicis Sapient Ping Pong events. 
@@ -118,5 +118,20 @@
 			display: block;
 		}
 	}
+
+	pre{
+		display: flex;
+		justify-content: center;
 		
+	}
+
+	pre:before,
+    pre:after {
+		content: "";
+		flex: 1 1;
+		border-bottom: 1px solid #000;
+		margin: auto;
+		
+    }
+	
 </style>

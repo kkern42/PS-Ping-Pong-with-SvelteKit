@@ -59,7 +59,7 @@
     <h2 on:click="{()=>switchPLayers(engineering, 'engin')}" class={enginClass}>Engineering</h2> 
   </div>
 
-  <hr/>
+  <pre><div style="padding: 0 1rem 0 1rem;">Past Participants</div></pre>
 
   {#each players as player, index}
   {#if (index%2) == 0} <div style="display: none;">{player.reverse = "reverse"} {player.margin = "right"}</div> {:else}  <div style="display: none;">{player.margin = "left"}</div> {/if}
@@ -150,8 +150,20 @@
     margin: .8rem 0 0 0;
   }
 
-  hr{
-    width: 100%;
+  pre{
+		display: flex;
+		justify-content: center;
+		
+	}
+
+	pre:before,
+    pre:after {
+		content: "";
+		flex: 1 1;
+		border-bottom: 1px solid darkgray;
+	  background-color: darkgrey;
+		margin: auto;
+		
   }
 
   @media screen and (max-width: 1000px) {

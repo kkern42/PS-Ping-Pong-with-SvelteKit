@@ -8,7 +8,7 @@
   import kelly from '$lib/images/profile-pictures/kelly.png';
   import keving from '$lib/images/profile-pictures/keving.png';
   import ensar from '$lib/images/profile-pictures/ensar.png';
-  import icon from '$lib/images/profile-pictures/icon.png';
+  const icon = "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Ficon.png?alt=media&token=2964f19f-2ee2-49c8-aec7-88c22a36a8b7";
 
   export let engineering = [
     {
@@ -97,7 +97,7 @@
       record: "TBD",
       strength: "Enthusiasm",
       weakness: "Shots with spin",
-      picture: icon,
+      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Ftushar.png?alt=media&token=64eb4088-41e8-479e-a615-661ef25ca30d",
       reverse: "",
       margin: "",
     }, 
@@ -117,7 +117,7 @@
       record: "TBD",
       strength: "TBD",
       weakness: "TBD",
-      picture: icon,
+      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fjasmyne.png?alt=media&token=99d4fb23-4143-405a-bb61-bd87ea9e7828",
       reverse: "",
       margin: "",
     }, 
@@ -137,7 +137,7 @@
       record: "TBD",
       strength: "TBD",
       weakness: "TBD",
-      picture: icon,
+      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsiddharth.png?alt=media&token=886d61f5-e0e0-4a4f-9fd5-32d12b08cc6b",
       reverse: "",
       margin: "",
     }, 
