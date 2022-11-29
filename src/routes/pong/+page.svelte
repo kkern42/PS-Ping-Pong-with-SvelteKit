@@ -68,7 +68,7 @@
     .title-score h2{
         margin-bottom: 0rem;
         margin-top:1rem;
-        font-size: 2rem;
+        font-size: 2sssrem;
     }
 
     pre{
@@ -219,7 +219,7 @@
             
         }
         //if hits right paddle/paddle 2
-        if(ball_coord.right >= paddle_2_coord.left && ball_coord.top >= paddle_2_coord.top && ball_coord.bottom <= paddle_2_coord.bottom && ball_coord.left >= paddle_1_coord.right) {
+        if(ball_coord.right >= paddle_2_coord.left && ball_coord.top >= paddle_2_coord.top && ball_coord.bottom <= paddle_2_coord.bottom && ball_coord.left <= paddle_2_coord.right) {
             dxd = 0;
             dx = Math.floor(Math.random() * 4) + 3;
             dy = Math.floor(Math.random() * 4) + 3;
