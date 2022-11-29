@@ -63,7 +63,8 @@
     }
 
     .title-score h2{
-        margin: 1rem;
+        margin-bottom: 0rem;
+        margin-top:1rem
     }
 
     pre{
@@ -191,14 +192,14 @@
             dyd = 0;
         }
         //if hits left paddle/paddle 1
-        if(ball_coord.left <= paddle_1_coord.right && ball_coord.top >= paddle_1_coord.top && ball_coord.bottom <= paddle_1_coord.bottom && (ball_coord.right >= paddle_1_coord.left)) {
+        if(ball_coord.left <= paddle_1_coord.right && ball_coord.top >= paddle_1_coord.top && ball_coord.bottom <= paddle_1_coord.bottom && ball_coord.right >= paddle_1_coord.left) {
             dxd = 1;
             dx = Math.floor(Math.random() * 4) + 3;
             dy = Math.floor(Math.random() * 4) + 3;
             
         }
         //if hits right paddle/paddle 2
-        if(ball_coord.right >= paddle_2_coord.left && ball_coord.top >= paddle_2_coord.top && ball_coord.bottom <= paddle_2_coord.bottom) {
+        if(ball_coord.right >= paddle_2_coord.left && ball_coord.top >= paddle_2_coord.top && ball_coord.bottom <= paddle_2_coord.bottom && ball_coord.left >= paddle_1_coord.right) {
             dxd = 0;
             dx = Math.floor(Math.random() * 4) + 3;
             dy = Math.floor(Math.random() * 4) + 3;
