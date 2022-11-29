@@ -16,7 +16,17 @@
         </div>
 
         <div class="bottom_border"></div>
+
+        <div class="techStack">
+            <img alt="svelte logo" src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/svelte.png?alt=media&token=b70bfbc4-fa45-457c-9b04-f2573aaadb78"/>
+            <img alt="java script logo" src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/JavaScript-Logo.png?alt=media&token=d35fdf6f-f7eb-49dc-b0f0-a3329435ebff"/>
+            <img alt="firestore logo" src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/firestore.png?alt=media&token=5d3e7ffc-f147-4de4-a481-9c072bfb360a"/>
+            <img alt="azure funcitons logo" src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/azure%20functions.png?alt=media&token=fadaf78a-b25b-4b11-8744-df6f132da904"/>
+            <img alt="github logo" src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/github.png?alt=media&token=ceeb6c46-f836-4b5f-9ff4-c71a86c41430"/>
+            <img alt="netlify" src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/netlify.png?alt=media&token=95e9c0bc-257e-4ddb-b284-e970122796db"/>
+        </div>
         <p class="text-center">Copyright @1882 | Designed by the <a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8">PS PP Comittee</a></p>
+
 
     </div>
 
@@ -24,6 +34,16 @@
 
 <!-- change footer to flex box not a ul -->
 <style>
+
+    .techStack{
+		display: flex;
+		justify-content: center
+	}
+
+	.techStack img{
+		margin: 1rem 1rem 0 1rem;
+	}
+
     .footer_bottom_container{
         display: flex;
         justify-content: center;
@@ -52,6 +72,7 @@
         border-bottom:1px solid #323f45; padding-bottom:20px;}
 
     .text-center{
+        padding-top: 1rem;
         text-align: center;
     }
 
