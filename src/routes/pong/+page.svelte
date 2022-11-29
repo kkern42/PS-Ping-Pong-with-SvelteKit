@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 	
@@ -7,18 +8,19 @@
 	<meta name ="viewport" content=
 	"width=device-width, initial-scale=1.0">
 
-	<title>PONG GAME</title>
+	<title>PONG</title>
 
 	<style>
 
 	.pong-container{
-        padding: 5rem 7rem 5rem 7rem;
+        padding: 4rem 7rem 5rem 7rem;
     }
 
 	.board {
 		
         padding: 5rem 5rem 20rem 5rem;
 		background-color: lightgrey;
+        border: 3px solid black;
         /* background-image: url("https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/pongtable23.jpg?alt=media&token=3b7ac46b-fc8d-4bf8-ac39-2d012d46ff27"); */
 		
 	}
@@ -64,19 +66,33 @@
         margin: 1rem;
     }
 
+    pre{
+		display: flex;
+		justify-content: center;
+		
+	}
+
+	pre:before,
+    pre:after {
+        /* makes it show up */
+		content: "";
+		flex: 1 1;
+		border-bottom: 1px solid darkgray;
+	    background-color: darkgrey;
+		margin: auto;
+		
+    }
+
 	</style>
 </head>
 	
 
 <div class="pong-container">
     <div class="title-score">
-        <h2 class = "player_1_score">0</h2>
-        
-        <h2 class="message">
-            Press Enter to Play
-        </h2>
-        <h2 class="player_2_score">0</h2>
+        <h2 class="message"> Press Enter to Play Pong</h2>
     </div>
+
+    <pre><div style="padding: 0 1rem 0 1rem;" class="score">Score: 000000</div></pre>
     <div class="board">
         <div class='ball'>
             <div class="ball_effect"></div>
@@ -100,6 +116,11 @@
         }
     }, false);
 
+    var scorer;
+    var seconds = 0
+    let zeros = "000000";
+    let numOfZeros = 5;
+
     const ballSpeed = 0.08;
 	let gameState = 'start';
 	let paddle_1 = document.querySelector('.paddle_1');
@@ -107,8 +128,6 @@
 	let board = document.querySelector('.board');
 	let initial_ball = document.querySelector('.ball');
 	let ball = document.querySelector('.ball');
-	let score_1 = document.querySelector('.player_1_score');
-	let score_2 = document.querySelector('.player_2_score');
 	let message = document.querySelector('.message');
 	let paddle_1_coord = paddle_1.getBoundingClientRect();
 	let paddle_2_coord = paddle_2.getBoundingClientRect();
@@ -120,13 +139,16 @@
 	let dy = Math.floor(Math.random() * 4) + 3;
 	let dxd = Math.floor(Math.random() * 2);
 	let dyd = Math.floor(Math.random() * 2);
+    let score = document.querySelector('.score');
 
 	document.addEventListener('keydown', (e) => {
 	if (e.key == 'Enter') {
 		gameState = gameState == 'start' ? 'play' : 'start';
 		if (gameState == 'play') {
 		message.innerHTML = 'Game Started';
-
+        scoreTimer();
+        seconds = 0;
+        score.innerHTML = "Score: 000000"
 		requestAnimationFrame(() => {
 			dx = Math.floor(Math.random() * 4) + 3;
 			dy = Math.floor(Math.random() * 4) + 3;
@@ -169,7 +191,7 @@
             dyd = 0;
         }
         //if hits left paddle/paddle 1
-        if(ball_coord.left <= paddle_1_coord.right && ball_coord.top >= paddle_1_coord.top && ball_coord.bottom <= paddle_1_coord.bottom) {
+        if(ball_coord.left <= paddle_1_coord.right && ball_coord.top >= paddle_1_coord.top && ball_coord.bottom <= paddle_1_coord.bottom && (ball_coord.right >= paddle_1_coord.left)) {
             dxd = 1;
             dx = Math.floor(Math.random() * 4) + 3;
             dy = Math.floor(Math.random() * 4) + 3;
@@ -183,16 +205,10 @@
             
         }
         if(ball_coord.left <= board_coord.left || ball_coord.right >= board_coord.right) {
-            if(ball_coord.left <= board_coord.left) {
-                score_2.innerHTML = +score_2.innerHTML + 1;
-            }
-            else {
-                score_1.innerHTML = +score_1.innerHTML + 1;
-            }
-
             gameState = 'start';
             ball_coord = initial_ball_coord;
             message.innerHTML = 'Press Enter to Play Pong';
+            clearInterval(scorer);
             return;
         }
 
@@ -204,6 +220,14 @@
             moveBall(dx, dy, dxd, dyd);
         });
 	}
+
+    function scoreTimer(){
+        scorer = setInterval(function() {
+            seconds = seconds + 1;
+            score.innerHTML = "Score: " + zeros.slice(seconds.toString().length) +seconds;
+        }, 100);
+    }
+    
 </script>
 
 	
