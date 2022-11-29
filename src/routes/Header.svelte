@@ -69,6 +69,7 @@
 		a.icon {
 			float: right;
 			display: block;
+			border-bottom: 1px solid #333;
 		}	
 
 		.navbar.responsive .icon {

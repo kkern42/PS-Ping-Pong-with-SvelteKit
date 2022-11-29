@@ -21,7 +21,8 @@
         padding: 5rem 5rem 20rem 5rem;
 		background-color: lightgrey;
         border: 3px solid black;
-        /* background-image: url("https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/pongtable23.jpg?alt=media&token=3b7ac46b-fc8d-4bf8-ac39-2d012d46ff27"); */
+        /* background-image: url("https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/pongtable.png?alt=media&token=2b72be57-aa10-4683-88ba-a3d9d539e252"); */
+        background-size: cover;
 		
 	}
 
@@ -30,7 +31,7 @@
 		width: 30px;
 		border-radius: 50%;
 		position: fixed;
-		top: calc(50% - 15px);
+		top: 60%;
 		left: calc(50% - 15px);
 	}
 
@@ -48,11 +49,13 @@
 	}
 
 	.paddle_1 {
+        top: 55%;
 		left: calc(10vw + 30px);
 		background-color: #FE414D;
 	}
 
 	.paddle_2 {
+        top: 55%;
 		right: calc(10vw + 30px);
 		background-color: black;
 	}
@@ -64,7 +67,8 @@
 
     .title-score h2{
         margin-bottom: 0rem;
-        margin-top:1rem
+        margin-top:1rem;
+        font-size: 2rem;
     }
 
     pre{
@@ -84,13 +88,28 @@
 		
     }
 
+    .mobile{
+        padding: 4rem 6rem 5rem 6rem;
+        display:none;
+    }
+
+    @media screen and (max-width: 500px) {
+		.pong-container{
+            display: none;
+        }
+
+        .mobile{
+            display: block;
+        }
+	}
+
 	</style>
 </head>
 	
 
 <div class="pong-container">
     <div class="title-score">
-        <h2 class="message"> Press Enter to Play Pong</h2>
+        <h2 class="message"> Press Enter to Play</h2>
     </div>
 
     <pre><div style="padding: 0 1rem 0 1rem;" class="score">Score: 000000</div></pre>
@@ -104,12 +123,13 @@
     </div>
 </div>
 
-
-
+<div class="mobile">
+    <h2>OOPS!</h2>
+    <p>The content you are looking for is not available in in this viewport.</p>
+    <p>PC or Desktop only!</p>
+</div>
 
 <script>
-
-
     // arrow keys are locked from scrolling
     window.addEventListener("keydown", function(e) {
         if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
@@ -208,7 +228,7 @@
         if(ball_coord.left <= board_coord.left || ball_coord.right >= board_coord.right) {
             gameState = 'start';
             ball_coord = initial_ball_coord;
-            message.innerHTML = 'Press Enter to Play Pong';
+            message.innerHTML = 'Press Enter to Play';
             clearInterval(scorer);
             return;
         }
