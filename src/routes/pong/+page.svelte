@@ -141,16 +141,20 @@
     var seconds = 0
     let zeros = "000000";
     let numOfZeros = 5;
+    let gameState = 'start';
 
     const ballVelo = 0.08;
     const ballSpeed = 5;
-	let gameState = 'start';
+	
+    //gets dom element
 	let paddle_1 = document.querySelector('.paddle_1');
 	let paddle_2 = document.querySelector('.paddle_2');
 	let board = document.querySelector('.board');
 	let initial_ball = document.querySelector('.ball');
 	let ball = document.querySelector('.ball');
 	let message = document.querySelector('.message');
+
+    //get element cordinate object
 	let paddle_1_coord = paddle_1.getBoundingClientRect();
 	let paddle_2_coord = paddle_2.getBoundingClientRect();
 	let initial_ball_coord = ball.getBoundingClientRect();
@@ -158,6 +162,8 @@
 	let board_coord = board.getBoundingClientRect();
 	let paddle_common = document.querySelector('.paddle').getBoundingClientRect();
     let score = document.querySelector('.score');
+
+    //directions
 	let dx;
 	let dy;
 	let dxd;
@@ -230,6 +236,8 @@
             gameState = 'start';
             ball_coord = initial_ball_coord;
             message.innerHTML = 'Press Enter to Play';
+
+            //stop scoring
             clearInterval(scorer);
             return;
         }
@@ -243,6 +251,7 @@
         });
 	}
 
+    //Could add interval deplay to a counter function to keep track of the streak once the funciton runs there is a delay until it can run again 
     function scoreTimer(){
         scorer = setInterval(function() {
             seconds = seconds + 1;
