@@ -142,7 +142,8 @@
     let zeros = "000000";
     let numOfZeros = 5;
 
-    const ballSpeed = 0.08;
+    const ballVelo = 0.08;
+    const ballSpeed = 5;
 	let gameState = 'start';
 	let paddle_1 = document.querySelector('.paddle_1');
 	let paddle_2 = document.querySelector('.paddle_2');
@@ -156,11 +157,11 @@
 	let ball_coord = initial_ball_coord;
 	let board_coord = board.getBoundingClientRect();
 	let paddle_common = document.querySelector('.paddle').getBoundingClientRect();
-	let dx = Math.floor(Math.random() * 4) + 3;
-	let dy = Math.floor(Math.random() * 4) + 3;
-	let dxd = Math.floor(Math.random() * 2);
-	let dyd = Math.floor(Math.random() * 2);
     let score = document.querySelector('.score');
+	let dx;
+	let dy;
+	let dxd;
+	let dyd;
 
 	document.addEventListener('keydown', (e) => {
 	if (e.key == 'Enter') {
@@ -171,10 +172,10 @@
         seconds = 0;
         score.innerHTML = "Score: 000000"
 		requestAnimationFrame(() => {
-			dx = Math.floor(Math.random() * 4) + 3;
-			dy = Math.floor(Math.random() * 4) + 3;
-			dxd = Math.floor(Math.random() * 2);
-			dyd = Math.floor(Math.random() * 2);
+			dx = Math.floor(Math.random() * ballSpeed) + 3;
+			dy = Math.floor(Math.random() * ballSpeed) + 3;
+			dxd = Math.floor(Math.random() * ballSpeed);
+			dyd = Math.floor(Math.random() * ballSpeed);
 			moveBall(dx, dy, dxd, dyd);
 		});
 		}
@@ -182,21 +183,20 @@
 
 	if (gameState == 'play') {
 		if(e.key == 'w') {
-            // 0.06 is the speed of the paddle, maybe i should make that a variable
-            paddle_1.style.top = Math.max(board_coord.top, paddle_1_coord.top - window.innerHeight * ballSpeed) + 'px';
+            paddle_1.style.top = Math.max(board_coord.top, paddle_1_coord.top - window.innerHeight * ballVelo) + 'px';
             paddle_1_coord = paddle_1.getBoundingClientRect();
 		}
 		if(e.key == 's') {
-		    paddle_1.style.top = Math.min(board_coord.bottom - paddle_common.height, paddle_1_coord.top + window.innerHeight * ballSpeed) + 'px';
+		    paddle_1.style.top = Math.min(board_coord.bottom - paddle_common.height, paddle_1_coord.top + window.innerHeight * ballVelo) + 'px';
 		    paddle_1_coord = paddle_1.getBoundingClientRect();
 		}
 
 		if(e.key == 'ArrowUp') {
-		    paddle_2.style.top = Math.max(board_coord.top, paddle_2_coord.top - window.innerHeight * ballSpeed) + 'px';
+		    paddle_2.style.top = Math.max(board_coord.top, paddle_2_coord.top - window.innerHeight * ballVelo) + 'px';
             paddle_2_coord = paddle_2.getBoundingClientRect();
 		}
 		if(e.key == 'ArrowDown') {
-		    paddle_2.style.top = Math.min(board_coord.bottom - paddle_common.height, paddle_2_coord.top + window.innerHeight * ballSpeed) + 'px';
+		    paddle_2.style.top = Math.min(board_coord.bottom - paddle_common.height, paddle_2_coord.top + window.innerHeight * ballVelo) + 'px';
 		    paddle_2_coord = paddle_2.getBoundingClientRect();
 		}
 	}
@@ -214,17 +214,18 @@
         //if hits left paddle/paddle 1
         if(ball_coord.left <= paddle_1_coord.right && ball_coord.top >= paddle_1_coord.top && ball_coord.bottom <= paddle_1_coord.bottom && ball_coord.right >= paddle_1_coord.left) {
             dxd = 1;
-            dx = Math.floor(Math.random() * 4) + 3;
-            dy = Math.floor(Math.random() * 4) + 3;
+            dx = Math.floor(Math.random() * ballSpeed) + 3;
+            dy = Math.floor(Math.random() * ballSpeed) + 3;
             
         }
         //if hits right paddle/paddle 2
         if(ball_coord.right >= paddle_2_coord.left && ball_coord.top >= paddle_2_coord.top && ball_coord.bottom <= paddle_2_coord.bottom && ball_coord.left <= paddle_2_coord.right) {
             dxd = 0;
-            dx = Math.floor(Math.random() * 4) + 3;
-            dy = Math.floor(Math.random() * 4) + 3;
+            dx = Math.floor(Math.random() * ballSpeed) + 3;
+            dy = Math.floor(Math.random() * ballSpeed) + 3;
             
         }
+        //hits out of play
         if(ball_coord.left <= board_coord.left || ball_coord.right >= board_coord.right) {
             gameState = 'start';
             ball_coord = initial_ball_coord;
