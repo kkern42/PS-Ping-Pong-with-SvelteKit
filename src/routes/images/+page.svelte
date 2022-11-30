@@ -53,7 +53,6 @@
     }
 
     function right(){
-        getPlayers();
         if(slideIndex + 1 > images.length-1){
             slideIndex = 0;
         }
@@ -80,19 +79,6 @@
         images = images;
         console.log("Image selection change");
     }
-
-    const getPlayers = async () => {
-            fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?name=kevin&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
-            .then(response => response.json())
-            .then(data => {
-                //returns an array of data
-                console.log(data.response);
-            
-            }).catch(error => {
-                console.log(error);
-                return [];
-            });
-        };
 
 </script>
 
