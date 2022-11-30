@@ -7,17 +7,30 @@
     let newComment = "";
     //console.log(new Date().toString());
     const getComments = async () => {
-        fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?name=kevin&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?name=kevin&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
         .then(response => response.json())
         .then(data => {
             //returns an array of data
-            console.log(data.response);
             comments = data.response;
         }).catch(error => {
             console.log(error);
             return [];
         });
     };
+
+    const setComment = async (/** @type {string} */ value) => {
+        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?comment="+ value +"&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.response);
+            
+        }).catch(error => {
+            console.log(error);
+            return [];
+        });
+        await getComments();
+    };
+    
 
     onMount(async () => {
         getComments();
@@ -27,7 +40,7 @@
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
     <h4>Post a comment</h4>
-   <div class="post"> <input value="{newComment}" placeholder="Post a comment"/> <button>Post</button></div>
+   <div class="post"> <input bind:value="{newComment}" placeholder="Post a comment..."/> <button on:click="{()=>setComment(newComment)}">Post</button></div>
     <hr/>
     {#each comments as comment}
         <div><span style="font-weight: 600; font-size: 17px;">{comment.author}</span> {comment.date}</div>
