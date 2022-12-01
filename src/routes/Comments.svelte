@@ -1,11 +1,17 @@
 <script>
     import { onMount } from "svelte"; 
+
     /**
 	 * @type {any[]}
 	 */
     let comments = [];
     let newComment = "";
-    //console.log(new Date().toString());
+    let commenter = "Anonymous";
+    /**
+	 * @type {Promise<void>}
+	 */
+    let promise;
+
     const getComments = async () => {
         await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?name=kevin&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
         .then(response => response.json())
@@ -17,8 +23,8 @@
         });
     };
 
-    const setComment = async (/** @type {string} */ value) => {
-        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?comment="+ value +"&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+    const setComment = async (/** @type {string} */ value, /** @type {string} */ name) => {
+        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?comment="+ value +"&name="+ name +"&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
         .then(response => response.json())
         .then(data => {
             console.log(data.response);
@@ -26,26 +32,31 @@
             console.log(error);
             return [];
         });
-        await getComments();
+        promise = getComments();
         newComment = "";
     };
     
 
     onMount(async () => {
-        getComments();
+        promise = getComments();
     });
 </script>
 
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
     <h4>Post a comment</h4>
-   <div class="post"> <input bind:value="{newComment}" placeholder="Post a comment..."/> <button on:click="{()=>setComment(newComment)}">Post</button></div>
+    <div class="post"> <input style="width: 15%; margin-right: .5rem;" bind:value="{commenter}"/><input bind:value="{newComment}" placeholder="Post a comment..."/> <button on:click="{()=>setComment(newComment, commenter)}">Post</button></div>
     <hr/>
-    {#each comments as comment}
+    {#await promise}
+	    <p>...Loading...</p>
+    {:then data}
+        {#each comments as comment}
         <div><span style="font-weight: 600; font-size: 17px;">{comment.author}</span> {comment.date}</div>
         <p>{comment.comment}</p>
-        
-    {/each}
+        {/each}
+    {:catch error}
+	    <p style="color: red">{error.message}</p>
+    {/await}
 </div>
 
 <style>
