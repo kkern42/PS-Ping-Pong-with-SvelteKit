@@ -17,13 +17,11 @@
     }
 
 	.board {
-		
         padding: 5rem 5rem 20rem 5rem;
 		background-color: lightgrey;
         border: 3px solid black;
         /* background-image: url("https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/pongtable.png?alt=media&token=2b72be57-aa10-4683-88ba-a3d9d539e252"); */
         background-size: cover;
-		
 	}
 
 	.ball {
@@ -111,7 +109,6 @@
     <div class="title-score">
         <h2 class="message"> Press Enter to Play</h2>
     </div>
-
     <pre><div style="padding: 0 1rem 0 1rem;" class="score">Score: 000000</div></pre>
     <div class="board">
         <div class='ball'>
@@ -119,7 +116,6 @@
         </div>
         <div class="paddle_1 paddle"></div>
         <div class="paddle_2 paddle"></div>
-        
     </div>
 </div>
 
@@ -136,11 +132,6 @@
             e.preventDefault();
         }
     }, false);
-
-
-
-
-    
 
     var scorer;
     var seconds = 0
@@ -265,6 +256,4 @@
     }
     
 </script>
-
-	
 </html>

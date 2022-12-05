@@ -3,9 +3,7 @@
 </script>
 
 <footer class="footer">
-
     <div class="container">
-
         <div class="footer_bottom_container">
             <a href="/">Home</a>
             <a href="/champions">Champions</a>
@@ -26,15 +24,10 @@
             <a href="https://www.netlify.com/"><img alt="netlify" src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/netlify.png?alt=media&token=95e9c0bc-257e-4ddb-b284-e970122796db"/></a>
         </div>
         <p class="text-center">Copyright @1882 | Designed by the <a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8">PS PP Comittee</a></p>
-
-
     </div>
-
 </footer>
 
-<!-- change footer to flex box not a ul -->
 <style>
-
     .techStack{
 		display: flex;
 		justify-content: center
@@ -70,7 +63,8 @@
     }
 
     .bottom_border { 
-        border-bottom:1px solid #323f45; padding-bottom:20px;}
+        border-bottom:1px solid #323f45; padding-bottom:20px;
+    }
 
     .text-center{
         padding-top: 1rem;
@@ -87,5 +81,4 @@
 
         }
     }
-
 </style>

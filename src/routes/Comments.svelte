@@ -5,8 +5,10 @@
 	 * @type {any[]}
 	 */
     let comments = [];
+
     let newComment = "";
     let commenter = "Anonymous";
+
     /**
 	 * @type {Promise<void>}
 	 */
@@ -40,6 +42,7 @@
     onMount(async () => {
         promise = getComments();
     });
+    
 </script>
 
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
