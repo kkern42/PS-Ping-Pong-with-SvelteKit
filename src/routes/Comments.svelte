@@ -45,9 +45,11 @@
 
 </script>
 
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css">
+
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
-    <h4>Post a comment</h4>
+    <h4>Post a comment <i class="fas fa-pencil-alt"></i></h4>
     <div class="post"> 
         <input style="width: 15%; margin-right: .5rem;" bind:value="{commenter}" maxlength="15"/><input bind:value="{newComment}" placeholder="Post a comment..." maxlength="120"/> 
         <button on:click="{()=>setComment(newComment, commenter)}">Post</button>

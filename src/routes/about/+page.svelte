@@ -34,6 +34,8 @@
 
 </script>
 
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css">
+
 <div class="about">
 	<h1>About Us</h1>
 	<pre><div style="padding: 0 1rem 0 1rem;">Meet the PS Ping Pong Commitee</div></pre>
@@ -53,7 +55,7 @@
 			<div class="profile">
 				<img alt="PS PP Commitee Member" src={member.picture} class="profile-picture"/>
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<p class="name" on:click="{() => {window.location.href=member.marcel}}"><span style="border-bottom: 2px solid #FE414D;">{member.name}</span></p>
+				<p class="name" on:click="{() => {window.location.href=member.marcel}}"><span style="border-bottom: 2px solid #FE414D;">{@html member.name }</span></p>
 				<div class="title">{member.title}</div>
 				<div style="font-size: .8rem">{member.job}</div>
 			</div>
