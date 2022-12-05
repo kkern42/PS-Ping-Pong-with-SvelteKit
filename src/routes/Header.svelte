@@ -19,6 +19,7 @@
 	<a class:active={$page.url.pathname.startsWith('/player-profiles')} href="/player-profiles" on:click="{() => switchToResponsive()}"><i class="fa fa-fw fa-users"></i> Player Profiles</a>
 	<a class:active={$page.url.pathname.startsWith('/about')} href="/about" on:click="{() => switchToResponsive()}"><i class="fa fa-fw fa-newspaper" ></i> About</a> 
 	<a class:active={$page.url.pathname.startsWith('/FAQ')} href="/FAQ" on:click="{() => switchToResponsive()}"><i class="fa fa-fw fa-question-circle"></i> FAQ</a> 
+	<a href="http://localhost:5173/pong"><i class="fa fa-fw fa-table-tennis"></i> Pong</a> 
 
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<!-- svelte-ignore a11y-missing-attribute -->

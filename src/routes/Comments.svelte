@@ -42,16 +42,19 @@
     onMount(async () => {
         promise = getComments();
     });
-    
+
 </script>
 
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
     <h4>Post a comment</h4>
-    <div class="post"> <input style="width: 15%; margin-right: .5rem;" bind:value="{commenter}"/><input bind:value="{newComment}" placeholder="Post a comment..."/> <button on:click="{()=>setComment(newComment, commenter)}">Post</button></div>
+    <div class="post"> 
+        <input style="width: 15%; margin-right: .5rem;" bind:value="{commenter}" maxlength="15"/><input bind:value="{newComment}" placeholder="Post a comment..." maxlength="120"/> 
+        <button on:click="{()=>setComment(newComment, commenter)}">Post</button>
+    </div>
     <hr/>
     {#await promise}
-	    <p>...Loading...</p>
+	    <p>... Loading ...</p>
     {:then data}
         {#each comments as comment}
         <div><span style="font-weight: 600; font-size: 17px;">{comment.author}</span> {comment.date}</div>
@@ -105,10 +108,7 @@
         border-radius: 4px;
         height: 42px;
         font-size: 14px;
-        color: #57687d;
-        background-color: #fff;
         width: 60%;
-    
     }
 
     .post{
@@ -119,7 +119,6 @@
     .commentsTitle{
 		display: flex;
 		justify-content: center;
-		
 	}
 
 	.commentsTitle:before,
@@ -128,7 +127,6 @@
 		flex: 1 1;
 		border-bottom: 2px solid darkgray;
 		margin: auto;
-		
     }
 	
     
