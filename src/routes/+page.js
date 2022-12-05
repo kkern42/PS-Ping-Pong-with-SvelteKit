@@ -5,7 +5,7 @@ export const prerender = true;
 
 // Run once when the page is loaded 
 const onDocumentReady = () => {
-    console.log("hello, you've found a secert message... the gold its buried under the foundation of the rockefeller estate at Rockwood Hall in Sleepy Hollow go quickly before the others find out");
+    console.log("hello, you've found a secert message... go to https://ps-ping-pong.netlify.app/pong to play pong!!");
   }
   
 onDocumentReady();
