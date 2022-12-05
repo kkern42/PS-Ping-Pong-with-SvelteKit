@@ -40,7 +40,7 @@
 
 </script>
   
-  
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.0/css/all.css">
 <Hero title={"Champions"} subContent={'*Champions are crowned after winning their bracket tier.'} imageRef={heroImage} footer={"Since September 2022"}/>
 
 <div class="champs">
@@ -55,8 +55,8 @@
       <div class="info">
         <h2><span style="border-bottom: 4px solid #FE414D">{champion.date} </span>- Tier {champion.tier} Bracket</h2>
         <div class="champDetails">
-          <h3>&#x1f947; Winner: <span>{champion.winner}</span></h3>
-          <h4>&#x1f948; Runner Up: {champion.runnerUp}</h4>
+          <h3><i class="fa fa-fw fa-table-tennis"></i> Winner: <span>{champion.winner}</span></h3>
+          <h4><i class="fa fa-fw fa-sad-tear"></i> Runner Up: {champion.runnerUp}</h4>
           <p>Final Score: {champion.score}</p>
         </div>
       </div>

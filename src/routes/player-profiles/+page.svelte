@@ -44,7 +44,7 @@
   }
 </script>
   
-  
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
 <Hero title={"Player Profiles"} subContent={'Know thy enemy'} imageRef={heroImage}/>
 
 <div class="player-profiles">
