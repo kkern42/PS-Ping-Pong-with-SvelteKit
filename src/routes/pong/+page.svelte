@@ -13,11 +13,11 @@
 	<style>
 
 	.pong-container{
-        padding: 4rem 7rem 5rem 7rem;
+        padding: 4rem 8.5rem 5rem 8.5rem;
     }
 
 	.board {
-        padding: 5rem 5rem 20rem 5rem;
+        padding: 3rem 5rem 20rem 5rem;
 		background-color: lightgrey;
         border: 3px solid black;
         /* background-image: url("https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/pongtable.png?alt=media&token=2b72be57-aa10-4683-88ba-a3d9d539e252"); */
@@ -48,13 +48,13 @@
 
 	.paddle_1 {
         top: 55%;
-		left: calc(10vw + 30px);
+		left: calc(10vw + 50px);
 		background-color: #FE414D;
 	}
 
 	.paddle_2 {
         top: 55%;
-		right: calc(10vw + 30px);
+		right: calc(10vw + 50px);
 		background-color: black;
 	}
 
