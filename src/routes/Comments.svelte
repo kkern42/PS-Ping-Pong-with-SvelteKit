@@ -15,7 +15,7 @@
     let promise;
 
     const getComments = async () => {
-        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?name=kevin&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?collection=Comments&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
         .then(response => response.json())
         .then(data => {
             comments = data.response;

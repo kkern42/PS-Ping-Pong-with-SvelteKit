@@ -1,4 +1,8 @@
+<script>
 
+	import { data } from "jquery";
+
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -102,6 +106,7 @@
         <div class="paddle_1 paddle"></div>
         <div class="paddle_2 paddle"></div>
     </div>
+    <ul id="leaderboard"></ul>
 </div>
 
 <div class="mobile">
@@ -117,6 +122,12 @@
             e.preventDefault();
         }
     }, false);
+
+    // get highscores on page laod
+    window.onload = function() {
+        //displayLeaderBoard();
+    };
+
     var scorer;
     var seconds = 0
     let zeros = "000000";
@@ -132,6 +143,7 @@
 	let initial_ball = document.querySelector('.ball');
 	let ball = document.querySelector('.ball');
 	let message = document.querySelector('.message');
+
     //get element cordinate object
 	let paddle_1_coord = paddle_1.getBoundingClientRect();
 	let paddle_2_coord = paddle_2.getBoundingClientRect();
@@ -140,26 +152,28 @@
 	let board_coord = board.getBoundingClientRect();
 	let paddle_common = document.querySelector('.paddle').getBoundingClientRect();
     let score = document.querySelector('.score');
+
     //directions
 	let dx;
 	let dy;
 	let dxd;
 	let dyd;
+
 	document.addEventListener('keydown', (e) => {
 	if (e.key == 'Enter') {
 		gameState = gameState == 'start' ? 'play' : 'start';
 		if (gameState == 'play') {
-		message.innerHTML = 'Game Started';
-        scoreTimer();
-        seconds = 0;
-        score.innerHTML = "Score: 000000"
-		requestAnimationFrame(() => {
-			dx = Math.floor(Math.random() * ballSpeed) + 3;
-			dy = Math.floor(Math.random() * ballSpeed) + 3;
-			dxd = Math.floor(Math.random() * ballSpeed);
-			dyd = Math.floor(Math.random() * ballSpeed);
-			moveBall(dx, dy, dxd, dyd);
-		});
+            message.innerHTML = 'Game Started';
+            scoreTimer();
+            seconds = 0;
+            score.innerHTML = "Score: 000000"
+            requestAnimationFrame(() => {
+                dx = Math.floor(Math.random() * ballSpeed) + 3;
+                dy = Math.floor(Math.random() * ballSpeed) + 3;
+                dxd = Math.floor(Math.random() * ballSpeed);
+                dyd = Math.floor(Math.random() * ballSpeed);
+                moveBall(dx, dy, dxd, dyd);
+            });
 		}
 	}
 	if (gameState == 'play') {
@@ -181,6 +195,7 @@
 		}
 	}
 	});
+
 	function moveBall(dx, dy, dxd, dyd) {
         //if hits top
         if(ball_coord.top <= board_coord.top) {
@@ -220,6 +235,7 @@
             moveBall(dx, dy, dxd, dyd);
         });
 	}
+
     //Could add interval deplay to a counter function to keep track of the streak once the funciton runs there is a delay until it can run again 
     function scoreTimer(){
         scorer = setInterval(function() {
@@ -227,7 +243,33 @@
             score.innerHTML = "Score: " + zeros.slice(seconds.toString().length) +seconds;
         }, 100);
     }
-    
+
+    let scoreList = [];
+
+    //gets scores, need to change so it only get top 10,  have to change that in functions
+    const getLeaderBoard = async () => {
+        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?collection=LeaderBoard&score="+ score + "&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+        .then(response => response.json())
+        .then(data => {
+            scoreList = data.response;
+        }).catch(error => {
+            console.log(error);
+            return [];
+        });
+    };
+
+    //calaucate if score is in top ten then give option to enter there score so we just need to know the lowest score then 
+    //needs formaitng and needs like 1 2 3 4 5 
+    const displayLeaderBoard = async () =>{
+        await getLeaderBoard();
+        let list = document.getElementById("leaderboard");
+        scoreList.forEach((item, index)=>{
+            let li = document.createElement("li");
+            li.innerText = item.score;
+            list.appendChild(li);
+        });
+    }
+
 </script>
 </html>
 
