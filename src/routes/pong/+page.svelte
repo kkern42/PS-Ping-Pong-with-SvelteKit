@@ -94,7 +94,7 @@
         display: none; 
         position: fixed;
         z-index: 1; 
-        padding-top: 6rem; 
+        padding-top: 5rem; 
         left: 0;
         top: 0;
         width: 100%; /* Full width */
@@ -133,7 +133,7 @@
     }
 
     h4{
-        margin: .5rem 0 1rem 0;
+        margin: 0 0 1rem 0;
     }
 
     h3{
@@ -167,7 +167,6 @@
     button{
         background-color: lightgray;
         margin-left: .5rem;
-        width: 505
     }
 
     p{
