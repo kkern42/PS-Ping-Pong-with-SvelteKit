@@ -94,7 +94,7 @@
         display: none; 
         position: fixed;
         z-index: 1; 
-        padding-top: 7.5rem; 
+        padding-top: 6rem; 
         left: 0;
         top: 0;
         width: 100%; /* Full width */
@@ -107,12 +107,11 @@
     .modal-content {
         background-color: #fefefe;
         margin: auto;
-        padding: 2rem;
+        padding: 1.5rem;
         border: 1px solid #888;
         width: 50%;
     }
 
-    /* The Close Button */
     .inputs{
         display: flex;
         align-items: start;
@@ -138,7 +137,7 @@
     }
 
     h3{
-        margin: 1rem 0 1rem 0;
+        margin: 1rem 0 .5rem 0;
     }
 
 
@@ -211,7 +210,7 @@
             <button id="submitScore" >Post</button>
         </div>
         <hr/>
-      <h3>Leaderboard</h3>
+      <h3>Leaderboard - Top 10</h3>
       <div id="leaderboard"></div>
     </div>
 </div>
@@ -380,20 +379,20 @@
             return [];
         });
 
-        removeChildern(list);
         await displayLeaderBoard();
     }
 
     //calaucate if score is in top ten then give option to enter there score so we just need to know the lowest score then 
     //needs formaitng and needs like 1 2 3 4 5 
     const displayLeaderBoard = async () =>{
-
+        removeChildern(list);
         await getLeaderBoard();
 
         scoreList.forEach((item, index)=>{
             let rank = index + 1;
             let li = document.createElement("p");
-            li.innerText = rank + ". " +  item.name + ": " + item.score + "   (" + item.date +")";
+            // li.innerText = rank + ". " +  item.name + ": " + item.score + "   (" + item.date +")";
+            li.innerText = rank + ". " +  item.name + ": " + item.score;
             list.appendChild(li);
         });
 
