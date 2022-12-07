@@ -390,8 +390,8 @@
         scoreList.forEach((item, index)=>{
             let rank = index + 1;
             let li = document.createElement("p");
-            // li.innerText = rank + ". " +  item.name + ": " + item.score + "   (" + item.date +")";
-            li.innerText = rank + ". " +  item.name + ": " + item.score;
+            li.innerText = rank + ". " +  item.name + ": " + item.score + "   (" + item.date +")";
+            //li.innerText = rank + ". " +  item.name + ": " + item.score;
             list.appendChild(li);
         });
 
