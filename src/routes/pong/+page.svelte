@@ -1,8 +1,3 @@
-<script>
-
-	import { bubble } from "svelte/internal";
-
-</script>
 <!DOCTYPE html>
 <html lang="en">
 	
@@ -93,6 +88,84 @@
 	        text-decoration: underline;
         }
 	}
+
+    /* modal styling */
+    .modal {
+        display: none; 
+        position: fixed;
+        z-index: 1; 
+        padding-top: 7.5rem; 
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 2rem;
+        border: 1px solid #888;
+        width: 60%;
+    }
+
+    /* The Close Button */
+    .inputs{
+        display: flex;
+        align-items: start;
+        margin-bottom: 1rem;
+    }
+
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    h4{
+        margin: .5rem 0 .5rem 0;
+    }
+
+    hr{
+        border: 1px solid lightgray;
+	    background-color: lightgrey;
+    }
+
+    input:focus,
+    input:focus-visible {
+	    outline: 3px auto darkgray;
+    }
+
+    input{
+        margin: 0 0 .5rem 0;
+        padding-left: .5rem;
+        border: 1px solid #bfc1c4;
+        border-radius: 4px;
+        height:42px;
+        font-size: 14px;
+        width: 60%;
+    }
+
+    button:hover{
+        border: 3px solid darkgray;
+    }
+    button{
+        background-color: lightgray;
+        margin-left: .5rem;
+        width: 505
+    }
+    
 	</style>
 </head>
 	
@@ -109,9 +182,9 @@
         <div class="paddle_1 paddle"></div>
         <div class="paddle_2 paddle"></div>
     </div>
-    <ul id="leaderboard"></ul>
 </div>
 
+<!-- Error Screen -->
 <div class="mobile">
     <h2>OOPS!</h2>
     <p>The content you are looking for is not available in in this viewport.</p>
@@ -119,19 +192,38 @@
     <a href="/" >Click here to go Home</a>
 </div>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h4 class="yourscore">Your Score:</h4>
+        <div class="inputs"> 
+            <input id="scoreinput" style="width: 20%; margin-right: .5rem;" placeholder="Username" maxlength="15"/>
+            <button id="submitScore" >Post</button>
+        </div>
+        <hr/>
+      <h3>Leaderboard</h3>
+      <div id="leaderboard"></div>
+    </div>
+</div>
+
 <script>
     // arrow keys are locked from scrolling
     window.addEventListener("keydown", function(e) {
-        if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
             e.preventDefault();
         }
-    }, false);
+    }, false);    
 
-    // get highscores on page laod
-    window.onload = function() {
-        //displayLeaderBoard();
-    };
+    // modal vars
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    var submitButton = document.getElementById("submitScore");
+    let yourScore = document.querySelector('.yourscore');
+    let list = document.getElementById("leaderboard");
 
+
+    // fixed values
     var scorer;
     var seconds = 0
     let zeros = "000000";
@@ -180,6 +272,7 @@
             });
 		}
 	}
+
 	if (gameState == 'play') {
 		if(e.key == 'w') {
             paddle_1.style.top = Math.max(board_coord.top, paddle_1_coord.top - window.innerHeight * ballVelo) + 'px';
@@ -230,6 +323,7 @@
             message.innerHTML = 'Press Enter to Play';
             //stop scoring
             clearInterval(scorer);
+            displayLeaderBoard();
             return;
         }
         
@@ -241,7 +335,7 @@
         });
 	}
 
-    //Could add interval deplay to a counter function to keep track of the streak once the funciton runs there is a delay until it can run again 
+    //Contorls the scoring 
     function scoreTimer(){
         scorer = setInterval(function() {
             seconds = seconds + 1;
@@ -253,7 +347,7 @@
 
     //gets scores, need to change so it only get top 10,  have to change that in functions
     const getLeaderBoard = async () => {
-        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?collection=LeaderBoard&score="+ score + "&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?collection=LeaderBoard&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
         .then(response => response.json())
         .then(data => {
             scoreList = data.response;
@@ -263,16 +357,62 @@
         });
     };
 
+    //submits score, and rerenders leaderboard
+    const submitScore = async () => {
+        let newScore = seconds;
+        let username = document.getElementById('scoreinput').value;
+        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?collection=LeaderBoard&score=" + newScore + "&name=" + username + "&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.repsonse);
+        }).catch(error => {
+            console.log(error);
+            return [];
+        });
+
+        removeChildern(list);
+        await displayLeaderBoard();
+    }
+
     //calaucate if score is in top ten then give option to enter there score so we just need to know the lowest score then 
     //needs formaitng and needs like 1 2 3 4 5 
     const displayLeaderBoard = async () =>{
+
         await getLeaderBoard();
-        let list = document.getElementById("leaderboard");
+
         scoreList.forEach((item, index)=>{
-            let li = document.createElement("li");
-            li.innerText = item.score;
+            let rank = index + 1;
+            let li = document.createElement("p");
+            li.innerText = rank + ". " +  item.name + " " + item.score;
             list.appendChild(li);
         });
+
+        modal.style.display = "block";
+        yourScore.innerHTML = "Submit your score: " + zeros.slice(seconds.toString().length) +seconds;
+    }
+
+    // closes modal when u click the x
+    span.onclick = function() {
+        modal.style.display = "none";
+        removeChildern(list);
+    }
+
+    // closes modal when u click any where 
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            removeChildern(list);
+        }
+    }
+
+    submitButton.onclick = function() {
+        submitScore();
+    }
+
+    function removeChildern(element){
+        while (element.firstChild) {
+            element.removeChild(element.firstChild);
+        }
     }
 
 </script>
