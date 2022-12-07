@@ -22,8 +22,8 @@
 	 * @param {{name: string;grip: string;record: string;strength: string;weakness: string;picture: string;margin: string;reverse: string;}[]} capList
 	 * @param {string} name
 	 */
-  function switchPLayers(capList, name){
-    players = capList
+  async function switchPLayers(capList, name){
+    players = capList;
 
     if(name == 'prod'){
       enginClass = ""

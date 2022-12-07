@@ -1,9 +1,8 @@
 <script>
 
-	import { data } from "jquery";
+	import { bubble } from "svelte/internal";
 
 </script>
-
 <!DOCTYPE html>
 <html lang="en">
 	
@@ -88,6 +87,10 @@
         }
         .mobile{
             display: block;
+            padding: 4rem 8.5rem 5rem 8.5rem;
+        }
+        a {
+	        text-decoration: underline;
         }
 	}
 	</style>
@@ -113,6 +116,7 @@
     <h2>OOPS!</h2>
     <p>The content you are looking for is not available in in this viewport.</p>
     <p>PC or Desktop only!</p>
+    <a href="/" >Click here to go Home</a>
 </div>
 
 <script>
@@ -228,6 +232,7 @@
             clearInterval(scorer);
             return;
         }
+        
         ball.style.top = ball_coord.top + dy * (dyd == 0 ? -1 : 1) + 'px';
         ball.style.left = ball_coord.left + dx * (dxd == 0 ? -1 : 1) + 'px';
         ball_coord = ball.getBoundingClientRect();
