@@ -348,7 +348,7 @@
     function scoreTimer(){
         scorer = setInterval(function() {
             seconds = seconds + 1;
-            score.innerHTML = "Score: " + zeros.slice(seconds.toString().length) +seconds;
+            score.innerHTML = "Score: " + zeros.slice(seconds.toString().length) + seconds;
         }, 100);
     }
 
@@ -367,6 +367,7 @@
     };
 
     //submits score, and rerenders leaderboard
+    //maybe disable post button once it is clicked
     const submitScore = async () => {
         let newScore = seconds;
         let username = document.getElementById('scoreinput').value;
@@ -392,12 +393,12 @@
         scoreList.forEach((item, index)=>{
             let rank = index + 1;
             let li = document.createElement("p");
-            li.innerText = rank + ". " +  item.name + " " + item.score;
+            li.innerText = rank + ". " +  item.name + ": " + item.score + "   (" + item.date +")";
             list.appendChild(li);
         });
 
         modal.style.display = "block";
-        yourScore.innerHTML = "Submit your score: " + zeros.slice(seconds.toString().length) +seconds;
+        yourScore.innerHTML = "Submit your score: " + zeros.slice(seconds.toString().length) + seconds;
     }
 
     // closes modal when u click the x
