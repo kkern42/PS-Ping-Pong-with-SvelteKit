@@ -109,7 +109,7 @@
         margin: auto;
         padding: 2rem;
         border: 1px solid #888;
-        width: 60%;
+        width: 50%;
     }
 
     /* The Close Button */
@@ -134,8 +134,13 @@
     }
 
     h4{
-        margin: .5rem 0 .5rem 0;
+        margin: .5rem 0 1rem 0;
     }
+
+    h3{
+        margin: 1rem 0 1rem 0;
+    }
+
 
     hr{
         border: 1px solid lightgray;
@@ -164,6 +169,10 @@
         background-color: lightgray;
         margin-left: .5rem;
         width: 505
+    }
+
+    p{
+        margin: 0 0 .25rem 0;
     }
     
 	</style>
@@ -409,6 +418,7 @@
         submitScore();
     }
 
+    //removes clidern from leaderboad so they don't keep appending to the old one
     function removeChildern(element){
         while (element.firstChild) {
             element.removeChild(element.firstChild);
