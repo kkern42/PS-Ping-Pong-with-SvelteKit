@@ -369,7 +369,7 @@
     const submitScore = async () => {
         let newScore = seconds;
         let username = document.getElementById('scoreinput').value;
-        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?collection=LeaderBoard&score=" + newScore + "&name=" + username + "&code=WFVEZmP8cqOe1Fyt7Q6Po07lpvhO6eRXtG9DCziwvbSOAzFuiHLimw==")
+        await fetch("https://pspptofirebase.azurewebsites.net/api/AccessFirebase?collection=LeaderBoard&score=" + newScore + "&name=" + username + "&" + CODE)
         .then(response => response.json())
         .then(data => {
             console.log(data.repsonse);
