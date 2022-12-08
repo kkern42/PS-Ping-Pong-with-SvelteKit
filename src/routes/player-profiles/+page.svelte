@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>Player Profiles</title>
-	<meta name="description" content="PLayer Profiles" />
+	<meta name="description" content="Player Profiles" />
 </svelte:head>
 
 <script>
@@ -12,11 +12,11 @@
   import {experience} from './experienceData.svelte';
 
 
-  let players = engineering;
+  let players = experience;
 
-  let enginClass = "underline"
+  let enginClass = ""
   let prodClass = ""
-  let expClass = ""
+  let expClass = "underline"
 
   /**
 	 * @param {{name: string;grip: string;record: string;strength: string;weakness: string;picture: string;margin: string;reverse: string;}[]} capList
