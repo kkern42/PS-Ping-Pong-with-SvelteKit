@@ -19,6 +19,7 @@
         .then(response => response.json())
         .then(data => {
             comments = data.response;
+            console.log(data.response)
         }).catch(error => {
             console.log(error);
             return [];
@@ -59,7 +60,7 @@
 	    <p>... Loading ...</p>
     {:then data}
         {#each comments as comment}
-        <div><span style="font-weight: 600; font-size: 17px;">{comment.author}</span> {comment.date}</div>
+        <div><span style="font-weight: 600; font-size: 17px;">{comment.author}</span> - {comment.date}</div>
         <p>{comment.comment}</p>
         {/each}
     {:catch error}
