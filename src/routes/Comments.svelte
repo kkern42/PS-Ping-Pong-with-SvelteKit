@@ -7,7 +7,7 @@
     let comments = [];
 
     let newComment = "";
-    let commenter = "Anonymous";
+    let commenter = "";
 
     /**
 	 * @type {Promise<void>}
@@ -40,6 +40,10 @@
     };
     
 
+    const setCommenter = async() => {
+			commenter = "";
+		};
+
     onMount(async () => {
         promise = getComments();
     });
@@ -52,8 +56,10 @@
 <div class="comment_section">
     <h4>Post a comment <i class="fas fa-pencil-alt"></i></h4>
     <div class="post"> 
-        <input style="width: 15%; margin-right: .5rem;" bind:value="{commenter}" maxlength="15"/><input bind:value="{newComment}" placeholder="Post a comment..." maxlength="120"/> 
-        <button on:click="{()=>setComment(newComment, commenter)}">Post</button>
+        <input placeholder="Enter name" style="width: 15%; margin-right: .5rem;" bind:value="{commenter}" maxlength="15"/>
+        <input bind:value="{newComment}" placeholder="Post a comment..." maxlength="120" /> 
+        <button on:click="{()=>setComment(newComment, commenter)}"
+                on:click={setCommenter} >Post</button>
     </div>
     <hr/>
     {#await promise}
