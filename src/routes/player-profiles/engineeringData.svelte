@@ -44,7 +44,7 @@
     {
       name: "Ensar Dogrusoz",
       grip: "handshake",
-      record: "TBD",
+      record: "2-4",
       strength: "Serving",
       weakness: "Moving, guys like a statue",
       picture: ensar,
@@ -54,7 +54,7 @@
     {
       name: "Kevin Garlepp",
       grip: "handshake",
-      record: "TBD",
+      record: "2-4",
       strength: "The will to win",
       weakness: "Crumbling under the lights",
       picture: keving,
@@ -64,7 +64,7 @@
     {
       name: "Kelly Buchanan",
       grip: "handshake",
-      record: "TBD",
+      record: "2-4",
       strength: "Strong returns",
       weakness: "Having a lead (pressure makes coal)",
       picture: kelly,
@@ -74,7 +74,7 @@
     {
       name: "SJ Clarke",
       grip: "handshake",
-      record: "TBD",
+      record: "4-4",
       strength: "Beating Kevin G.",
       weakness: "John playing as Katie",
       picture: icon,
@@ -84,7 +84,7 @@
     {
       name: "Ayush Saxena",
       grip: "handshake",
-      record: "TBD",
+      record: "4-1",
       strength: "Vast Experince",
       weakness: "No warmup & Reece",
       picture: ayush,
@@ -94,7 +94,7 @@
     {
       name: "Tushar Arora",
       grip: "handshake",
-      record: "TBD",
+      record: "3-2",
       strength: "Enthusiasm",
       weakness: "Shots with spin",
       picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Ftushar.png?alt=media&token=64eb4088-41e8-479e-a615-661ef25ca30d",
@@ -104,7 +104,7 @@
     {
       name: "Julia Buckley",
       grip: "handshake",
-      record: "TBD",
+      record: "1-4",
       strength: "TBD",
       weakness: "tbd",
       picture: icon,
@@ -124,7 +124,7 @@
     {
       name: "Jasmyne Jean-Remy",
       grip: "handshake",
-      record: "TBD",
+      record: "0-2",
       strength: "TBD",
       weakness: "TBD",
       picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fjasmyne.png?alt=media&token=99d4fb23-4143-405a-bb61-bd87ea9e7828",
@@ -144,7 +144,7 @@
     {
       name: "Siddharth Bhawalkar",
       grip: "handshake",
-      record: "TBD",
+      record: "0-1",
       strength: "Knoweldge of table tennis",
       weakness: "Adjusting to in-office rules",
       picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsiddharth.png?alt=media&token=886d61f5-e0e0-4a4f-9fd5-32d12b08cc6b",
