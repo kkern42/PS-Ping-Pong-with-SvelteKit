@@ -50,7 +50,7 @@
 
 </script>
 
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
@@ -63,7 +63,7 @@
     </div>
     <hr/>
     {#await promise}
-	    <p>... Loading ...</p>
+        <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
     {:then data}
         {#each comments as comment}
         <div><span style="font-weight: 600; font-size: 17px;">{comment.author}</span> - {comment.date}</div>
