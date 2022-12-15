@@ -50,7 +50,7 @@
 
 </script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.0/css/all.css">
 
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
@@ -59,7 +59,8 @@
         <input placeholder="Enter name" style="width: 15%; margin-right: .5rem;" bind:value="{commenter}" maxlength="15"/>
         <input bind:value="{newComment}" placeholder="Post a comment..." maxlength="120" /> 
         <button on:click="{()=>setComment(newComment, commenter)}"
-                on:click={setCommenter} >Post</button>
+                on:click={setCommenter} >Post</button>         
+                <!-- <span style="padding: .6rem;"><i class="fa fa-refresh" style="font-size:24px"></i></span> -->
     </div>
     <hr/>
     {#await promise}
