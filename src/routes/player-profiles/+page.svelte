@@ -12,11 +12,11 @@
   import {experience} from './experienceData.svelte';
 
 
-  let players = experience;
+  let players = engineering;
 
-  let enginClass = ""
+  let enginClass = "underline"
   let prodClass = ""
-  let expClass = "underline"
+  let expClass = ""
 
   /**
 	 * @param {{name: string;grip: string;record: string;strength: string;weakness: string;picture: string;margin: string;reverse: string;}[]} capList
@@ -50,13 +50,13 @@
 <div class="player-profiles">
   <div class="capabilities" >
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <h2 on:click="{()=>switchPLayers(experience, 'exp')}" class={expClass}>Experience</h2> 
-    <h2  style="color: darkgrey;">|</h2>
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <h2 on:click="{()=>switchPLayers(product, 'prod')}" class={prodClass}>Product</h2> 
+    <h2 on:click="{()=>switchPLayers(engineering, 'engin')}" class={enginClass}>Engineering</h2> 
     <h2 style="color: darkgrey;">|</h2>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <h2 on:click="{()=>switchPLayers(engineering, 'engin')}" class={enginClass}>Engineering</h2> 
+    <h2 on:click="{()=>switchPLayers(product, 'prod')}" class={prodClass}>Product</h2> 
+    <h2  style="color: darkgrey;">|</h2>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <h2 on:click="{()=>switchPLayers(experience, 'exp')}" class={expClass}>Experience</h2> 
   </div>
 
   <pre><div style="padding: 0 1rem 0 1rem;">Past Participants</div></pre>
