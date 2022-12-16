@@ -10,7 +10,7 @@
 
 	<style>
 	.pong-container{
-        padding: 4rem 8.5rem 5rem 8.5rem;
+        padding: 4rem 8.5rem .5rem 8.5rem;
     }
 	.board {
         padding: 3rem 5rem 20rem 5rem;
@@ -190,6 +190,7 @@
         <div class="paddle_2 paddle"></div>
     </div>
 </div>
+<p style="font-size: 12px;">**Use the W and S keys to move the left paddle and the Up and Down arrow to move the right</p>
 
 <!-- Error Screen -->
 <div class="mobile">
