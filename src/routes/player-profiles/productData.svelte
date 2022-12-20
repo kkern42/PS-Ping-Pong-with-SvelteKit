@@ -40,7 +40,7 @@
       grip: "handshake",
       record: "1-2",
       strength: "Showing up",
-      weakness: "When Sophia plays for her",
+      weakness: "When Ruby plays for her",
       picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsophia.png?alt=media&token=a89a3930-69c4-4936-8157-8499cdb4e580",
       reverse: "",
       margin: "",
