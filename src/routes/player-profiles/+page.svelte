@@ -51,10 +51,10 @@
   <div class="capabilities" >
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <h2 on:click="{()=>switchPLayers(engineering, 'engin')}" class={enginClass}>Engineering</h2> 
-    <h2 style="color: darkgrey;">|</h2>
+    <h2 style="color: darkgrey; border-bottom: 4px solid white; cursor: default;">|</h2>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <h2 on:click="{()=>switchPLayers(product, 'prod')}" class={prodClass}>Product</h2> 
-    <h2  style="color: darkgrey;">|</h2>
+    <h2  style="color: darkgrey; border-bottom: 4px solid white;">|</h2>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <h2 on:click="{()=>switchPLayers(experience, 'exp')}" class={expClass}>Experience</h2> 
   </div>
@@ -78,6 +78,7 @@
     </div>
   {/each}
 </div>
+
   
 <style>
 
@@ -119,11 +120,17 @@
   }
 
   .capabilities h2:hover{
-    cursor: pointer;
+   cursor: pointer;
+   border-bottom: 4px solid #FE414D;
+   transition: .3s;
   }
 
   .capabilities .underline{
     border-bottom: 4px solid #FE414D;
+  }
+
+  .capabilities:hover > :not(:hover){
+    border-bottom: 4px solid white;
   }
 
   .reverse{
