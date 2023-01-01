@@ -64,7 +64,7 @@
     </div>
     <hr/>
     {#await promise}
-        <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+    <i class="fa fa-sync-alt fa-spin" style="font-size:24px"></i>
     {:then data}
         {#each comments as comment}
         <div><span style="font-weight: 600; font-size: 17px;">{comment.author}</span> - {comment.date}</div>
