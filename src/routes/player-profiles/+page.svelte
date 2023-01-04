@@ -122,7 +122,7 @@
   .capabilities h2:hover{
    cursor: pointer;
    border-bottom: 4px solid #FE414D;
-   transition: .3s;
+   
   }
 
   .capabilities .underline{
@@ -130,7 +130,7 @@
   }
 
   .capabilities:hover > :not(:hover){
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid transparent;
   }
 
   .reverse{

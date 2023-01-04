@@ -161,11 +161,9 @@
         width: 60%;
     }
 
-    button:hover{
-        border: 3px solid darkgray;
-    }
+  
     button{
-        background-color: lightgray;
+        border: .1rem solid darkgray;
         margin-left: .5rem;
     }
 

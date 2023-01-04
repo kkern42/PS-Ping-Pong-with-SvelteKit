@@ -37,13 +37,9 @@
         });
         promise = getComments();
         newComment = "";
+        commenter = ""
     };
     
-
-    const setCommenter = async() => {
-			commenter = "";
-		};
-
     onMount(async () => {
         promise = getComments();
     });
@@ -58,9 +54,7 @@
     <div class="post"> 
         <input placeholder="Enter name" style="width: 15%; margin-right: .5rem;" bind:value="{commenter}" maxlength="15"/>
         <input bind:value="{newComment}" placeholder="Post a comment..." maxlength="120" /> 
-        <button on:click="{()=>setComment(newComment, commenter)}"
-                on:click={setCommenter} >Post</button>         
-                <!-- <span style="padding: .6rem;"><i class="fa fa-refresh" style="font-size:24px"></i></span> -->
+        <button on:click="{()=>setComment(newComment, commenter)}">Post</button>         
     </div>
     <hr/>
     {#await promise}
@@ -97,19 +91,15 @@
     }
 
     button{
-        background-color: lightgray;
+        background-color: rgb(248, 248, 248);
+        border: .1rem solid darkgray;
         margin-left: .5rem;
-    }
-
-    button:hover{
-        border: 3px solid darkgray;
     }
 
     input:focus,
     input:focus-visible {
 	    outline: 3px auto darkgray;
     }
-
 
     input{
         margin: 0 0 .5rem 0;

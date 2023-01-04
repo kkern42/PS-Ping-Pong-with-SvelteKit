@@ -43,6 +43,7 @@
 		text-decoration: none;
 		font-size: 1rem;
 		font-weight: 700;
+		transition: .6s;
   	}
   
   	.navbar a:hover {
