@@ -19,6 +19,7 @@
       runnerUp: "Ashley Kim",
       score: "21-19",
       picture: sandy,
+      link: "https://marcel.ai/app/person/8028767",
     },  
     {
       date: "Fall 2022",
@@ -27,6 +28,7 @@
       runnerUp: "Sophie Reck",
       score: "21-18",
       picture: nia,
+      link: "https://marcel.ai/niawashington",
     }, 
     {
       date: "Fall 2022",
@@ -35,6 +37,7 @@
       runnerUp: "Ayush Saxena",
       score: "21-18",
       picture: reece,
+      link: "https://marcel.ai/reeceberhardt",
     }, 
   ];
 
@@ -55,7 +58,7 @@
       <div class="info">
         <h2>{champion.date} - Tier {champion.tier} Bracket</h2>
         <div class="champDetails">
-          <h3><i class="fas fa-trophy"></i> Winner: <span style="border-bottom: 4px solid #FE414D">{champion.winner}</span></h3>
+          <h3><i class="fas fa-trophy"></i> Winner: <span style="border-bottom: 4px solid #FE414D"><a href={champion.link} style="text-decoration: none; color: #213547">{champion.winner}</a></span></h3>
           <h4><i class="fa fa-fw fa-sad-tear"></i> Runner Up: {champion.runnerUp}</h4>
           <p>Final Score: {champion.score}</p>
         </div>

@@ -80,6 +80,7 @@
 
 	.name{
 		margin: 1rem 0 0 0;
+		transition: .1s;
 	}
 
 	.name:hover{
