@@ -160,7 +160,6 @@
   pre{
 		display: flex;
 		justify-content: center;
-		
 	}
 
 	pre:before,
@@ -170,16 +169,11 @@
 		border-bottom: 1px solid darkgray;
 	  background-color: darkgrey;
 		margin: auto;
-		
   }
 
   @media screen and (max-width: 1000px) {
     .img-container{
       width: 60%;
-    }
-
-    hr{
-      width: 100%;
     }
 
     .capabilities h2{
@@ -196,10 +190,6 @@
       font-size: 1.3rem;
     }
     
-    hr{
-      display: none;
-    }
-
     .player-profiles{
       padding: 2rem 3.5rem 4rem 3.5rem;
       text-align: center;

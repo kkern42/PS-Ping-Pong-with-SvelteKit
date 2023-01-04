@@ -141,9 +141,8 @@
     }
 
     .img-container{
-        
-        /* max-width: 15rem; */
-        width: 100%;
+      /* max-width: 15rem; */
+      width: 100%;
     }
 
     img{
