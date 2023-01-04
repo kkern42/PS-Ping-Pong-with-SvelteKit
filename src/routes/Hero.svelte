@@ -4,12 +4,13 @@
     export let subContent = "";
     export let imageRef = "";
     export let footer = "";
+    export let videoLink = "";
 </script>
 
 <div class="hero_container">
     <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({imageRef})">
         <div class="hero-text">
-            <a href="https://brackethq.com/b/k4n6/" > 
+            <a href={videoLink} > 
                 <img src={PSPPLogo} class="logo" alt="PS PP Logo" />
             </a>
             <h1 style="font-size: 3rem;"> {@html title} </h1>

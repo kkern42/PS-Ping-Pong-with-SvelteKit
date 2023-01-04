@@ -45,7 +45,7 @@
 </script>
   
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
-<Hero title={"Player Profiles"} subContent={'Know thy enemy'} imageRef={heroImage}/>
+<Hero title={"Player Profiles"} subContent={'Know thy enemy'} imageRef={heroImage} videoLink={"https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Videos%2FIMG_1255.mp4?alt=media&token=1bbc65d6-0e07-49d1-abe3-8b02836500b2"}/>
 
 <div class="player-profiles">
   <div class="capabilities" >

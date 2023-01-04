@@ -24,7 +24,7 @@
 	];
 </script>
 
-<Hero title={"Past Brackets"} imageRef={heroImage} subContent={"You didn't do as well as you thought"}/>
+<Hero title={"Past Brackets"} imageRef={heroImage} subContent={"You didn't do as well as you thought"} videoLink={"https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Videos%2FIMG_7672.mp4?alt=media&token=18e2158c-9bf1-49e3-b858-9578199e4ac3"}/>
 
 <div class="app">
     {#each brackets as bracket, index}

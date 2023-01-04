@@ -44,7 +44,7 @@
 </script>
   
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.0/css/all.css">
-<Hero title={"Champions"} subContent={'*Champions are crowned after winning their bracket tier.'} imageRef={heroImage} footer={"Since September 2022"}/>
+<Hero title={"Champions"} subContent={'*Champions are crowned after winning their bracket tier.'} imageRef={heroImage} footer={"Since September 2022"} videoLink={"https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Videos%2FIMG_7671%20(1).mp4?alt=media&token=96c1e905-6587-41be-b355-38dd8480f3fe"}/>
 
 <div class="champs">
 
