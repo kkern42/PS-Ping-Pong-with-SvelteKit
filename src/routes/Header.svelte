@@ -58,6 +58,13 @@
   		display: none;
   	}
 
+	@media screen and (max-width: 1000px){
+		.navbar a{
+			padding: .8rem;
+			font-size: .8rem;
+		}
+	}
+
 	@media screen and (max-width: 500px) {
 		.navbar a {
 			display:none;
