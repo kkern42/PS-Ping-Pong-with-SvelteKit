@@ -13,9 +13,11 @@
         margin-left: auto;
 		margin-right: auto;
     }
+
 	.pong-container{
         padding: 4rem 8.5rem .5rem 8.5rem;
     }
+
 	.board {
         padding: 3rem 5rem 20rem 5rem;
 		background-color: lightgrey;
@@ -23,6 +25,7 @@
         /* background-image: url("https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/pongtable.png?alt=media&token=2b72be57-aa10-4683-88ba-a3d9d539e252"); */
         background-size: cover;
 	}
+
 	.ball {
 		height: 30px;
 		width: 30px;
@@ -31,12 +34,14 @@
 		top: 300px;
 		left: calc(50% - 15px);
 	}
+
 	.ball_effect {
 		height: 100%;
 		width: 100%;
 		border-radius: 100px;
 		box-shadow: inset 0 0 20px orange;
 	}
+
 	.paddle {
 		height: 100px;
 		width: 18px;
@@ -52,6 +57,19 @@
 		right: 10.5rem;
 		background-color: black;
 	}
+
+    @media screen and (min-width: 1500px){
+        .paddle_1 {
+            top: 300px;
+            left: 30rem;
+            background-color: #FE414D;
+	    }
+        .paddle_2 {
+            top: 300px;
+            right: 30rem;
+            background-color: black;
+        }
+    }
 	.title-score{
         display: flex;
         justify-content: center
