@@ -17,10 +17,6 @@
     let displayImage = kevin;
     let otherImage = ashley;
 
-    const nextImage = () => {
-    displayImage = otherImage;  
-  }
-
     let images = [
         {
             date: "",
@@ -38,6 +34,46 @@
             date: "",
             picture: ashley,
         },  
+        {
+            date: "",
+            picture: kevin,
+        }, 
+        {
+            date: "",
+            picture: ashley,
+        },
+        {
+            date: "",
+            picture: kevin,
+        }, 
+        {
+            date: "",
+            picture: ashley,
+        }, 
+        {
+            date: "",
+            picture: kevin,
+        }, 
+        {
+            date: "",
+            picture: ashley,
+        }, 
+        {
+            date: "",
+            picture: kevin,
+        }, 
+        {
+            date: "",
+            picture: ashley,
+        }, 
+        {
+            date: "",
+            picture: kevin,
+        }, 
+        {
+            date: "",
+            picture: ashley,
+        }, 
         {
             date: "",
             picture: kevin,
@@ -63,7 +99,6 @@
             slideIndex += 1;
         }
         images = images;
-        console.log("Image selection change");
     }
 
     function left(){
@@ -77,7 +112,6 @@
             slideIndex += (-1);
         }
         images = images;
-        console.log("Image selection change");
     }
 
 </script>
@@ -96,12 +130,6 @@
        {/if}
     {/each}
 
-    <!-- <div class="img-container">
-        <img src={displayImage} alt="ping pong office">
-        <button type="button" class="prev" on:click="{nextImage}">❮</button>
-        <button type="button" class="next" on:click="{nextImage}">❯</button>
-    </div> -->
-
     <div class="thumbnails">
         {#each images as image, index}
             <div class="img-container">
@@ -118,7 +146,9 @@
     
     .thumbnails{
         display: flex;
+        flex-wrap: wrap;
         padding: 1rem;
+        justify-content: center;
     }
 
     .subImages:hover{
@@ -127,9 +157,10 @@
     }
 
     .images{
-        padding: 5.5rem 10rem 4rem 10rem;
+        padding: 5.5rem 5rem 4rem 5rem;
         
     }
+
      img{
 		width:100%;
 	}
@@ -141,7 +172,9 @@
 
     .img-container{
        display: flex; 
+       flex: 0 0 150px;
        justify-content: center;
+       padding: .5rem;
     }
 
 
