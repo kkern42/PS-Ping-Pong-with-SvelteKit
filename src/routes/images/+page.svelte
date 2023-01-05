@@ -4,85 +4,35 @@
 </svelte:head>
 
 <script>
+    import PSPPLogo from '$lib/images/pingpong.svg';
     import { onMount } from "svelte";
     import Hero from '../Hero.svelte';
     import heroImage from '$lib/images/hero-imagespg.png';
-	import Counter from "../Counter.svelte";
     import kevin from '$lib/images/hero_image_ashley_ayush2.png';
     import ashley from '$lib/images/jacob-alden-hero.png';
-    import jd from '$lib/images/past-bracket-hero3.png';
+    import jd from '$lib/images/gallery/IMG_1.jpeg';
 
     let slideIndex = 0;
-
-    let displayImage = kevin;
-    let otherImage = ashley;
 
     let images = [
         {
             date: "",
-            picture: kevin,
+            picture: jd,
         },  
-        {
-            date: "",
-            picture: ashley,
-        }, 
-        {
-            date: "",
-            picture: kevin,
-        },
-        {
-            date: "",
-            picture: ashley,
-        },  
-        {
-            date: "",
-            picture: kevin,
-        }, 
-        {
-            date: "",
-            picture: ashley,
-        },
-        {
-            date: "",
-            picture: kevin,
-        }, 
-        {
-            date: "",
-            picture: ashley,
-        }, 
-        {
-            date: "",
-            picture: kevin,
-        }, 
-        {
-            date: "",
-            picture: ashley,
-        }, 
-        {
-            date: "",
-            picture: kevin,
-        }, 
-        {
-            date: "",
-            picture: ashley,
-        }, 
-        {
-            date: "",
-            picture: kevin,
-        }, 
-        {
-            date: "",
-            picture: ashley,
-        }, 
-        {
-            date: "",
-            picture: kevin,
-        }, 
         {
             date: "",
             picture: ashley,
         }, 
     ]
+
+    for (let i = 1; i < 23; i++) {
+        images.push({
+            date: "",
+            picture: "/src/lib/images/gallery/IMG_" + i + ".jpeg"
+        })
+    }
+
+
 
     function changeToThumbNail(/** @type {number} */ i){
         slideIndex = i;
@@ -114,32 +64,46 @@
         images = images;
     }
 
+   let pop = false;
+    let displayImage = ""
+    const showImage = ( /** @type {string} */ ref) => {
+		pop = true; 
+        displayImage = ref;
+	};
+
+    const closeImage = () => {
+        pop = false;
+    }
+
 </script>
 
-<Hero title={"Photo Gallery"} subContent={'JD needs to take more pics'} imageRef={heroImage}/>
+<!-- <Hero title={"Photo Gallery"} subContent={'JD needs to take more pics'} imageRef={heroImage}/> -->
 
 <div class="images">
-    {#each images as image, index}
-       {#if index == slideIndex}
-
-        <div class="img-container">
-            <button type="button" class="prev" on:click="{left}">❮</button>
-            <img src={image.picture} alt="{image.date}">
-            <button type="button" class="next" on:click="{right}">❯</button>
-        </div>
-       {/if}
-    {/each}
+    <div>
+        <h1>The Gallery</h1>
+        <p>Checkout the gallery, its beautiful</p>
+        <p>Reach out to Ashley Kim, JD Pablo or Kevin Kern to get your picture taken</p>
+      </div>
 
     <div class="thumbnails">
         {#each images as image, index}
             <div class="img-container">
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <img class="subImages" src={image.picture} alt="{image.date}" on:click="{()=>changeToThumbNail(index)}">
-
+                <img class="subImages" src={image.picture} alt="{image.date}" on:click="{()=>showImage(image.picture)}">
             </div>
         {/each}
     </div>
-    
+
+    {#if pop}
+        <div class="popup">
+            <div class="popup-content">
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <span class="close" on:click="{()=>closeImage()}">&times;</span>
+                <img src={displayImage} alt="ping pong dipalsyed"/> 
+            </div>
+        </div>
+    {/if}
 </div>
 
 <style>
@@ -158,10 +122,9 @@
 
     .images{
         padding: 5.5rem 5rem 4rem 5rem;
-        
     }
 
-     img{
+    img{
 		width:100%;
 	}
 
@@ -172,22 +135,63 @@
 
     .img-container{
        display: flex; 
-       flex: 0 0 150px;
+       flex: 0 0 250px;
        justify-content: center;
        padding: .5rem;
+
+    }
+
+    .img-container img{
+       object-fit: contain;
+       aspect-ratio: 8/7;
     }
 
 
     .prev{
         cursor: pointer;  
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
+        /* transition: 0.6s ease; */
+        border-radius: 3px 3px 3px 3px;
+        
     }
 
     .next {
         cursor: pointer;
-        transition: 0.6s ease;
-        border-radius: 3px 0 0 3px;
+        /* transition: 0.6s ease; */
+        border-radius: 3px 3px 3px 3px;
+    }
+
+    .popup{
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .popup-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        width: 35%;
+    }
+
+    .close {
+        color: #aaaaaa;
+        font-size: 28px;
+        float: right;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
     }
 
 </style>
