@@ -15,9 +15,9 @@
 </div>
 
 <style>
-main{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1600px;
-}
+	main{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1600px;
+	}
 </style>
