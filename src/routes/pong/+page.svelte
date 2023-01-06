@@ -66,14 +66,17 @@
     }
 
     .title-score h2{
-        margin-bottom: .5rem;
-        margin-top:.5rem;
+        margin-bottom: .25rem;
+        margin-top: .5rem;
         font-size: 2rem;
     }
 
     pre{
 		display: flex;
 		justify-content: center;
+        margin: 0;
+        margin-top: .25rem;
+        margin-bottom: .5rem;
 		
 	}
 
@@ -182,6 +185,10 @@
         border: .1rem solid darkgray;
         margin-left: .5rem;
     }
+
+    p{
+        margin: 0;
+    }
 	</style>
 </head>
 	
@@ -190,8 +197,9 @@
     <div class="pong-container">
         <div class="title-score">
             <h2 class="message"> Press Enter to Play</h2>
-            <p style="font-size: 10px;">Use the W and S keys to move the left paddle and the Up and Down arrow to move the right</p>
+           
         </div>
+        <p style="text-align: center; font-size: 10px;">Use the W and S keys to move the left paddle and the Up and Down arrow to move the right</p>
         <pre><div style="padding: 0 1rem 0 1rem;" class="score">Score: 000000</div></pre>
         <div class="board">
             <div class='ball'>
