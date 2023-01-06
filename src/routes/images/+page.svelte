@@ -28,7 +28,7 @@
     for (let i = 1; i < 23; i++) {
         images.push({
             date: "",
-            picture: "/src/lib/images/gallery/IMG_" + i + ".jpeg"
+            picture: "./src/lib/images/gallery/IMG_" + i + ".jpeg"
         })
     }
 
