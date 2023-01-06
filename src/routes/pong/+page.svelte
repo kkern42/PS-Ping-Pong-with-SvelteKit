@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	
@@ -61,14 +62,13 @@
 	}
 
 	.title-score{
-        display: flex;
-        justify-content: center
+        text-align: center;
     }
 
     .title-score h2{
-        margin-bottom: 0rem;
-        margin-top:1rem;
-        font-size: 2sssrem;
+        margin-bottom: .5rem;
+        margin-top:.5rem;
+        font-size: 2rem;
     }
 
     pre{
@@ -182,11 +182,6 @@
         border: .1rem solid darkgray;
         margin-left: .5rem;
     }
-
-    p{
-        margin: 0 0 .25rem 0;
-    }
-    
 	</style>
 </head>
 	
@@ -195,6 +190,7 @@
     <div class="pong-container">
         <div class="title-score">
             <h2 class="message"> Press Enter to Play</h2>
+            <p style="font-size: 10px;">Use the W and S keys to move the left paddle and the Up and Down arrow to move the right</p>
         </div>
         <pre><div style="padding: 0 1rem 0 1rem;" class="score">Score: 000000</div></pre>
         <div class="board">
@@ -205,7 +201,6 @@
             <div class="paddle_2 paddle"></div>
         </div>
     </div>
-    <p style="font-size: 12px;">**Use the W and S keys to move the left paddle and the Up and Down arrow to move the right</p>
     
     <!-- Error Screen -->
     <div class="mobile">
@@ -290,10 +285,10 @@
 
 
     // paddles always start in the right place
-    paddle_1.style.left = board_coord.left + 15+ 'px';
+    paddle_1.style.left = board_coord.left + 25+ 'px';
     paddle_1_coord = paddle_1.getBoundingClientRect();
 
-    paddle_2.style.left= board_coord.right -35+ 'px';
+    paddle_2.style.left= board_coord.right -45+ 'px';
     paddle_2_coord = paddle_2.getBoundingClientRect();
 
 
