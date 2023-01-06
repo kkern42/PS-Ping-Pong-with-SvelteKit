@@ -60,19 +60,6 @@
 		background-color: black;
 	}
 
-    @media screen and (min-width: 1500px){
-        .paddle_1 {
-            top: 300px;
-            left: 30rem;
-            background-color: #FE414D;
-	    }
-        .paddle_2 {
-            top: 300px;
-            right: 30rem;
-            background-color: black;
-        }
-    }
-
 	.title-score{
         display: flex;
         justify-content: center
@@ -300,6 +287,15 @@
     let dy;
     let dxd;
     let dyd;
+
+
+    // paddles always start in the right place
+    paddle_1.style.left = board_coord.left + 15+ 'px';
+    paddle_1_coord = paddle_1.getBoundingClientRect();
+
+    paddle_2.style.left= board_coord.right -35+ 'px';
+    paddle_2_coord = paddle_2.getBoundingClientRect();
+
 
     document.addEventListener('keydown', (e) => {
     if (e.key == 'Enter') {
