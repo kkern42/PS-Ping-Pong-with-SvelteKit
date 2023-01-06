@@ -12,6 +12,7 @@
     import ashley from '$lib/images/jacob-alden-hero.png';
     import jd from '$lib/images/gallery/IMG_1.jpeg';
 
+
     let slideIndex = 0;
 
     let images = [
@@ -25,14 +26,12 @@
         }, 
     ]
 
-    for (let i = 1; i < 23; i++) {
-        images.push({
-            date: "",
-            picture: "./src/lib/images/gallery/IMG_" + i + ".jpeg"
-        })
-    }
-
-
+    // for (let i = 1; i < 23; i++) {
+    //     images.push({
+    //         date: "",
+    //         picture: "./src/lib/images/gallery/IMG_" + i + ".jpeg"
+    //     })
+    // }
 
     function changeToThumbNail(/** @type {number} */ i){
         slideIndex = i;
