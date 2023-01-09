@@ -10,7 +10,7 @@
     import heroImage from '$lib/images/hero-imagespg.png';
     import kevin from '$lib/images/hero_image_ashley_ayush2.png';
     import ashley from '$lib/images/jacob-alden-hero.png';
-    import jd from '$lib/images/gallery/IMG_1.jpeg';
+
 
 
     let slideIndex = 0;
