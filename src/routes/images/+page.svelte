@@ -74,9 +74,9 @@
 
 <div class="images">
     <div>
-        <h1>The Gallery</h1>
+        <h1>Tournament Images</h1>
         <p>Checkout the gallery, its beautiful</p>
-        <p>Reach out to Ashley Kim, JD Pablo or Kevin Kern to get your picture taken</p>
+        <p>Dont see yourself, join the <a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8" target="">PS PP NYC</a> Teams channel so you don't miss the next tournament!</p>
       </div>
 
     <div class="thumbnails">
@@ -133,15 +133,16 @@
        /* 250px */
        flex: 0 0 15rem;
        justify-content: center;
-       border: 4px solid #eee;
+       /* border: 4px solid #eee; */
         padding: 0.5rem;
         background-color: #f9f9f9;
 
     }
 
     .img-container img{
-       object-fit: contain;
+       object-fit: cover;
        aspect-ratio: 8/7;
+       height: auto;
     }
 
 
