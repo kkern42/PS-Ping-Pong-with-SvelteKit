@@ -20,12 +20,14 @@
 	 */
     let images = []
 
-    for (let i = 0; i < 24; i++) {
+  
+        for (let i = 0; i < 24; i++) {
         images.push({
             date: "",
             picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_" + i +".jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24"
         })
     }
+    
 
     function changeToThumbNail(/** @type {number} */ i){
         slideIndex = i;
@@ -68,6 +70,7 @@
         pop = false;
     }
 
+
 </script>
 
 <!-- <Hero title={"Photo Gallery"} subContent={'JD needs to take more pics'} imageRef={heroImage}/> -->
@@ -75,8 +78,8 @@
 <div class="images">
     <div>
         <h1>Tournament Images</h1>
-        <p>Checkout the gallery, its beautiful</p>
-        <p>Dont see yourself, join the <a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8" target="">PS PP NYC</a> Teams channel so you don't miss the next tournament!</p>
+        <p>Checkout pictures from the 375 Hudson 9th Floor Ping Pong Table</p>
+        <p>Dont see yourself, join the <a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8" style="color:#FE414D">PS PP NYC</a> Teams channel so you don't miss the next tournament!</p>
       </div>
 
     <div class="thumbnails">
@@ -145,12 +148,10 @@
        height: auto;
     }
 
-
     .prev{
         cursor: pointer;  
         /* transition: 0.6s ease; */
         border-radius: 3px 3px 3px 3px;
-        
     }
 
     .next {
@@ -162,43 +163,49 @@
     .popup{
         position: fixed; /* Stay in place */
         z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
+        padding-top: 65px; /* Location of the box */
+        padding-bottom: 300px;
         left: 0;
         top: 0;
         width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
+        height:100%;
+       overflow: scroll;
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
 
     .popup-content {
-        background-color: #fefefe;
+        /* background-color: #fefefe; */
         margin: auto;
         padding: 20px;
-        width:37%
+        width:80%;
     }
 
     .popup-img-container{
        display: flex; 
        justify-content: center;
+       
     }
 
     .popup-img-container img{
-        object-fit: contain;
-       aspect-ratio: 15/14;
+        border: 10px solid white;
+       width: 60%;
+       background-color: #f9f9f9;
     }
 
     .close {
-        color: #aaaaaa;
-        font-size: 28px;
+        color: white;
+        font-size: 50px;
         float: right;
         font-weight: bold;
+        padding:.1rem;
+        
+        
     }
 
     .close:hover,
     .close:focus {
-        color: #000;
+        color: darkgray;
         text-decoration: none;
         cursor: pointer;
     }

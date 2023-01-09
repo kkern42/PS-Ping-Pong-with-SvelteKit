@@ -13,23 +13,26 @@
 
 		{key:"2",
 		question: "What tier should I be in?",
-		answer: "Some answer"},
+		answer: "Tiers are based off your prior ping pong experince and your past experince playing stick sports"},
 
 		{key:"3",
 		question: "What are the rules?",
-		answer: "Some answer"},
+		answer: "Its pretty straight foward, winners serves more thought out answer to be posted soon"},
 
 		{key:"4",
 		question: "How many games do I play?",
-		answer: "Some answer"},
+		answer: "On average players play about 4 games across 3 weeks"},
 
 		{key:"5",
 		question: "What is double elimination?",
-		answer: "Some answer"},
+		answer: "You are allowed to loose twice before you are knocked out of the losers bracket. If you lose a game in the torurnmanet you will be entered into the losers bracket which if you get through you will play the winner of the winners bracket for the championship. If you loose in the losers bracket you are out."},
 
 		{key:"6",
 		question: "Who can I contact about scheduling issues?",
-		answer: "Some answer"},
+		answer: "Ping Ashley Kim, JD Pablo or Kevin kern"},
+		{key:"7",
+		question: "Whos the best player in the tournament?",
+		answer: "Come on you know we can't answer that..."},
 
 
 	]
@@ -38,37 +41,49 @@
 
 </script>
 
-<Accordion>
-	{#each questions as question}
-	<AccordionItem key={question.key}>
-		<div slot='header' class='header'>
-			<!-- <img src={item.img} alt="Cover"/> -->
-			<div>
-				<p>{ question.question }</p>
+<div class="faq">
+	<h1>FAQ</h1>
+	<pre><div style="padding: 0 1rem 0 1rem;">Find the answers to all your burning questions</div></pre>
+
+	<Accordion>
+		{#each questions as question}
+		<AccordionItem key={question.key}>
+			<div slot='header' class='header'>
+				<!-- <img src={item.img} alt="Cover"/> -->
+				<div>
+					<p>{ question.question }</p>
+				</div>
 			</div>
-		</div>
+			
+			<p slot='body' class='body'>
+				{ question.answer }
+			</p>
+		</AccordionItem>
 		
-		<p slot='body' class='body'>
-			{ question.answer }
-		</p>
-	</AccordionItem>
-	
-  {/each}
-</Accordion>
+	{/each}
+	</Accordion>
+</div>
 
 <style>
+
+	.faq{
+		min-height: 20rem;
+		max-width: 120rem;
+		margin: 0 auto;
+		padding: 4rem 6rem 4rem 6rem;
+      	text-align: center;
+    }
 	
 	:global(.accordion){
 		margin: 0 auto;
 		padding-right: 6rem;
 		padding-left: 6rem;
-		padding-top: 4rem;
-		padding-bottom:4rem;
+		padding-top: .5rem;
       	text-align: center;
     }
 
 	:global(.accordion-item) {
-		margin: 1rem; 
+		margin: 2rem; 
 		border-bottom: 1px solid rgb(100, 120, 140);
 	}
 
@@ -89,5 +104,20 @@
 		margin: 0;
 		font-size: 18px;
 	}
+
+	pre{
+		display: flex;
+		justify-content: center;
+		
+	}
+
+	pre:before,
+    pre:after {
+		content: "";
+		flex: 1 1;
+		border-bottom: 1px solid #000;
+		margin: auto;
+		
+    }
 		
 </style>
