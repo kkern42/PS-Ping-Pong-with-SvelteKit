@@ -15,23 +15,17 @@
 
     let slideIndex = 0;
 
-    let images = [
-        {
-            date: "",
-            picture: jd,
-        },  
-        {
-            date: "",
-            picture: ashley,
-        }, 
-    ]
+    /**
+	 * @type {any[]}
+	 */
+    let images = []
 
-    // for (let i = 1; i < 23; i++) {
-    //     images.push({
-    //         date: "",
-    //         picture: "./src/lib/images/gallery/IMG_" + i + ".jpeg"
-    //     })
-    // }
+    for (let i = 1; i < 23; i++) {
+        images.push({
+            date: "",
+            picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_" + i +".jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24"
+        })
+    }
 
     function changeToThumbNail(/** @type {number} */ i){
         slideIndex = i;
@@ -99,7 +93,9 @@
             <div class="popup-content">
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <span class="close" on:click="{()=>closeImage()}">&times;</span>
-                <img src={displayImage} alt="ping pong dipalsyed"/> 
+                <div class="popup-img-container">
+                    <img src={displayImage} alt="ping pong dipalsyed"/>
+                </div> 
             </div>
         </div>
     {/if}
@@ -134,9 +130,12 @@
 
     .img-container{
        display: flex; 
-       flex: 0 0 250px;
+       /* 250px */
+       flex: 0 0 15rem;
        justify-content: center;
-       padding: .5rem;
+       border: 4px solid #eee;
+        padding: 0.5rem;
+        background-color: #f9f9f9;
 
     }
 
@@ -176,7 +175,17 @@
         background-color: #fefefe;
         margin: auto;
         padding: 20px;
-        width: 35%;
+        width:37%
+    }
+
+    .popup-img-container{
+       display: flex; 
+       justify-content: center;
+    }
+
+    .popup-img-container img{
+        object-fit: contain;
+       aspect-ratio: 15/14;
     }
 
     .close {
