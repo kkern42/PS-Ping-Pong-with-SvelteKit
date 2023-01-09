@@ -20,7 +20,7 @@
 	 */
     let images = []
 
-    for (let i = 0; i < 23; i++) {
+    for (let i = 0; i < 24; i++) {
         images.push({
             date: "",
             picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_" + i +".jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24"
