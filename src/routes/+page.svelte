@@ -75,16 +75,17 @@
     padding: 1.5em;
     /* animation */
     will-change: transform,opacity;
-    animation: fade-in-up-key .75s forwards
+    animation: fade-in-up-key .75s forwards;
+    transition: .5s;
   }
 
   .read-the-docs {
     color: #888;
   }
 
-  /* .logo:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  } */
+  .logo:hover {
+    filter: drop-shadow(0 0 .5em #ff3e00aa);
+  }
   .app{
     z-index: 2;
   }

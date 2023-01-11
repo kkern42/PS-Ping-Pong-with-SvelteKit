@@ -80,11 +80,13 @@
 
 	.name{
 		margin: 1rem 0 0 0;
-		transition: .1s;
+		transition: .6s ease;
+		transition-delay: .3s;
 	}
 
 	.name:hover{
 		cursor: pointer;
+		transform: rotate(360deg);
 		font-weight: 800;
 	}
 

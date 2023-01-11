@@ -126,11 +126,6 @@
 		width:100%;
 	}
 
-    button{
-        color: white;
-        background-color: black;
-    }
-
     .img-container{
        display: flex; 
        /* 250px */
@@ -146,18 +141,6 @@
        object-fit: cover;
        aspect-ratio: 8/7;
        height: auto;
-    }
-
-    .prev{
-        cursor: pointer;  
-        /* transition: 0.6s ease; */
-        border-radius: 3px 3px 3px 3px;
-    }
-
-    .next {
-        cursor: pointer;
-        /* transition: 0.6s ease; */
-        border-radius: 3px 3px 3px 3px;
     }
 
     .popup{
@@ -198,9 +181,7 @@
         font-size: 50px;
         float: right;
         font-weight: bold;
-        padding:.1rem;
-        
-        
+        padding:.1rem; 
     }
 
     .close:hover,

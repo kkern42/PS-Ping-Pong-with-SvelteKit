@@ -94,7 +94,17 @@
         background-color: rgb(248, 248, 248);
         border: .1rem solid darkgray;
         margin-left: .5rem;
+        transition: .5s;
+        transition-delay: .3s;
     }
+
+    button:hover {
+        border-width: .15em;
+        /* border-color: black; */
+        /* color:white; */
+        /* font-weight: bold; */
+        /* background-color: darkgrey; */
+  }
 
     input:focus,
     input:focus-visible {
@@ -109,6 +119,7 @@
         height: 42px;
         font-size: 14px;
         width: 60%;
+        
     }
 
     .post{

@@ -199,7 +199,7 @@
             <h2 class="message"> Press Enter to Play</h2>
            
         </div>
-        <p style="text-align: center; font-size: 10px;">Use the W and S keys to move the left paddle and the Up and Down arrow to move the right</p>
+        <p style="text-align: center; font-size: 10px;">Use the W and S keys to move the left paddle and the up and down arrows to move the right</p>
         <pre><div style="padding: 0 1rem 0 1rem;" class="score">Score: 000000</div></pre>
         <div class="board">
             <div class='ball'>
