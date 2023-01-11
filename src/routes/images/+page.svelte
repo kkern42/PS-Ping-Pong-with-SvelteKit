@@ -105,7 +105,6 @@
 </div>
 
 <style>
-    
     .thumbnails{
         display: flex;
         flex-wrap: wrap;
@@ -190,5 +189,4 @@
         text-decoration: none;
         cursor: pointer;
     }
-
 </style>

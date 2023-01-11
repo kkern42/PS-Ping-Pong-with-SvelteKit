@@ -20,8 +20,9 @@
 	<a class:active={$page.url.pathname.startsWith('/about')} href="/about" on:click="{() => switchToResponsive()}"><i class="fa fa-fw fa-newspaper" ></i> About</a> 
 	<a class:active={$page.url.pathname.startsWith('/FAQ')} href="/FAQ" on:click="{() => switchToResponsive()}"><i class="fa fa-fw fa-question-circle"></i> FAQ</a> 
 	<a class:active={$page.url.pathname.startsWith('/images')} href="/images" on:click="{() => switchToResponsive()}"><i class="fa fa-fw fa-images"></i> Images</a> 
+	<!-- svelte-ignore a11y-click-events-have-key-events -->
+	<!-- svelte-ignore a11y-missing-attribute -->
 	<a on:click="{() => {window.location.href="https://ps-ping-pong.netlify.app/pong"}}"><i class="fa fa-fw fa-table-tennis"></i> Pong</a> 
-
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a class="icon" on:click="{() => switchToResponsive()}">

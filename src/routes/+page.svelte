@@ -89,11 +89,4 @@
   .app{
     z-index: 2;
   }
-  /* .dec{
-   position: absolute;
-    z-index: 0;
-    width: 100%;
-    top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);}
 </style>

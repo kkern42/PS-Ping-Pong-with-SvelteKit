@@ -75,6 +75,4 @@
         will-change: transform,opacity;
         animation: fade-in-up-key .75s forwards;
     }
-        
-    
 </style>
