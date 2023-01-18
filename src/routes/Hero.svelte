@@ -24,7 +24,7 @@
 
 <style>
     .hero_container{
-        padding-top: 3.5rem;
+        padding-top: 3rem;
         text-align: center;
         display: flex;
         flex-direction: row;
@@ -59,6 +59,7 @@
     /* everything 720 and below */
     @media screen and (max-width: 720px) {
         .hero-text {
+            
             /* text-align: center; */
             padding-right: 6rem;
             padding-left: 6rem;
@@ -69,7 +70,7 @@
 
     .logo {
         height: 8rem;
-        padding: 2rem  1.5rem 1.5rem 1.5rem;
+        padding: 2.5rem  1.5rem 1.5rem 1.5rem;
         will-change: filter;
         /* animation */
         will-change: transform,opacity;
