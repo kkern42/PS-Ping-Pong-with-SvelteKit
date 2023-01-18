@@ -33,8 +33,6 @@
 		{key:"7",
 		question: "Whos the best player in the tournament?",
 		answer: "Come on you know we can't answer that..."},
-
-
 	]
 
 
@@ -76,13 +74,13 @@
 	
 	:global(.accordion){
 		margin: 0 auto;
-		padding-right: 6rem;
-		padding-left: 6rem;
+		padding-right: 0;
 		padding-top: .5rem;
       	text-align: center;
     }
 
 	:global(.accordion-item) {
+		text-align: left;
 		margin: 2rem; 
 		border-bottom: 1px solid rgb(100, 120, 140);
 	}
@@ -118,6 +116,23 @@
 		border-bottom: 1px solid #000;
 		margin: auto;
 		
+    }
+
+	@media screen and (max-width: 500px) {
+       .faq{
+		padding: 4rem 2rem 4rem 2rem;
+		text-align: center;
+	   }
+
+	   :global(.accordion){
+		padding-right: 0rem;
+		
+    }
+    }
+
+    @media screen and (max-width: 1000px) {
+        
+        
     }
 		
 </style>
