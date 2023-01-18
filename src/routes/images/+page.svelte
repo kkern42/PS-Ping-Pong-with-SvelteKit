@@ -189,4 +189,19 @@
         text-decoration: none;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 500px) {
+        .images{
+            padding: 5.5rem 3rem 4rem 3rem;
+        }
+        .img-container{
+            flex: 0 0 22rem;
+        }
+        .popup-img-container img{
+        
+       width: 100%;
+      
+    }
+    }
+    
 </style>
