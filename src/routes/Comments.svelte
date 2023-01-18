@@ -98,10 +98,6 @@
         transition-delay: .3s;
     }
 
-    button:hover {
-        border-width: .15em;
-    }
-
     input:focus,
     input:focus-visible {
 	    outline: 3px auto darkgray;

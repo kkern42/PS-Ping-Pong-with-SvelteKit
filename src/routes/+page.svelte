@@ -57,7 +57,7 @@
     <p class="read-the-docs">Reach out to Ashley Kim, JD Pablo or Kevin Kern to learn more</p>
   </div>
 
-  <button on:click="{changeImage}" style="background-color: light-grey;">{buttonText}</button>
+  <button on:click="{changeImage}" style="background-color: #f9f9f9;">{buttonText}</button>
   
   {#each brackets as bracket, index}
     <div class="bracket">
