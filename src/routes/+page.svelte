@@ -66,6 +66,7 @@
     </div>
     {#if index < (brackets.length-1)}<hr/>{/if}
   {/each}
+  
   <Comments />
 </div>
 

@@ -34,15 +34,11 @@
 		question: "Whos the best player in the tournament?",
 		answer: "Come on you know we can't answer that..."},
 	]
-
-
-
 </script>
 
 <div class="faq">
 	<h1>FAQ</h1>
 	<pre><div style="padding: 0 1rem 0 1rem;">Find the answers to all your burning questions</div></pre>
-
 	<Accordion>
 		{#each questions as question}
 		<AccordionItem key={question.key}>
@@ -63,7 +59,6 @@
 </div>
 
 <style>
-
 	.faq{
 		min-height: 20rem;
 		max-width: 120rem;
@@ -91,7 +86,6 @@
 		padding: 0.5em;
 	}
 	
-	
 	.header p {
 		font-size: 18px;
 		margin: 0;
@@ -106,7 +100,6 @@
 	pre{
 		display: flex;
 		justify-content: center;
-		
 	}
 
 	pre:before,
@@ -115,24 +108,16 @@
 		flex: 1 1;
 		border-bottom: 1px solid #000;
 		margin: auto;
-		
     }
 
 	@media screen and (max-width: 500px) {
        .faq{
-		padding: 4rem 2rem 4rem 2rem;
-		text-align: center;
+			padding: 4rem 2rem 4rem 2rem;
+			text-align: center;
 	   }
 
 	   :global(.accordion){
-		padding-right: 0rem;
-		
-    }
-    }
-
-    @media screen and (max-width: 1000px) {
-        
-        
-    }
-		
+			padding-right: 0rem;
+    	}
+    }		
 </style>

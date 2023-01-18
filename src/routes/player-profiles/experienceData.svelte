@@ -2,28 +2,26 @@
   import nia from '$lib/images/profile-pictures/nia.png';
   import jacob from '$lib/images/profile-pictures/jacob.png';
 
-  import icon from '$lib/images/profile-pictures/icon.png';
-
   export let experience = [
     {
-        name: "Nia Washington",
-        grip: "Handshake",
-        record: "7-2",
-        strength: "Consistent smart play",
-        weakness: "Crowd noise",
-        picture: nia,
-        reverse: "",
-        margin: "",
+      name: "Nia Washington",
+      grip: "Handshake",
+      record: "7-2",
+      strength: "Consistent smart play",
+      weakness: "Crowd noise",
+      picture: nia,
+      reverse: "",
+      margin: "",
     }, 
     {
-        name: "Jacob Lagmay",
-        grip: "Handshake",
-        record: "2-4",
-        strength: "Pressure makes diamonds",
-        weakness: "Being ahead",
-        picture: jacob,
-        reverse: "",
-        margin: "",
+      name: "Jacob Lagmay",
+      grip: "Handshake",
+      record: "2-4",
+      strength: "Pressure makes diamonds",
+      weakness: "Being ahead",
+      picture: jacob,
+      reverse: "",
+      margin: "",
     },
     {
       name: "Jenn He",

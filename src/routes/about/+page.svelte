@@ -31,7 +31,6 @@
 			marcel: "https://marcel.ai/kevinkern"
 		},
 	];
-
 </script>
 
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -39,14 +38,12 @@
 <div class="about">
 	<h1>About Us</h1>
 	<pre><div style="padding: 0 1rem 0 1rem;">Meet the PS Ping Pong Commitee</div></pre>
-
 	<p>
 		The PS Ping Pong Commitee (PSPPC) is the governing body for all Publicis Sapient Ping Pong events. 
 		The PSPPC was born out of a need to have a little more fun in the office :)
 		The PSPPF is responsible for the organization of office wide competitions, including quaterly Office Ping Pong Championships that has continued since the Summer of 2022.
 		The PSPPC oversee all rules and regulations pretaining to competitions held in office. 
 	</p>
-
 	<p>Remember to have fun!</p>
 
 	<h2>Team Members</h2>
@@ -64,7 +61,6 @@
 </div>
 
 <style>
-	
 	.about{
 		min-height: 20rem;
 		max-width: 120rem;
@@ -138,5 +134,4 @@
 		margin: auto;
 		
     }
-	
 </style>

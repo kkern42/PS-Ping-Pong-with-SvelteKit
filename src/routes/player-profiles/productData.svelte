@@ -1,8 +1,6 @@
 <script context="module">
-
   import sandy from '$lib/images/profile-pictures/sandy2.png';
   import alden from '$lib/images/profile-pictures/alden.png';
-  import icon from '$lib/images/profile-pictures/icon.png';
 
   export let product = [
     {

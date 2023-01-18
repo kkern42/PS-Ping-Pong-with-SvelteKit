@@ -10,7 +10,6 @@
   import nia from '$lib/images/profile-pictures/nia.png';
   import reece from '$lib/images/profile-pictures/Reece.png';
 
-  // add feild that has the bracket links, and red undelrine indicates clickable 
   let champions = [
     {
       date: "Summer 2022",
@@ -40,7 +39,6 @@
       link: "https://marcel.ai/reeceberhardt",
     }, 
   ];
-
 </script>
   
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.0/css/all.css">
@@ -50,11 +48,9 @@
 
   {#each champions as champion, index}
     <div class="champ-container">
-
       <div class="img-container">
         <img alt="PS PP Champion {champion.winner}" src={champion.picture} class="profile-picture"/>
       </div>
-
       <div class="info">
         <h2>{champion.date} - Tier {champion.tier} Bracket</h2>
         <div class="champDetails">
@@ -63,14 +59,12 @@
           <p>Final Score: {champion.score}</p>
         </div>
       </div>
-
     </div>
     {#if index < (champions.length-1)}<hr/>{/if}
   {/each}
 </div>
   
 <style>
-
   .champs{
     margin: 0 auto;
     padding: 2rem 6rem 4rem 6rem;

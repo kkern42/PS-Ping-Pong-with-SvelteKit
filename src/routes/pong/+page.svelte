@@ -9,185 +9,183 @@
 	<title>PONG</title>
 
 	<style>
-    .pong-page{
-        max-width:1300px;
-        margin-left: auto;
-		margin-right: auto;
-    }
-
-	.pong-container{
-        padding: 4rem 8.5rem .5rem 8.5rem;
-    }
-
-	.board {
-        padding: 3rem 5rem 20rem 5rem;
-		background-color: lightgrey;
-        border: 3px solid black;
-        background-size: cover;
-	}
-
-	.ball {
-		height: 30px;
-		width: 30px;
-		border-radius: 50%;
-		position: fixed;
-		top: 300px;
-		left: calc(50% - 15px);
-	}
-
-	.ball_effect {
-		height: 100%;
-		width: 100%;
-		border-radius: 100px;
-		box-shadow: inset 0 0 20px orange;
-	}
-
-	.paddle {
-		height: 100px;
-		width: 18px;
-		position: fixed;
-	}
-
-	.paddle_1 {
-        top: 300px;
-		left: 10.5rem;
-		background-color: #FE414D;
-	}
-
-	.paddle_2 {
-        top: 300px;
-		right: 10.5rem;
-		background-color: black;
-	}
-
-	.title-score{
-        text-align: center;
-    }
-
-    .title-score h2{
-        margin-bottom: .25rem;
-        margin-top: .5rem;
-        font-size: 2rem;
-    }
-
-    pre{
-		display: flex;
-		justify-content: center;
-        margin: 0;
-        margin-top: .25rem;
-        margin-bottom: .5rem;
-		
-	}
-
-	pre:before,
-    pre:after {
-        /* makes it show up */
-		content: "";
-		flex: 1 1;
-		border-bottom: 1px solid darkgray;
-	    background-color: darkgrey;
-		margin: auto;
-		
-    }
-
-    .mobile{
-        padding: 4rem 6rem 5rem 6rem;
-        display:none;
-    }
-
-    @media screen and (max-width: 500px) {
-		.pong-container{
-            display: none;
+        .pong-page{
+            max-width:1300px;
+            margin-left: auto;
+            margin-right: auto;
         }
+
+        .pong-container{
+            padding: 4rem 8.5rem .5rem 8.5rem;
+        }
+
+        .board {
+            padding: 3rem 5rem 20rem 5rem;
+            background-color: lightgrey;
+            border: 3px solid black;
+            background-size: cover;
+        }
+
+        .ball {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            position: fixed;
+            top: 300px;
+            left: calc(50% - 15px);
+        }
+
+        .ball_effect {
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            box-shadow: inset 0 0 20px orange;
+        }
+
+        .paddle {
+            height: 100px;
+            width: 18px;
+            position: fixed;
+        }
+
+        .paddle_1 {
+            top: 300px;
+            left: 10.5rem;
+            background-color: #FE414D;
+        }
+
+        .paddle_2 {
+            top: 300px;
+            right: 10.5rem;
+            background-color: black;
+        }
+
+        .title-score{
+            text-align: center;
+        }
+
+        .title-score h2{
+            margin-bottom: .25rem;
+            margin-top: .5rem;
+            font-size: 2rem;
+        }
+
+        pre{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            margin-top: .25rem;
+            margin-bottom: .5rem;
+        }
+
+        pre:before,
+        pre:after {
+            /* makes it show up */
+            content: "";
+            flex: 1 1;
+            border-bottom: 1px solid darkgray;
+            background-color: darkgrey;
+            margin: auto;
+        }
+
         .mobile{
-            display: block;
-            padding: 4rem 8.5rem 5rem 8.5rem;
+            padding: 4rem 6rem 5rem 6rem;
+            display:none;
         }
-        a {
-	        text-decoration: underline;
+
+        @media screen and (max-width: 500px) {
+            .pong-container{
+                display: none;
+            }
+            .mobile{
+                display: block;
+                padding: 4rem 8.5rem 5rem 8.5rem;
+            }
+            a {
+                text-decoration: underline;
+            }
         }
-	}
 
-    /* modal styling */
-    .modal {
-        display: none; 
-        position: fixed;
-        z-index: 1; 
-        padding-top: 5rem; 
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
+        /* modal styling */
+        .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1; 
+            padding-top: 5rem; 
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
 
-    .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 1rem 1.5rem 1rem 1.5rem;
-        border: 1px solid #888;
-        width: 50%;
-    }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 1rem 1.5rem 1rem 1.5rem;
+            border: 1px solid #888;
+            width: 50%;
+        }
 
-    .inputs{
-        display: flex;
-        align-items: start;
-        margin-bottom: 1rem;
-    }
+        .inputs{
+            display: flex;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
 
-    .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-    h4{
-        margin: 0 0 1rem 0;
-    }
+        h4{
+            margin: 0 0 1rem 0;
+        }
 
-    h3{
-        margin: 1rem 0 .5rem 0;
-    }
+        h3{
+            margin: 1rem 0 .5rem 0;
+        }
 
-    hr{
-        border: 1px solid lightgray;
-	    background-color: lightgrey;
-    }
+        hr{
+            border: 1px solid lightgray;
+            background-color: lightgrey;
+        }
 
-    input:focus,
-    input:focus-visible {
-	    outline: 3px auto darkgray;
-    }
+        input:focus,
+        input:focus-visible {
+            outline: 3px auto darkgray;
+        }
 
-    input{
-        margin: 0 0 .5rem 0;
-        padding-left: .5rem;
-        border: 1px solid #bfc1c4;
-        border-radius: 4px;
-        height:42px;
-        font-size: 14px;
-        width: 60%;
-    }
+        input{
+            margin: 0 0 .5rem 0;
+            padding-left: .5rem;
+            border: 1px solid #bfc1c4;
+            border-radius: 4px;
+            height:42px;
+            font-size: 14px;
+            width: 60%;
+        }
 
-  
-    button{
-        border: .1rem solid darkgray;
-        margin-left: .5rem;
-    }
+    
+        button{
+            border: .1rem solid darkgray;
+            margin-left: .5rem;
+        }
 
-    p{
-        margin: 0;
-    }
+        p{
+            margin: 0;
+        }
 	</style>
 </head>
 	
@@ -196,7 +194,6 @@
     <div class="pong-container">
         <div class="title-score">
             <h2 class="message"> Press Enter to Play</h2>
-           
         </div>
         <p style="text-align: center; font-size: 10px;">Use the W and S keys to move the left paddle and the up and down arrows to move the right</p>
         <pre><div style="padding: 0 1rem 0 1rem;" class="score">Score: 000000</div></pre>
@@ -209,7 +206,7 @@
         </div>
     </div>
     
-    <!-- Error Screen -->
+    <!-- error Screen -->
     <div class="mobile">
         <h2>OOPS!</h2>
         <p>The content you are looking for is not available in in this viewport.</p>
@@ -257,7 +254,6 @@
     let yourScore = document.querySelector('.yourscore');
     let list = document.getElementById("leaderboard");
 
-
     // fixed values
     var scorer;
     var seconds = 0
@@ -290,7 +286,6 @@
     let dxd;
     let dyd;
 
-
     // paddles always start in the right place
     paddle_1.style.left = board_coord.left + 25+ 'px';
     paddle_1_coord = paddle_1.getBoundingClientRect();
@@ -298,43 +293,42 @@
     paddle_2.style.left= board_coord.right -45+ 'px';
     paddle_2_coord = paddle_2.getBoundingClientRect();
 
-
     document.addEventListener('keydown', (e) => {
-    if (e.key == 'Enter') {
-        gameState = gameState == 'start' ? 'play' : 'start';
-        if (gameState == 'play') {
-            message.innerHTML = 'Game Started';
-            scoreTimer();
-            seconds = 0;
-            score.innerHTML = "Score: 000000"
-            requestAnimationFrame(() => {
-                dx = Math.floor(Math.random() * ballSpeed) + 3;
-                dy = Math.floor(Math.random() * ballSpeed) + 3;
-                dxd = Math.floor(Math.random() * ballSpeed);
-                dyd = Math.floor(Math.random() * ballSpeed);
-                moveBall(dx, dy, dxd, dyd);
-            });
+        if (e.key == 'Enter') {
+            gameState = gameState == 'start' ? 'play' : 'start';
+            if (gameState == 'play') {
+                message.innerHTML = 'Game Started';
+                scoreTimer();
+                seconds = 0;
+                score.innerHTML = "Score: 000000"
+                requestAnimationFrame(() => {
+                    dx = Math.floor(Math.random() * ballSpeed) + 3;
+                    dy = Math.floor(Math.random() * ballSpeed) + 3;
+                    dxd = Math.floor(Math.random() * ballSpeed);
+                    dyd = Math.floor(Math.random() * ballSpeed);
+                    moveBall(dx, dy, dxd, dyd);
+                });
+            }
         }
-    }
 
-    if (gameState == 'play') {
-        if(e.key == 'w') {
-            paddle_1.style.top = Math.max(board_coord.top, paddle_1_coord.top - window.innerHeight * ballVelo) + 'px';
-            paddle_1_coord = paddle_1.getBoundingClientRect();
+        if (gameState == 'play') {
+            if(e.key == 'w') {
+                paddle_1.style.top = Math.max(board_coord.top, paddle_1_coord.top - window.innerHeight * ballVelo) + 'px';
+                paddle_1_coord = paddle_1.getBoundingClientRect();
+            }
+            if(e.key == 's') {
+                paddle_1.style.top = Math.min(board_coord.bottom - paddle_common.height, paddle_1_coord.top + window.innerHeight * ballVelo) + 'px';
+                paddle_1_coord = paddle_1.getBoundingClientRect();
+            }
+            if(e.key == 'ArrowUp') {
+                paddle_2.style.top = Math.max(board_coord.top, paddle_2_coord.top - window.innerHeight * ballVelo) + 'px';
+                paddle_2_coord = paddle_2.getBoundingClientRect();
+            }
+            if(e.key == 'ArrowDown') {
+                paddle_2.style.top = Math.min(board_coord.bottom - paddle_common.height, paddle_2_coord.top + window.innerHeight * ballVelo) + 'px';
+                paddle_2_coord = paddle_2.getBoundingClientRect();
+            }
         }
-        if(e.key == 's') {
-            paddle_1.style.top = Math.min(board_coord.bottom - paddle_common.height, paddle_1_coord.top + window.innerHeight * ballVelo) + 'px';
-            paddle_1_coord = paddle_1.getBoundingClientRect();
-        }
-        if(e.key == 'ArrowUp') {
-            paddle_2.style.top = Math.max(board_coord.top, paddle_2_coord.top - window.innerHeight * ballVelo) + 'px';
-            paddle_2_coord = paddle_2.getBoundingClientRect();
-        }
-        if(e.key == 'ArrowDown') {
-            paddle_2.style.top = Math.min(board_coord.bottom - paddle_common.height, paddle_2_coord.top + window.innerHeight * ballVelo) + 'px';
-            paddle_2_coord = paddle_2.getBoundingClientRect();
-        }
-    }
     });
 
     function moveBall(dx, dy, dxd, dyd) {
@@ -351,14 +345,12 @@
             dxd = 1;
             dx = Math.floor(Math.random() * ballSpeed) + 3;
             dy = Math.floor(Math.random() * ballSpeed) + 3;
-            
         }
         //if hits right paddle/paddle 2
         if(ball_coord.right >= paddle_2_coord.left && ball_coord.top >= paddle_2_coord.top && ball_coord.bottom <= paddle_2_coord.bottom && ball_coord.left <= paddle_2_coord.right) {
             dxd = 0;
             dx = Math.floor(Math.random() * ballSpeed) + 3;
             dy = Math.floor(Math.random() * ballSpeed) + 3;
-            
         }
         //hits out of play
         if(ball_coord.left <= board_coord.left || ball_coord.right >= board_coord.right) {
