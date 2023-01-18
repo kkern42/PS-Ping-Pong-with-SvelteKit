@@ -54,7 +54,7 @@
     <div class="post">
         <input placeholder="Enter name" style="width: 15%; margin-right: .5rem; background-color: white;" bind:value="{commenter}" maxlength="15" />
         <input bind:value="{newComment}" placeholder="Post a comment..." style="background-color: white;" maxlength="120" /> 
-        <button on:click="{()=>setComment(newComment, commenter)}">Post</button>         
+        <button on:click="{()=>setComment(newComment, commenter)}" style="color: black">Post</button>         
     </div>
     <hr/>
     {#await promise}

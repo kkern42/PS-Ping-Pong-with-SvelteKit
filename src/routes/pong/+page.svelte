@@ -23,7 +23,6 @@
         padding: 3rem 5rem 20rem 5rem;
 		background-color: lightgrey;
         border: 3px solid black;
-        /* background-image: url("https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/pongtable.png?alt=media&token=2b72be57-aa10-4683-88ba-a3d9d539e252"); */
         background-size: cover;
 	}
 
