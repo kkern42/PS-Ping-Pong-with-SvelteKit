@@ -51,9 +51,9 @@
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
     <h4>Post a comment <i class="fas fa-pencil-alt"></i></h4>
-    <div class="post"> 
-        <input placeholder="Enter name" style="width: 15%; margin-right: .5rem;" bind:value="{commenter}" maxlength="15"/>
-        <input bind:value="{newComment}" placeholder="Post a comment..." maxlength="120" /> 
+    <div class="post">
+        <input placeholder="Enter name" style="width: 15%; margin-right: .5rem; background-color: white;" bind:value="{commenter}" maxlength="15" />
+        <input bind:value="{newComment}" placeholder="Post a comment..." style="background-color: white;" maxlength="120" /> 
         <button on:click="{()=>setComment(newComment, commenter)}">Post</button>         
     </div>
     <hr/>
