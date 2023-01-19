@@ -26,7 +26,6 @@
     psText = currText; 
   }
 
-
   let brackets = [
     {
       title: "Tier 1 Bracket - Fall 2022",
@@ -66,7 +65,7 @@
     </div>
     {#if index < (brackets.length-1)}<hr/>{/if}
   {/each}
-  
+
   <Comments />
 </div>
 
