@@ -107,7 +107,7 @@
       record: "1-4",
       strength: "TBD",
       weakness: "tbd",
-      picture: icon,
+      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FJulia%20B..png?alt=media&token=fabc2aa9-35ec-4cd6-b912-9c074111888c",
       reverse: "",
       margin: "",
     },  
