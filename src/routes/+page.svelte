@@ -26,15 +26,18 @@
     psText = currText; 
   }
 
+  /**
+	 * @type {any[]}
+	 */
   let brackets = [
-    {
-      title: "Tier 1 Bracket - Fall 2022",
-      src: "https://brackethq.com/b/k4n6/embed/"
-    },
-    {
-      title: "Tier 2 Bracket - Fall 2022",
-      src: "https://brackethq.com/b/x6n6/embed/"
-    },
+    // {
+    //   title: "Tier 1 Bracket - Fall 2022",
+    //   src: "https://brackethq.com/b/k4n6/embed/"
+    // },
+    // {
+    //   title: "Tier 2 Bracket - Fall 2022",
+    //   src: "https://brackethq.com/b/x6n6/embed/"
+    // },
 
   ];
 </script>
@@ -52,11 +55,15 @@
       </a>
     </div>
     <h1>PS {title} Tournament</h1>
-    <p>Check out <a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8" target=""><u>PS PP NYC</u></a>, the official Teams channel for NYC PING PONG!</p>
-    <p class="read-the-docs">Reach out to Ashley Kim, JD Pablo or Kevin Kern to learn more</p>
+    <p>Sign up <a href="https://forms.gle/ZJPPoKWaxWMr86Yx6" target=""><u>HERE</u></a> to be a part of the Winter Tournament!</p>
+    <p class="read-the-docs">Reach out to Ashley Kim, JD Pablo or Kevin Kern to learn more or join our <a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8"><u>Teams channel </u></a></p>
   </div>
 
   <button on:click="{changeImage}" style="background-color: #f9f9f9; color: black;">{buttonText}</button>
+
+  <div class="bracket">
+    <iframe width="700" height="393.75" src="https://www.youtube.com/embed/lD2PfWganbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
   
   {#each brackets as bracket, index}
     <div class="bracket">
