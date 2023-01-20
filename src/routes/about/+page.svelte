@@ -31,6 +31,30 @@
 			marcel: "https://marcel.ai/kevinkern"
 		},
 	];
+
+	let interns = [
+		{
+			name: "Alden Aspiras",
+			picture: ashley,
+			title: "Videography Intern",
+			job: "Associate Product Manager",
+			marcel: "https://marcel.ai/ashleykim"
+		},
+		{
+			name: "Jenn He",
+			picture: jd,
+			title: "Design Intern",
+			job: "Associate Experience Designer",
+			marcel: "https://marcel.ai/jdpablo"
+		},
+		{
+			name: "Ensar Dogrusoz",
+			picture: kevin,
+			title: "Logistics Mangement Intern",
+			job: "Associate Software Engineer",
+			marcel: "https://marcel.ai/kevinkern"
+		},
+	];
 </script>
 
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -59,6 +83,17 @@
 		{/each}
 	</div>
 	<!-- add interns but with saller images and text -->
+	<div class="team">
+		{#each interns as intern}
+			<div class="profile">
+				<img alt="PS PP Commitee Member" src={intern.picture} class="profile-picture"/>
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<p on:click="{() => {window.location.href=intern.marcel}}" style=" margin: 1rem 0 0 0;"><span style="border-bottom: 2px solid #FE414D;">{@html intern.name }</span></p>
+				<div class="title">{intern.title}</div>
+				<div style="font-size: .8rem">{intern.job}</div>
+			</div>
+		{/each}
+	</div>
 </div>
 
 <style>
