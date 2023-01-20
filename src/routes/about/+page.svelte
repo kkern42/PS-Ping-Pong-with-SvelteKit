@@ -58,6 +58,7 @@
 			</div>
 		{/each}
 	</div>
+	<!-- add interns but with saller images and text -->
 </div>
 
 <style>
