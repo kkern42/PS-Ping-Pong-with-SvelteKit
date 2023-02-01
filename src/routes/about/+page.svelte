@@ -33,24 +33,24 @@
 	let interns = [
 		{
 			name: "Jenn He",
-			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FjennIntern.jpeg?alt=media&token=b6ddf7bc-2265-4363-9ae8-ec4f54910fb2",
+			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FjennIntern.jpeg?alt=media&token=f137da32-32ac-43c2-b0df-8c2d824dc581",
 			title: "Design Intern",
 			job: "Associate Experience Designer",
-			marcel: "https://marcel.ai/jdpablo"
+			marcel: "https://marcel.ai/app/person/8065868"
 		},
 		{
 			name: "Ensar Dogrusoz",
 			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FensarIntern.jpeg?alt=media&token=fc4db587-2fbe-4d65-8966-474c3a758a60",
 			title: "Logistics Management Intern",
 			job: "Associate Software Engineer",
-			marcel: "https://marcel.ai/kevinkern"
+			marcel: "https://marcel.ai/ensardogrusoz"
 		},
 		{
 			name: "Alden Aspiras",
 			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FaldenIntern.jpeg?alt=media&token=03808f1f-959d-43c9-9734-7add1d5315cf",
 			title: "Videography Intern",
 			job: "Associate Product Manager",
-			marcel: "https://marcel.ai/ashleykim"
+			marcel: "https://marcel.ai/aldenaspiras"
 		},
 	];
 </script>
@@ -86,7 +86,7 @@
 			<div class="profile">
 				<img alt="PS PP Commitee Member" src={intern.picture} class="profile-picture"/>
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<p on:click="{() => {window.location.href=intern.marcel}}" style=" margin: 1rem 0 0 0;"><span style="border-bottom: 2px solid #FE414D;">{@html intern.name }</span></p>
+				<p on:click="{() => {window.location.href=intern.marcel}}" style=" margin: 1rem 0 0 0; cursor: grab;"><span style="border-bottom: 2px solid #FE414D;">{@html intern.name }</span></p>
 				<div class="title">{intern.title}</div>
 				<div style="font-size: .8rem">{intern.job}</div>
 			</div>
