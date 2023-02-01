@@ -27,7 +27,7 @@
       name: "Jenn He",
       grip: "Penhold",
       record: "3-2",
-      strength: "Adapts to other peoples play style",
+      strength: "Adapts to other people's play style",
       weakness: "No backhand",
       picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fjennhe.png?alt=media&token=5ac37a50-2813-4d73-927a-fbcba6a0c1c2",
       reverse: "",
@@ -35,7 +35,7 @@
     }, 
     {
       name: "Katie So",
-      grip: "handshake",
+      grip: "Handshake",
       record: "1-2",
       strength: "Fast shots",
       weakness: "Playing JD",
@@ -45,7 +45,7 @@
     }, 
     {
       name: "Deanna Sagaris",
-      grip: "handshake",
+      grip: "Handshake",
       record: "0-2",
       strength: "TBD",
       weakness: "TBD",
@@ -55,7 +55,7 @@
     }, 
     {
       name: "Sahana Sripadanna",
-      grip: "handshake",
+      grip: "Handshake",
       record: "0-4",
       strength: "Passionate about the game",
       weakness: "Long rallies",
@@ -65,7 +65,7 @@
     }, 
     {
       name: "Sophie Reck",
-      grip: "handshake",
+      grip: "Handshake",
       record: "6-4",
       strength: "Talking while playing",
       weakness: "Playing Nia",
@@ -75,7 +75,7 @@
     }, 
     {
       name: "Sasha Taran",
-      grip: "handshake",
+      grip: "Handshake",
       record: "1-2",
       strength: "Longevity",
       weakness: "Has to get back to work",
