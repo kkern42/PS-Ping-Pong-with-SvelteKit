@@ -4,12 +4,13 @@
     export let subContent = "";
     export let imageRef = "";
     export let footer = "";
+    export let videoLink = "";
 </script>
 
 <div class="hero_container">
     <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({imageRef})">
         <div class="hero-text">
-            <a href="https://brackethq.com/b/k4n6/" > 
+            <a href={videoLink} > 
                 <img src={PSPPLogo} class="logo" alt="PS PP Logo" />
             </a>
             <h1 style="font-size: 3rem;"> {@html title} </h1>
@@ -23,7 +24,7 @@
 
 <style>
     .hero_container{
-        padding-top: 3.5rem;
+        padding-top: 3rem;
         text-align: center;
         display: flex;
         flex-direction: row;
@@ -58,6 +59,7 @@
     /* everything 720 and below */
     @media screen and (max-width: 720px) {
         .hero-text {
+            
             /* text-align: center; */
             padding-right: 6rem;
             padding-left: 6rem;
@@ -68,12 +70,10 @@
 
     .logo {
         height: 8rem;
-        padding: 2rem  1.5rem 1.5rem 1.5rem;
+        padding: 2.5rem  1.5rem 1.5rem 1.5rem;
         will-change: filter;
         /* animation */
         will-change: transform,opacity;
         animation: fade-in-up-key .75s forwards;
     }
-        
-    
 </style>

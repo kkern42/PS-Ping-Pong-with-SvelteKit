@@ -1,4 +1,4 @@
-# create-svelte
+# Getting the project running
 
 To get started after cloning rep:
 

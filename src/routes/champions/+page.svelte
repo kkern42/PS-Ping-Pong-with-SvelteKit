@@ -10,7 +10,6 @@
   import nia from '$lib/images/profile-pictures/nia.png';
   import reece from '$lib/images/profile-pictures/Reece.png';
 
-  // add feild that has the bracket links, and red undelrine indicates clickable 
   let champions = [
     {
       date: "Summer 2022",
@@ -19,6 +18,7 @@
       runnerUp: "Ashley Kim",
       score: "21-19",
       picture: sandy,
+      link: "https://marcel.ai/app/person/8028767",
     },  
     {
       date: "Fall 2022",
@@ -27,6 +27,7 @@
       runnerUp: "Sophie Reck",
       score: "21-18",
       picture: nia,
+      link: "https://marcel.ai/niawashington",
     }, 
     {
       date: "Fall 2022",
@@ -35,39 +36,35 @@
       runnerUp: "Ayush Saxena",
       score: "21-18",
       picture: reece,
+      link: "https://marcel.ai/reeceberhardt",
     }, 
   ];
-
 </script>
   
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.0/css/all.css">
-<Hero title={"Champions"} subContent={'*Champions are crowned after winning their bracket tier.'} imageRef={heroImage} footer={"Since September 2022"}/>
+<Hero title={"Champions"} subContent={'It always seems impossible, until it is done'} imageRef={heroImage} videoLink={"https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Videos%2FIMG_7671%20(1).mp4?alt=media&token=96c1e905-6587-41be-b355-38dd8480f3fe"}/>
 
 <div class="champs">
 
   {#each champions as champion, index}
     <div class="champ-container">
-
       <div class="img-container">
         <img alt="PS PP Champion {champion.winner}" src={champion.picture} class="profile-picture"/>
       </div>
-
       <div class="info">
-        <h2><span style="border-bottom: 4px solid #FE414D">{champion.date} </span>- Tier {champion.tier} Bracket</h2>
+        <h2>{champion.date} - Tier {champion.tier} Bracket</h2>
         <div class="champDetails">
-          <h3><i class="fas fa-trophy"></i> Winner: <span>{champion.winner}</span></h3>
+          <h3><i class="fas fa-trophy"></i> Winner: <span style="border-bottom: 4px solid #FE414D"><a href={champion.link} style="text-decoration: none; color: #213547">{champion.winner}</a></span></h3>
           <h4><i class="fa fa-fw fa-sad-tear"></i> Runner Up: {champion.runnerUp}</h4>
           <p>Final Score: {champion.score}</p>
         </div>
       </div>
-
     </div>
     {#if index < (champions.length-1)}<hr/>{/if}
   {/each}
 </div>
   
 <style>
-
   .champs{
     margin: 0 auto;
     padding: 2rem 6rem 4rem 6rem;
@@ -138,9 +135,8 @@
     }
 
     .img-container{
-        
-        /* max-width: 15rem; */
-        width: 100%;
+      /* max-width: 15rem; */
+      width: 100%;
     }
 
     img{

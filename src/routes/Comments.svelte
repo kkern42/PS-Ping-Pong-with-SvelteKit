@@ -19,6 +19,7 @@
         .then(response => response.json())
         .then(data => {
             comments = data.response;
+            console.log(data.response)
         }).catch(error => {
             console.log(error);
             return [];
@@ -36,36 +37,31 @@
         });
         promise = getComments();
         newComment = "";
+        commenter = ""
     };
     
-
-    const setCommenter = async() => {
-			commenter = "";
-		};
-
     onMount(async () => {
         promise = getComments();
     });
 
 </script>
 
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.0/css/all.css">
 
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
     <h4>Post a comment <i class="fas fa-pencil-alt"></i></h4>
-    <div class="post"> 
-        <input placeholder="Enter name" style="width: 15%; margin-right: .5rem;" bind:value="{commenter}" maxlength="15"/>
-        <input bind:value="{newComment}" placeholder="Post a comment..." maxlength="120" /> 
-        <button on:click="{()=>setComment(newComment, commenter)}"
-                on:click={setCommenter} >Post</button>
+    <div class="post">
+        <input placeholder="Enter name" style="width: 15%; margin-right: .5rem; background-color: white;" bind:value="{commenter}" maxlength="15" />
+        <input bind:value="{newComment}" placeholder="Post a comment..." style="background-color: white;" maxlength="120" /> 
+        <button on:click="{()=>setComment(newComment, commenter)}" style="color: black">Post</button>         
     </div>
     <hr/>
     {#await promise}
-	    <p>... Loading ...</p>
+    <i class="fa fa-sync-alt fa-spin" style="font-size:24px"></i>
     {:then data}
         {#each comments as comment}
-        <div><span style="font-weight: 600; font-size: 17px;">{comment.author}</span> {comment.date}</div>
+        <div><span style="font-weight: 600; font-size: 17px;">{comment.author}</span> - {comment.date}</div>
         <p>{comment.comment}</p>
         {/each}
     {:catch error}
@@ -95,19 +91,17 @@
     }
 
     button{
-        background-color: lightgray;
+        background-color: rgb(248, 248, 248);
+        border: .1rem solid darkgray;
         margin-left: .5rem;
-    }
-
-    button:hover{
-        border: 3px solid darkgray;
+        transition: .5s;
+        transition-delay: .3s;
     }
 
     input:focus,
     input:focus-visible {
 	    outline: 3px auto darkgray;
     }
-
 
     input{
         margin: 0 0 .5rem 0;
@@ -136,6 +130,4 @@
 		border-bottom: 2px solid darkgray;
 		margin: auto;
     }
-	
-    
 </style>
