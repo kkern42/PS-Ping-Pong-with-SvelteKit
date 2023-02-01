@@ -21,7 +21,7 @@
 		answer: "Older player serves first. Matches are played to 21 points and you must win by at \
 		least 2 points. If you win your point, you serve next. You get 2 chances to serve. A serve is\
 		considered a let if it touches the net and this attempt does not count in your 2 chances. \
-		Read the full set of rules " + '<a href="">HERE</a>'},
+		Read the full set of rules " + '<a href="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Ping%20Pong%20Tournament%20Rules.pdf?alt=media&token=8e79d99e-a7dd-4b0c-a33f-0a06bfa0f95c">HERE</a>'},
 
 		{key:"4",
 		question: "How many games do I play?",
