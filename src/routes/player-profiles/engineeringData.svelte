@@ -137,7 +137,7 @@
       name: "Anthony Pizzulli",
       grip: "Handshake",
       record: "0-4",
-      strength: "Winning for other people while talking to Reece",
+      strength: "Being an angry nerd",
       weakness: "Gluten",
       picture: anthony,
       reverse: "",
