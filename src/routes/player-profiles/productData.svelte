@@ -15,9 +15,9 @@
     }, 
     {
       name: "Alden Aspiras",
-      grip: "handshake",
+      grip: "Handshake",
       record: "2-2",
-      strength: "Content Creation",
+      strength: "Content creation",
       weakness: "Tired from traveling 2hrs to office",
       picture: alden,
       reverse: "",
@@ -25,7 +25,7 @@
     }, 
     {
       name: "Ruby Zheng",
-      grip: "handshake",
+      grip: "Handshake",
       record: "1-2",
       strength: "The fits",
       weakness: "When Sophia plays for her",
@@ -35,7 +35,7 @@
     }, 
     {
       name: "Sophia Huang",
-      grip: "handshake",
+      grip: "Handshake",
       record: "1-2",
       strength: "Showing up",
       weakness: "When Ruby plays for her",

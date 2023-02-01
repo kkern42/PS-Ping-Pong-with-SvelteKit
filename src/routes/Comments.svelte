@@ -39,6 +39,9 @@
         newComment = "";
         commenter = ""
     };
+
+    const onKeyPress = e => {
+            if (e.charCode === 13) setComment(newComment, commenter)};
     
     onMount(async () => {
         promise = getComments();
@@ -53,7 +56,7 @@
     <h4>Post a comment <i class="fas fa-pencil-alt"></i></h4>
     <div class="post">
         <input placeholder="Enter name" style="width: 15%; margin-right: .5rem; background-color: white;" bind:value="{commenter}" maxlength="15" />
-        <input bind:value="{newComment}" placeholder="Post a comment..." style="background-color: white;" maxlength="120" /> 
+        <input on:keypress= {onKeyPress} bind:value="{newComment}" placeholder="Post a comment..." style="background-color: white;" maxlength="120" /> 
         <button on:click="{()=>setComment(newComment, commenter)}" style="color: black">Post</button>         
     </div>
     <hr/>
