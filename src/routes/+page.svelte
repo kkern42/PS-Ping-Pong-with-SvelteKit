@@ -62,7 +62,7 @@
   <button on:click="{changeImage}" style="background-color: #f9f9f9; color: black;">{buttonText}</button>
 
   <div class="bracket">
-    <iframe width="700" height="393.75" src="https://www.youtube.com/embed/lD2PfWganbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="75%" height="393.75" src="https://www.youtube.com/embed/XKc6qn7CbXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   
   {#each brackets as bracket, index}

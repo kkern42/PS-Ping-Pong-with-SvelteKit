@@ -4,28 +4,26 @@
 </svelte:head>
 
 <script>
-	import kevin from '$lib/images/profile-pictures/kevincat.png';
 	import ashley from '$lib/images//profile-pictures/ashley.png';
-	import jd from '$lib/images//profile-pictures/jdfit.png';
 
 	let members = [
 		{
 			name: "Ashley Kim",
-			picture: ashley,
+			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fashleycomittee.png?alt=media&token=0f9af003-8208-4dce-84dd-d30129ee1b1d",
 			title: "PS PP Commitee Member",
 			job: "Associate Software Engineer",
 			marcel: "https://marcel.ai/ashleykim"
 		},
 		{
 			name: "JD Pablo",
-			picture: jd,
+			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fjdcomittee.jpeg?alt=media&token=910764e3-05fc-4026-800a-ceef371b6843",
 			title: "PS PP Commitee Member",
 			job: "Associate Software Engineer",
 			marcel: "https://marcel.ai/jdpablo"
 		},
 		{
 			name: "Kevin Kern",
-			picture: kevin,
+			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fkevincomittee.jpeg?alt=media&token=581f2c4f-ba3e-4cde-a9be-31ee7fb73020",
 			title: "PS PP Commitee Member",
 			job: "Associate Software Engineer",
 			marcel: "https://marcel.ai/kevinkern"
@@ -34,25 +32,25 @@
 
 	let interns = [
 		{
-			name: "Alden Aspiras",
-			picture: ashley,
-			title: "Videography Intern",
-			job: "Associate Product Manager",
-			marcel: "https://marcel.ai/ashleykim"
-		},
-		{
 			name: "Jenn He",
-			picture: jd,
+			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FjennIntern.jpeg?alt=media&token=b6ddf7bc-2265-4363-9ae8-ec4f54910fb2",
 			title: "Design Intern",
 			job: "Associate Experience Designer",
 			marcel: "https://marcel.ai/jdpablo"
 		},
 		{
 			name: "Ensar Dogrusoz",
-			picture: kevin,
-			title: "Logistics Mangement Intern",
+			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FensarIntern.jpeg?alt=media&token=fc4db587-2fbe-4d65-8966-474c3a758a60",
+			title: "Logistics Management Intern",
 			job: "Associate Software Engineer",
 			marcel: "https://marcel.ai/kevinkern"
+		},
+		{
+			name: "Alden Aspiras",
+			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FaldenIntern.jpeg?alt=media&token=03808f1f-959d-43c9-9734-7add1d5315cf",
+			title: "Videography Intern",
+			job: "Associate Product Manager",
+			marcel: "https://marcel.ai/ashleykim"
 		},
 	];
 </script>
