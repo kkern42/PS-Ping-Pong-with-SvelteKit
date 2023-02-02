@@ -139,7 +139,7 @@
       record: "0-4",
       strength: "Being an angry nerd",
       weakness: "Gluten",
-      picture: anthony,
+      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fanthony.png?alt=media&token=28beba24-bcdd-4ab4-b44b-2b48ebe46d20",
       reverse: "",
       margin: "",
     },
