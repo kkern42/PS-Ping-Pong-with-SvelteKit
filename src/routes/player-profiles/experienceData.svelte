@@ -72,7 +72,17 @@
       picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FSophie%20Reck.png?alt=media&token=f0166229-c5d2-4e7c-9bdf-803fe996058b",
       reverse: "",
       margin: "",
-    }, 
+    },
+    {
+      name: "Avery Klurfield",
+      grip: "handshake",
+      record: "2-2",
+      strength: "Giving career advice during games",
+      weakness: "Meetings all day",
+      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FaveryK.jpeg?alt=media&token=6f2bc9a8-e298-49e1-a3b0-8302748b9eec",
+      reverse: "",
+      margin: "",
+    },
     {
       name: "Sasha Taran",
       grip: "Handshake",
