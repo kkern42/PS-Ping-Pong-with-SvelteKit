@@ -117,13 +117,15 @@
 
 	@media screen and (max-width: 1000px) {
 		iframe {
-			width:100%
+			width:100%;
+			height: 300px;
 		}		
 	}
 
 	@media screen and (max-width: 500px) {
 		iframe {
-			width:100%
+			width:100%;
+			height: 275px;
 		}
 	}
 </style>

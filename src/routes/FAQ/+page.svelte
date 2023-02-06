@@ -7,7 +7,7 @@
 			question: 'How do I join a tournament?',
 			answer:
 				'Fill out ' +
-				'<a href="https://docs.google.com/forms/d/e/1FAIpQLScKCQGcEkON_31BSsaIYkFdUgEPsbu-NLFUGR_HQY0PS2vgLA/viewform">this Google Form</a>' +
+				'<a href="https://docs.google.com/forms/d/e/1FAIpQLScKCQGcEkON_31BSsaIYkFdUgEPsbu-NLFUGR_HQY0PS2vgLA/viewform"><u>this Google Form</u></a>' +
 				' by EOD 2/10!'
 		},
 
@@ -27,7 +27,7 @@
 		least 2 points. If you win your point, you serve next. You get 2 chances to serve. A serve is\
 		considered a let if it touches the net and this attempt does not count as one of your 2 chances. \
 		Read the full set of rules ' +
-				'<a href="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Ping%20Pong%20Tournament%20Rules.pdf?alt=media&token=8e79d99e-a7dd-4b0c-a33f-0a06bfa0f95c">HERE</a>.'
+				'<a href="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Ping%20Pong%20Tournament%20Rules.pdf?alt=media&token=8e79d99e-a7dd-4b0c-a33f-0a06bfa0f95c"><u>HERE</u></a>.'
 		},
 
 		{
