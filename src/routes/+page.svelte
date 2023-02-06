@@ -61,10 +61,10 @@
 			the Winter Tournament!
 		</p>
 		<p class="read-the-docs">
-			Reach out to Ashley Kim, JD Pablo or Kevin Kern to learn more or join our <a
-				href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8"
-				><u>Teams channel</u></a
-			>.
+			Reach out to Ashley Kim, JD Pablo or Kevin Kern to learn more or join our
+			<a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8">
+				<u>Teams channel</u>.
+			</a>
 		</p>
 	</div>
 
@@ -112,5 +112,18 @@
 	}
 	.app {
 		z-index: 2;
+	}
+
+
+	@media screen and (max-width: 1000px) {
+		iframe {
+			width:100%
+		}		
+	}
+
+	@media screen and (max-width: 500px) {
+		iframe {
+			width:100%
+		}
 	}
 </style>
