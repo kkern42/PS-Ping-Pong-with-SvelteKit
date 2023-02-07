@@ -91,11 +91,12 @@
 	{#if pop}
 		<div class="popup">
 			<div class="popup-content">
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<span class="close" on:click={() => closeImage()}>&times;</span>				
 				<div class="popup-img-container">
-					<button on:click={() => changePopUpBackward()}> <i class="fas fa-caret-left"></i></button>
+					<button on:click={() => changePopUpBackward()} style="border-radius: 4px 0 0 4px"> <i class="fas fa-angle-left"></i></button>
 					<img src={displayImage} alt="ping pong dipalsyed" />
-					<button on:click={() => changePopUpForward()}> <i class="fas fa-caret-right"></i></button>
+					<button on:click={() => changePopUpForward()} style="border-radius: 0 4px 4px 0"> <i class="fas fa-angle-right"></i></button>
 				</div>
 			</div>
 		</div>
@@ -166,7 +167,7 @@
 
 	.popup-img-container button{
 		border-radius: 0px;
-		padding: 1rem;
+		padding: .8rem;
 		font-size: 40px;
 	}
 
