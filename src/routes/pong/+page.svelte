@@ -290,6 +290,9 @@
 		let dxd;
 		let dyd;
 
+		//prevent from starting game while popup is up
+		let popUpAway = true; 
+
 		// paddles always start in the right place
 		paddle_1.style.left = board_coord.left + 25 + 'px';
 		paddle_1_coord = paddle_1.getBoundingClientRect();
@@ -298,7 +301,7 @@
 		paddle_2_coord = paddle_2.getBoundingClientRect();
 
 		document.addEventListener('keydown', (e) => {
-			if (e.key == 'Enter') {
+			if (e.key == 'Enter' && popUpAway) {
 				gameState = gameState == 'start' ? 'play' : 'start';
 				if (gameState == 'play') {
 					message.innerHTML = 'Game Started';
@@ -458,6 +461,7 @@
 				list.appendChild(li);
 			});
 
+			popUpAway = false; 
 			modal.style.display = 'block';
 			yourScore.innerHTML =
 				'Submit your score: ' + zeros.slice(seconds.toString().length) + seconds;
@@ -465,12 +469,14 @@
 
 		// closes modal when u click the x
 		span.onclick = function () {
+			popUpAway = true; 
 			modal.style.display = 'none';
 			removeChildern(list);
 		};
 
 		// closes modal when u click any where
 		window.onclick = function (event) {
+			popUpAway = true; 
 			if (event.target == modal) {
 				modal.style.display = 'none';
 				removeChildern(list);
