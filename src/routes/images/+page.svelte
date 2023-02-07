@@ -1,6 +1,6 @@
 <script>
 
-	let maxImages = 24; 
+	let maxImages = 38; 
 	let currIndex = 0;
 	/**
 	 * @type {any[]}
@@ -91,13 +91,11 @@
 	{#if pop}
 		<div class="popup">
 			<div class="popup-content">
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<span class="close" on:click={() => closeImage()}>&times;</span>
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<h2 on:click={() => changePopUpForward()}> foward </h2>
-				<h2 on:click={() => changePopUpBackward()}> back </h2>
+				<span class="close" on:click={() => closeImage()}>&times;</span>				
 				<div class="popup-img-container">
+					<button on:click={() => changePopUpBackward()}> <i class="fas fa-caret-left"></i></button>
 					<img src={displayImage} alt="ping pong dipalsyed" />
+					<button on:click={() => changePopUpForward()}> <i class="fas fa-caret-right"></i></button>
 				</div>
 			</div>
 		</div>
@@ -152,7 +150,7 @@
 		height: 100%;
 		overflow: scroll;
 		background-color: rgb(0, 0, 0); /* Fallback color */
-		background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+		background-color: rgba(0, 0, 0, 0.4); 
 	}
 
 	.popup-content {
@@ -164,6 +162,18 @@
 	.popup-img-container {
 		display: flex;
 		justify-content: center;
+	}
+
+	.popup-img-container button{
+		border-radius: 0px;
+		padding: 1rem;
+		font-size: 40px;
+	}
+
+	.popup-img-container button:hover{
+		background-color: lightgray;
+		transform: none;
+		border-color: lightgray;
 	}
 
 	.popup-img-container img {
