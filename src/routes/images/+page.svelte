@@ -1,9 +1,12 @@
 <script>
+
+	let maxImages = 24; 
+	let currIndex = 0;
 	/**
 	 * @type {any[]}
 	 */
 	let images = [];
-	for (let i = 0; i < 24; i++) {
+	for (let i = 0; i < maxImages; i++) {
 		images.push({
 			date: '',
 			picture:
@@ -15,14 +18,43 @@
 
 	let pop = false;
 	let displayImage = '';
-	const showImage = (/** @type {string} */ ref) => {
+	const showImage = ( /** @type {number} */ index) => {
 		pop = true;
-		displayImage = ref;
+		currIndex = index;
+		displayImage = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_' +
+				index +
+				'.jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24';
 	};
 
 	const closeImage = () => {
 		pop = false;
 	};
+
+	const changePopUpForward = () => {
+		if (currIndex + 1 > maxImages -1){
+			currIndex = 0;
+		}
+		else{
+			currIndex = currIndex + 1;
+		}
+		
+		displayImage = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_' +
+				currIndex +
+				'.jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24';
+	}
+
+	const changePopUpBackward = () => {
+		if (currIndex - 1 < 0){
+			currIndex = maxImages-1;
+		}
+		else{
+			currIndex = currIndex - 1;
+		}
+		
+		displayImage = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_' +
+				currIndex +
+				'.jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24';	
+	}
 </script>
 
 <svelte:head>
@@ -50,7 +82,7 @@
 					class="subImages"
 					src={image.picture}
 					alt={image.date}
-					on:click={() => showImage(image.picture)}
+					on:click={() => showImage(index)}
 				/>
 			</div>
 		{/each}
@@ -61,6 +93,9 @@
 			<div class="popup-content">
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<span class="close" on:click={() => closeImage()}>&times;</span>
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<h2 on:click={() => changePopUpForward()}> foward </h2>
+				<h2 on:click={() => changePopUpBackward()}> back </h2>
 				<div class="popup-img-container">
 					<img src={displayImage} alt="ping pong dipalsyed" />
 				</div>
