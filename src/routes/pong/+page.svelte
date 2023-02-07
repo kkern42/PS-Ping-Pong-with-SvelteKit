@@ -293,7 +293,7 @@
 		//prevent from starting game while popup is up
 		let popUpAway = true; 
 
-		// paddles always start in the right place
+		// paddles always start in the right place, it still off tho on this paddles
 		paddle_1.style.left = board_coord.left + 20 + 'px';
 		paddle_1_coord = paddle_1.getBoundingClientRect();
 
