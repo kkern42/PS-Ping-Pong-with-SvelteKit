@@ -294,10 +294,11 @@
 		let popUpAway = true; 
 
 		// paddles always start in the right place
-		paddle_1.style.left = board_coord.left + 25 + 'px';
+		paddle_1.style.left = board_coord.left + 20 + 'px';
 		paddle_1_coord = paddle_1.getBoundingClientRect();
 
-		paddle_2.style.left = board_coord.right - 45 + 'px';
+
+		paddle_2.style.left = board_coord.right - 50 + 'px';
 		paddle_2_coord = paddle_2.getBoundingClientRect();
 
 		document.addEventListener('keydown', (e) => {
