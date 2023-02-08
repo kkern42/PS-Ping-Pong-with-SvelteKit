@@ -4,18 +4,18 @@
 	import './styles.css';
 </script>
 
-<div >
+<div>
 	<Header />
 
 	<main>
 		<slot />
 	</main>
 
-	<Footer/>
+	<Footer />
 </div>
 
 <style>
-	main{
+	main {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 1600px;
