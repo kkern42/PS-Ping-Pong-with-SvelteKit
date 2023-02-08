@@ -1,6 +1,5 @@
 <script>
-
-	let maxImages = 38; 
+	let maxImages = 38;
 	let currIndex = 0;
 	/**
 	 * @type {any[]}
@@ -18,12 +17,13 @@
 
 	let pop = false;
 	let displayImage = '';
-	const showImage = ( /** @type {number} */ index) => {
+	const showImage = (/** @type {number} */ index) => {
 		pop = true;
 		currIndex = index;
-		displayImage = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_' +
-				index +
-				'.jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24';
+		displayImage =
+			'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_' +
+			index +
+			'.jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24';
 	};
 
 	const closeImage = () => {
@@ -31,30 +31,30 @@
 	};
 
 	const changePopUpForward = () => {
-		if (currIndex + 1 > maxImages -1){
+		if (currIndex + 1 > maxImages - 1) {
 			currIndex = 0;
-		}
-		else{
+		} else {
 			currIndex = currIndex + 1;
 		}
-		
-		displayImage = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_' +
-				currIndex +
-				'.jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24';
-	}
+
+		displayImage =
+			'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_' +
+			currIndex +
+			'.jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24';
+	};
 
 	const changePopUpBackward = () => {
-		if (currIndex - 1 < 0){
-			currIndex = maxImages-1;
-		}
-		else{
+		if (currIndex - 1 < 0) {
+			currIndex = maxImages - 1;
+		} else {
 			currIndex = currIndex - 1;
 		}
-		
-		displayImage = 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_' +
-				currIndex +
-				'.jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24';	
-	}
+
+		displayImage =
+			'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/gallery%2FIMG_' +
+			currIndex +
+			'.jpeg?alt=media&token=5b4f2e37-9dc3-41c6-bb5f-c54edbbb6b24';
+	};
 </script>
 
 <svelte:head>
@@ -92,11 +92,15 @@
 		<div class="popup">
 			<div class="popup-content">
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<span class="close" on:click={() => closeImage()}>&times;</span>				
+				<span class="close" on:click={() => closeImage()}>&times;</span>
 				<div class="popup-img-container">
-					<button on:click={() => changePopUpBackward()} style="border-radius: 4px 0 0 4px"> <i class="fas fa-angle-left"></i></button>
+					<button on:click={() => changePopUpBackward()} style="border-radius: 4px 0 0 4px">
+						<i class="fas fa-angle-left" /></button
+					>
 					<img src={displayImage} alt="ping pong dipalsyed" />
-					<button on:click={() => changePopUpForward()} style="border-radius: 0 4px 4px 0"> <i class="fas fa-angle-right"></i></button>
+					<button on:click={() => changePopUpForward()} style="border-radius: 0 4px 4px 0">
+						<i class="fas fa-angle-right" /></button
+					>
 				</div>
 			</div>
 		</div>
@@ -151,7 +155,7 @@
 		height: 100%;
 		overflow: scroll;
 		background-color: rgb(0, 0, 0); /* Fallback color */
-		background-color: rgba(0, 0, 0, 0.4); 
+		background-color: rgba(0, 0, 0, 0.4);
 	}
 
 	.popup-content {
@@ -165,13 +169,13 @@
 		justify-content: center;
 	}
 
-	.popup-img-container button{
+	.popup-img-container button {
 		border-radius: 0px;
-		padding: .8rem;
+		padding: 0.8rem;
 		font-size: 40px;
 	}
 
-	.popup-img-container button:hover{
+	.popup-img-container button:hover {
 		background-color: lightgray;
 		transform: none;
 		border-color: lightgray;
