@@ -67,10 +67,11 @@
 		<h1>Tournament Images</h1>
 		<p>Check out pictures from the 375 Hudson 9th floor ping pong table.</p>
 		<p>
-			Don't see yourself? Join the <a
-				href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8"
-				><u>PS PP NYC</u></a
-			> Teams channel so you don't miss the next tournament!
+			Don't see yourself? Join the 
+			<a href="https://teams.microsoft.com/l/team/19%3aCsAUOEEmMq-4OoZugqYP4h2HWJ051bI48z3DbSB7Ha81%40thread.tacv2/conversations?groupId=3e8b7471-35de-45b0-9a0b-b40cf83d6d83&tenantId=d52c9ea1-7c21-47b1-82a3-33a74b1f74b8">
+				<u>PS PP NYC</u>
+			</a> 
+				Teams channel so you don't miss the next tournament!
 		</p>
 	</div>
 
