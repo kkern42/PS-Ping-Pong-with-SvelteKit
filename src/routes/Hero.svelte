@@ -14,7 +14,8 @@
 	>
 		<div class="hero-text">
 			<a href={videoLink}>
-				<img src={PSPPLogo} class="logo" alt="PS PP Logo" />
+				<img src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Asset%202.svg?alt=media&token=d02c5718-a371-4ac2-877a-80339fff039d" class="logo" alt="PS PP Logo" />
+				<!-- <img src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Asset%201.svg?alt=media&token=c24fa46f-4756-4653-a532-9dc9d56a9bca" class="logo" alt="PS PP Logo" loading="lazy" /> -->
 			</a>
 			<h1 style="font-size: 3rem;">{@html title}</h1>
 			<div style="text-align: center;">

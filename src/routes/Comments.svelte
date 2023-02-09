@@ -50,7 +50,7 @@
 		commenter = '';
 	};
 
-	const onKeyPress = (e) => {
+	const onKeyPress = (/** @type {{ charCode: number; }} */ e) => {
 		if (e.charCode === 13) setComment(newComment, commenter);
 	};
 
