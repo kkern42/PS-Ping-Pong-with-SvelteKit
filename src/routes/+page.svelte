@@ -52,7 +52,7 @@
 			<a
 				href="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Videos%2FIMG_7657%20(2).mp4?alt=media&token=1ca064cf-acb9-4142-ad48-9c130699bb04"
 			>
-				<img src={imageLogo} class="logo" alt="PS PP Logo" loading="lazy" />
+				<img src="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Asset%201.svg?alt=media&token=c24fa46f-4756-4653-a532-9dc9d56a9bca" class="logo" alt="PS PP Logo" loading="lazy" />
 			</a>
 		</div>
 		<h1>PS {title} Tournament</h1>
