@@ -1,5 +1,5 @@
 <script>
-	let maxImages = 38;
+	let maxImages = 39;
 	let currIndex = 0;
 	/**
 	 * @type {any[]}
