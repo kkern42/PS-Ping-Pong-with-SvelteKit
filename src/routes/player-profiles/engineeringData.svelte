@@ -1,167 +1,173 @@
 <script context="module">
-  import kevin from '$lib/images/profile-pictures/kevintwocat.png';
-  import ashley from '$lib/images/profile-pictures/ashley.png';
-  import jd from '$lib/images/profile-pictures/jdfit.png';
-  import anthony from '$lib/images/profile-pictures/anthonyp.png';
-  import reece from '$lib/images/profile-pictures/reecep.png';
-  import sj from '$lib/images/profile-pictures/sj.png';
-  import ayush from '$lib/images/profile-pictures/ayush.png';
-  import kelly from '$lib/images/profile-pictures/kelly.png';
-  import keving from '$lib/images/profile-pictures/keving.png';
-  import ensar from '$lib/images/profile-pictures/ensar.png';
-  import leelee from '$lib/images/profile-pictures/leelee.png';
-  const icon = "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Ficon.png?alt=media&token=2964f19f-2ee2-49c8-aec7-88c22a36a8b7";
+	import kevin from '$lib/images/profile-pictures/kevintwocat.png';
+	import ashley from '$lib/images/profile-pictures/ashley.png';
+	import jd from '$lib/images/profile-pictures/jdfit.png';
+	import anthony from '$lib/images/profile-pictures/anthonyp.png';
+	import reece from '$lib/images/profile-pictures/reecep.png';
+	import sj from '$lib/images/profile-pictures/sj.png';
+	import ayush from '$lib/images/profile-pictures/ayush.png';
+	import kelly from '$lib/images/profile-pictures/kelly.png';
+	import keving from '$lib/images/profile-pictures/keving.png';
+	import ensar from '$lib/images/profile-pictures/ensar.png';
+	import leelee from '$lib/images/profile-pictures/leelee.png';
+	const icon =
+		'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Ficon.png?alt=media&token=2964f19f-2ee2-49c8-aec7-88c22a36a8b7';
 
-  export let engineering = [
-    {
-      name: "Ashley Kim",
-      grip: "Handshake",
-      record: "8-4",
-      strength: "Tennis forehand",
-      weakness: "Any hard hit shot",
-      picture: ashley,
-      reverse: "",
-      margin: "",
-    },  
-    {
-      name: "JD Pablo",
-      grip: "Penhold",
-      record: "4-4",
-      strength: "When he hits it really hard",
-      weakness: "Hitting the table & getting nervous",
-      picture: jd,
-      reverse: "",
-      margin: "",
-    }, 
-    {
-      name: "Kevin Kern",
-      grip: "Handshake",
-      record: "6-4",
-      strength: "Playing the angles",
-      weakness: "Top competition",
-      picture: kevin,
-      reverse: "",
-      margin: "",
-    }, 
-    {
-      name: "Ensar Dogrusoz",
-      grip: "Handshake",
-      record: "2-4",
-      strength: "Serving",
-      weakness: "Moving, he's like a statue",
-      picture: ensar,
-      reverse: "",
-      margin: "",
-    }, 
-    {
-      name: "Kevin Garlepp",
-      grip: "Handshake",
-      record: "2-4",
-      strength: "The will to win",
-      weakness: "Crumbling under the lights",
-      picture: keving,
-      reverse: "",
-      margin: "",
-    }, 
-    {
-      name: "Kelly Buchanan",
-      grip: "Handshake",
-      record: "2-4",
-      strength: "Strong returns",
-      weakness: "Having a lead (pressure makes coal)",
-      picture: kelly,
-      reverse: "",
-      margin: "",
-    }, 
-    {
-      name: "SJ Clarke",
-      grip: "Handshake",
-      record: "4-4",
-      strength: "Beating Kevin G.",
-      weakness: "John playing as Katie",
-      picture: sj,
-      reverse: "",
-      margin: "",
-    }, 
-    {
-      name: "Ayush Saxena",
-      grip: "Handshake",
-      record: "4-1",
-      strength: "Vast Experince",
-      weakness: "No warmup & Reece",
-      picture: ayush,
-      reverse: "",
-      margin: "",
-    }, 
-    {
-      name: "Tushar Arora",
-      grip: "Handshake",
-      record: "3-2",
-      strength: "Enthusiasm",
-      weakness: "Shots with spin",
-      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Ftushar.png?alt=media&token=64eb4088-41e8-479e-a615-661ef25ca30d",
-      reverse: "",
-      margin: "",
-    },
-    {
-      name: "Julia Buckley",
-      grip: "Handshake",
-      record: "1-4",
-      strength: "Being a capricorn",
-      weakness: "Lives in a basement",
-      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FJulia%20B..png?alt=media&token=fabc2aa9-35ec-4cd6-b912-9c074111888c",
-      reverse: "",
-      margin: "",
-    },  
-    {
-      name: "Reece Eberhardt",
-      grip: "Handshake",
-      record: "7-1",
-      strength: "Saying \"Reece\" after every point",
-      weakness: "Losing",
-      picture: reece,
-      reverse: "",
-      margin: "",
-    },
-    {
-      name: "Jasmyne Jean-Remy",
-      grip: "Handshake",
-      record: "0-2",
-      strength: "Coming into the office despite having no work",
-      weakness: "Commuting during the winter",
-      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fjasmyne.png?alt=media&token=99d4fb23-4143-405a-bb61-bd87ea9e7828",
-      reverse: "",
-      margin: "",
-    }, 
-    {
-      name: "Anthony Pizzulli",
-      grip: "Handshake",
-      record: "0-4",
-      strength: "Being an angry nerd",
-      weakness: "Gluten",
-      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fanthony.png?alt=media&token=28beba24-bcdd-4ab4-b44b-2b48ebe46d20",
-      reverse: "",
-      margin: "",
-    },
-    {
-      name: "Siddharth Bhawalkar",
-      grip: "Handshake",
-      record: "0-1",
-      strength: "Knowledge of table tennis",
-      weakness: "Adjusting to in-office rules",
-      picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsiddharth.png?alt=media&token=886d61f5-e0e0-4a4f-9fd5-32d12b08cc6b",
-      reverse: "",
-      margin: "",
-    }, 
-    {
-      name: "Leelee Liang",
-      grip: "Handshake",
-      record: "0-0",
-      strength: "Undefeated",
-      weakness: "Forgetting to sign up for the tournament",
-      picture: leelee,
-      reverse: "",
-      margin: "",
-    }, 
-  ];
+	export let engineering = [
+		{
+			name: 'Ashley Kim',
+			grip: 'Handshake',
+			record: '8-4',
+			strength: 'Tennis forehand',
+			weakness: 'Any hard-hit shot',
+			picture: ashley,
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'JD Pablo',
+			grip: 'Penhold',
+			record: '4-4',
+			strength: 'Scales with equipment quality',
+			weakness: 'Gets nervous',
+			picture: jd,
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Kevin Kern',
+			grip: 'Handshake',
+			record: '6-4',
+			strength: 'Playing the angles',
+			weakness: 'Top competition',
+			picture: kevin,
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Ensar Dogrusoz',
+			grip: 'Handshake',
+			record: '2-4',
+			strength: 'Serving',
+			weakness: "Moving -- he's like a statue",
+			picture: ensar,
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Kevin Garlepp',
+			grip: 'Handshake',
+			record: '2-4',
+			strength: 'The will to win',
+			weakness: 'Crumbling under the lights',
+			picture: keving,
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Kelly Buchanan',
+			grip: 'Handshake',
+			record: '2-4',
+			strength: 'Strong returns',
+			weakness: 'Having a lead (pressure makes coal)',
+			picture: kelly,
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'SJ Clarke',
+			grip: 'Handshake',
+			record: '4-4',
+			strength: 'Beating Kevin G.',
+			weakness: 'John playing as Katie',
+			picture: sj,
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Ayush Saxena',
+			grip: 'Handshake',
+			record: '4-1',
+			strength: 'Vast experience',
+			weakness: 'No warmup & Reece',
+			picture: ayush,
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Tushar Arora',
+			grip: 'Handshake',
+			record: '3-2',
+			strength: 'Enthusiasm',
+			weakness: 'Shots with spin',
+			picture:
+				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Ftushar.png?alt=media&token=64eb4088-41e8-479e-a615-661ef25ca30d',
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Julia Buckley',
+			grip: 'Handshake',
+			record: '1-4',
+			strength: 'Capricorn',
+			weakness: 'Lives in a basement',
+			picture:
+				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FJulia%20B..png?alt=media&token=fabc2aa9-35ec-4cd6-b912-9c074111888c',
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Reece Eberhardt',
+			grip: 'Handshake',
+			record: '7-1',
+			strength: 'Saying "Reece" after every point',
+			weakness: 'Losing',
+			picture: reece,
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Jasmyne Jean-Remy',
+			grip: 'Handshake',
+			record: '0-2',
+			strength: 'Coming into the office despite having no work',
+			weakness: 'Commuting during the winter',
+			picture:
+				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fjasmyne.png?alt=media&token=99d4fb23-4143-405a-bb61-bd87ea9e7828',
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Anthony Pizzulli',
+			grip: 'Handshake',
+			record: '0-4',
+			strength: 'Being an angry nerd',
+			weakness: 'Gluten',
+			picture:
+				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fanthony.png?alt=media&token=28beba24-bcdd-4ab4-b44b-2b48ebe46d20',
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Siddharth Bhawalkar',
+			grip: 'Handshake',
+			record: '0-1',
+			strength: 'Knowledge of table tennis',
+			weakness: 'Adjusting to in-office rules',
+			picture:
+				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsiddharth.png?alt=media&token=886d61f5-e0e0-4a4f-9fd5-32d12b08cc6b',
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Leelee Liang',
+			grip: 'Handshake',
+			record: '0-0',
+			strength: 'Undefeated',
+			weakness: 'Forgetting to sign up for the tournament',
+			picture: leelee,
+			reverse: '',
+			margin: ''
+		}
+	];
 </script>
