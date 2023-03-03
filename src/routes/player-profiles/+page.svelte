@@ -4,11 +4,13 @@
 	import { product } from './productData.svelte';
 	import { engineering } from './engineeringData.svelte';
 	import { experience } from './experienceData.svelte';
+	import {marketing } from './marketingData.svelte';
 
 	let players = engineering;
 	let enginClass = 'underline';
 	let prodClass = '';
 	let expClass = '';
+	let markClass = '';
 
 	/**
 	 * @param {{name: string;grip: string;record: string;strength: string;weakness: string;picture: string;margin: string;reverse: string;}[]} capList
@@ -21,14 +23,22 @@
 			enginClass = '';
 			prodClass = 'underline';
 			expClass = '';
+			markClass = '';
 		} else if (name == 'exp') {
 			enginClass = '';
 			prodClass = '';
 			expClass = 'underline';
-		} else {
+			markClass = '';
+		} else if (name == 'engin') {
 			enginClass = 'underline';
 			prodClass = '';
 			expClass = '';
+			markClass = '';
+		}else{
+			enginClass = '';
+			prodClass = '';
+			expClass = '';
+			markClass = 'underline';
 		}
 	}
 </script>
@@ -57,6 +67,10 @@
 		<h2 style="color: darkgrey; border-bottom: 4px solid white;">|</h2>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<h2 on:click={() => switchPLayers(experience, 'exp')} class={expClass}>Experience</h2>
+		<h2 style="color: darkgrey; border-bottom: 4px solid white;">|</h2>
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<h2 on:click={() => switchPLayers(marketing, 'mark')} class={markClass}>Marketing</h2>
+
 	</div>
 
 	<pre><div style="padding: 0 1rem 0 1rem;">Past Participants</div></pre>
@@ -78,7 +92,7 @@
 				</h2>
 				<div class="details">
 					<h3>Grip: {player.grip}</h3>
-					<p>Strength: {player.strength}</p>
+					<p>Strength: {@html player.strength}</p>
 					<p>Weakness: {player.weakness}</p>
 				</div>
 			</div>
@@ -118,6 +132,7 @@
 		display: flex;
 		justify-content: center;
 		padding: 1rem 0rem 1.5rem 0rem;
+		flex-wrap: wrap;
 	}
 
 	.capabilities h2 {

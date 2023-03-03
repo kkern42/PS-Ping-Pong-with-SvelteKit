@@ -99,6 +99,26 @@
 				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsasha.png?alt=media&token=a482843e-ba45-4543-a1ed-1e62dee5664a',
 			reverse: '',
 			margin: ''
-		}
+		},
+		{
+            name: 'Jim Gulsen',
+			grip: 'Handshake',
+			record: '0-0',
+			strength: 'Being the only PM in the tournament',
+			weakness: '',
+			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fjim.jpeg?alt=media&token=ab711634-d158-400f-aaea-d48c846df687',
+			reverse: '',
+			margin: ''
+        },
+		{
+            name: 'Omer Ercan',
+			grip: 'Handshake',
+			record: '0-0',
+			strength: 'Played ping pong overseas',
+			weakness: 'Forgetting to bring his own paddle',
+			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fomer.jpeg?alt=media&token=9b552e1e-69ab-41f5-8dc6-693641bf52ec',
+			reverse: '',
+			margin: ''
+        }
 	];
 </script>

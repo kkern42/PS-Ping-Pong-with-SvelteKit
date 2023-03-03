@@ -44,6 +44,16 @@
 				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsophia.png?alt=media&token=a89a3930-69c4-4936-8157-8499cdb4e580',
 			reverse: '',
 			margin: ''
-		}
+		},
+		{
+			name: 'Suresh Padhiary',
+			grip: 'Handshake',
+			record: '0-0',
+			strength: 'Humble and humorous',
+			weakness: '',
+			picture:'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsuresh.jpeg?alt=media&token=4e3bbb68-2d93-4467-8a7d-3349456746f1',
+			reverse: '',
+			margin: ''
+		},
 	];
 </script>
