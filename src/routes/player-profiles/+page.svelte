@@ -132,6 +132,7 @@
 		display: flex;
 		justify-content: center;
 		padding: 1rem 0rem 1.5rem 0rem;
+		flex-wrap: wrap;
 	}
 
 	.capabilities h2 {
