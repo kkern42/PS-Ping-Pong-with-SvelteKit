@@ -168,6 +168,46 @@
 			picture: leelee,
 			reverse: '',
 			margin: ''
-		}
+		},
+		{
+			name: 'Vinit Prabhu',
+			grip: 'Handshake',
+			record: '0-0',
+			strength: 'Spin serve',
+			weakness: 'Figuring out how to get into the building',
+			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fvinit.png?alt=media&token=18467270-9a10-4837-9871-4340d8061371',
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Etai Barash',
+			grip: 'Handshake',
+			record: '0-0',
+			strength: 'Backhand flick',
+			weakness: 'Has too much work',
+			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fetai.jpeg?alt=media&token=fca90b54-3085-4330-afef-ad9a5c031283',
+			reverse: '',
+			margin: ''
+		},
+		{
+			name: 'Samuel Niakan',
+			grip: 'Handshake',
+			record: '0-0',
+			strength: 'Always willing to try THAT shot',
+			weakness: 'Adhering to the PS PP serving rules',
+			picture: '',
+			reverse: '',
+			margin: ''
+		},
+		{
+            name: 'Krushi Patel',
+			grip: 'Handshake',
+			record: '0-0',
+			strength: 'Grip versatility',
+			weakness: 'something abt him being the only data person so he has to be grouped into the eng tab',
+			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fkrushi.jpeg?alt=media&token=392f2e3c-37e5-43ac-a461-bfb469217c59',
+			reverse: '',
+			margin: ''
+        }
 	];
 </script>
