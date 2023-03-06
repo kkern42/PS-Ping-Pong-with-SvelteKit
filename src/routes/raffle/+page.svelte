@@ -11,7 +11,25 @@
         {"name": "Deanna Sagaris", "entries": 1},
         {"name": "Anthony Pizzulli", "entries": 2},
         {"name": "Jim Gulsen", "entries": 4},
-        {"name": "Sahana Sripadanna", "entries": 1}
+        {"name": "Sahana Sripadanna", "entries": 1},
+        {"name": "Kevin Garlepp", "entries": 1},
+        {"name": "Jennifer He", "entries": 3},
+        {"name": "Kelly Buchanan", "entries": 2},
+        {"name": "Vinit Prabhu", "entries": 5},
+        {"name": "Suresh Padhiary", "entries": 1},
+        {"name": "Jacob Lagmay", "entries": 3},
+        {"name": "SJ Clarke", "entries": 2},
+        {"name": "Tushar Arora", "entries": 1},
+        {"name": "Omer Ecran", "entries": 5},
+        {"name": "Katie So", "entries": 1},
+        {"name": "Rufino Balayo", "entries": 4},
+        {"name": "Samuel Niakan", "entries": 4},
+        {"name": "Sandy Jiang", "entries": 5},
+        {"name": "Krushi Patel", "entries": 1},
+        {"name": "Etai Barash", "entries": 4},
+        {"name": "Alden Aspiras", "entries": 2},
+        {"name": "Ensar Dorgrusoz", "entries": 3},
+        {"name": "Elias Eberman", "entries": 1},
     ]
 
     }; 
@@ -103,14 +121,10 @@
     :global(.my-svelte-table tbody){
         border: solid black 1px; 
         border-collapse: collapse; 
-        background: pink; 
+        background: gainsboro; 
         text-align: center; 
         padding: 10px;
     }
 
-    /*
-    :global(.my-svelte-table thead){
-        background: lightblue; 
-    } */
 
 </style>
