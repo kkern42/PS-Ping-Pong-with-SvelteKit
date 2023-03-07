@@ -17,9 +17,9 @@
 		{
 			name: 'Ashley Kim',
 			grip: 'Handshake',
-			record: '8-4',
+			record: '11-5',
 			strength: 'Tennis forehand',
-			weakness: 'Any hard-hit shot',
+			weakness: 'The slanted floors and furniture surrounding the table',
 			picture: ashley,
 			reverse: '',
 			margin: ''
@@ -27,7 +27,7 @@
 		{
 			name: 'JD Pablo',
 			grip: 'Penhold',
-			record: '4-4',
+			record: '6-6',
 			strength: 'Scales with equipment quality',
 			weakness: 'Gets nervous',
 			picture: jd,
@@ -37,7 +37,7 @@
 		{
 			name: 'Kevin Kern',
 			grip: 'Handshake',
-			record: '6-4',
+			record: '7-6',
 			strength: 'Playing the angles',
 			weakness: 'Top competition',
 			picture: kevin,
@@ -47,7 +47,7 @@
 		{
 			name: 'Ensar Dogrusoz',
 			grip: 'Handshake',
-			record: '2-4',
+			record: '4-6',
 			strength: 'Serving',
 			weakness: "Moving -- he's like a statue",
 			picture: ensar,
@@ -57,7 +57,7 @@
 		{
 			name: 'Kevin Garlepp',
 			grip: 'Handshake',
-			record: '2-4',
+			record: '2-6',
 			strength: 'The will to win',
 			weakness: 'Crumbling under the lights',
 			picture: keving,
@@ -67,9 +67,9 @@
 		{
 			name: 'Kelly Buchanan',
 			grip: 'Handshake',
-			record: '2-4',
+			record: '3-6',
 			strength: 'Strong returns',
-			weakness: 'Having a lead (pressure makes coal)',
+			weakness: 'Unlucky draws',
 			picture: kelly,
 			reverse: '',
 			margin: ''
@@ -77,7 +77,7 @@
 		{
 			name: 'SJ Clarke',
 			grip: 'Handshake',
-			record: '4-4',
+			record: '4-6',
 			strength: 'Beating Kevin G.',
 			weakness: 'John playing as Katie',
 			picture: sj,
@@ -97,7 +97,7 @@
 		{
 			name: 'Tushar Arora',
 			grip: 'Handshake',
-			record: '3-2',
+			record: '3-4',
 			strength: 'Enthusiasm',
 			weakness: 'Shots with spin',
 			picture:
@@ -108,7 +108,7 @@
 		{
 			name: 'Julia Buckley',
 			grip: 'Handshake',
-			record: '1-4',
+			record: '4-5',
 			strength: 'Capricorn',
 			weakness: 'Lives in a basement',
 			picture:
@@ -140,7 +140,7 @@
 		{
 			name: 'Anthony Pizzulli',
 			grip: 'Handshake',
-			record: '0-4',
+			record: '0-6',
 			strength: 'Being an angry nerd',
 			weakness: 'Gluten',
 			picture:
@@ -172,7 +172,7 @@
 		{
 			name: 'Vinit Prabhu',
 			grip: 'Handshake',
-			record: '0-0',
+			record: '4-1',
 			strength: 'Spin serve',
 			weakness: 'Figuring out how to get into the building',
 			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fvinit.png?alt=media&token=18467270-9a10-4837-9871-4340d8061371',
@@ -182,7 +182,7 @@
 		{
 			name: 'Etai Barash',
 			grip: 'Handshake',
-			record: '0-0',
+			record: '3-2',
 			strength: 'Backhand flick',
 			weakness: 'Has too much work',
 			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fetai.jpeg?alt=media&token=fca90b54-3085-4330-afef-ad9a5c031283',
@@ -192,7 +192,7 @@
 		{
 			name: 'Samuel Niakan',
 			grip: 'Handshake',
-			record: '0-0',
+			record: '3-2',
 			strength: 'Always willing to try THAT shot',
 			weakness: 'Adhering to the PS PP serving rules',
 			picture: '',
@@ -202,9 +202,9 @@
 		{
             name: 'Krushi Patel',
 			grip: 'Handshake',
-			record: '0-0',
+			record: '0-1',
 			strength: 'Grip versatility',
-			weakness: 'something abt him being the only data person so he has to be grouped into the eng tab',
+			weakness: 'Is grouped with the engineers since there are no other data people',
 			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fkrushi.jpeg?alt=media&token=392f2e3c-37e5-43ac-a461-bfb469217c59',
 			reverse: '',
 			margin: ''

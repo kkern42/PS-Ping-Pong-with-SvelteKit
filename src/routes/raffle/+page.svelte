@@ -89,7 +89,7 @@
     <button on:click={getWinner}>Get Winner</button>
 
     {#if visible}
-        <div id="result">Winner is {winner}</div>
+        <div id="result">&#127881 Winner is {winner} &#127881</div>
     {/if}
 
     <div class="my-svelte-table">

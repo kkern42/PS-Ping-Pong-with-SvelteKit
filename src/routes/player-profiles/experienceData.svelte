@@ -6,7 +6,7 @@
 		{
 			name: 'Nia Washington',
 			grip: 'Handshake',
-			record: '7-2',
+			record: '11-2',
 			strength: 'Consistent smart play',
 			weakness: 'Crowd noise',
 			picture: nia,
@@ -16,7 +16,7 @@
 		{
 			name: 'Jacob Lagmay',
 			grip: 'Handshake',
-			record: '2-4',
+			record: '4-6',
 			strength: 'Pressure makes diamonds',
 			weakness: 'Being ahead',
 			picture: jacob,
@@ -26,7 +26,7 @@
 		{
 			name: 'Jenn He',
 			grip: 'Penhold',
-			record: '3-2',
+			record: '5-4',
 			strength: "Adapts to other people's playstyle",
 			weakness: 'No backhand',
 			picture:
@@ -37,7 +37,7 @@
 		{
 			name: 'Katie So',
 			grip: 'Handshake',
-			record: '1-2',
+			record: '1-4',
 			strength: 'Fast shots',
 			weakness: 'Playing JD',
 			picture:
@@ -48,7 +48,7 @@
 		{
 			name: 'Deanna Sagaris',
 			grip: 'Handshake',
-			record: '0-2',
+			record: '1-3',
 			strength: 'Fighting spirit',
 			weakness: 'Allergic to sesame',
 			picture:
@@ -59,7 +59,7 @@
 		{
 			name: 'Sahana Sripadanna',
 			grip: 'Handshake',
-			record: '0-4',
+			record: '0-6',
 			strength: 'Passionate about the game',
 			weakness: 'Long rallies',
 			picture:
@@ -70,7 +70,7 @@
 		{
 			name: 'Sophie Reck',
 			grip: 'Handshake',
-			record: '6-4',
+			record: '9-6',
 			strength: 'Talking while playing',
 			weakness: 'Playing Nia',
 			picture:
@@ -83,7 +83,7 @@
 			grip: 'handshake',
 			record: '2-2',
 			strength: 'Giving career advice during games',
-			weakness: 'Meetings all day',
+			weakness: 'Has meeting all day',
 			picture:
 				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FaveryK.jpeg?alt=media&token=6f2bc9a8-e298-49e1-a3b0-8302748b9eec',
 			reverse: '',
@@ -103,9 +103,9 @@
 		{
             name: 'Jim Gulsen',
 			grip: 'Handshake',
-			record: '0-0',
+			record: '3-2',
 			strength: 'Being the only PM in the tournament',
-			weakness: '',
+			weakness: 'Also has to get back to work',
 			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fjim.jpeg?alt=media&token=ab711634-d158-400f-aaea-d48c846df687',
 			reverse: '',
 			margin: ''
@@ -113,8 +113,8 @@
 		{
             name: 'Omer Ercan',
 			grip: 'Handshake',
-			record: '0-0',
-			strength: 'Played ping pong overseas',
+			record: '5-0',
+			strength: 'Overseas knowledge',
 			weakness: 'Forgetting to bring his own paddle',
 			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fomer.jpeg?alt=media&token=9b552e1e-69ab-41f5-8dc6-693641bf52ec',
 			reverse: '',
