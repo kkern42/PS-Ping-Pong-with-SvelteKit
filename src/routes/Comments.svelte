@@ -22,7 +22,6 @@
 			.then((response) => response.json())
 			.then((data) => {
 				comments = data.response;
-				//console.log(data.response);
 			})
 			.catch((error) => {
 				console.log(error);
@@ -51,36 +50,36 @@
 		commenter = '';
 	};
 
-	const onKeyPress = (/** @type {{ charCode: number; }} */ e) => {
-		if (e.charCode === 13) setComment(newComment, commenter);
+	const sortComments= () => {
+		comments  = comments.sort((a, b) => (a.timestamp > b.timestamp) ? 1 : -1);
 	};
+
 
 	onMount(async () => {
 		promise = getComments();
 	});
 
-	console.log(JSON.stringify(comments))
 
-	const columns = [
-		{
-			key: "name", 
-			title: "", 
-			value: v => v.author,
-			sortable: true
-		},
-		{
-			key: "comment", 
-			title: "Comment", 
-			value: v => v.comment, 
-			sortable: false
-		},
-		{
-			key: "date", 
-			title: "Date Posted", 
-			value: v => v.date, 
-			sortable: true,
-		}
-	]
+	// const columns = [
+	// 	{
+	// 		key: "name", 
+	// 		title: "", 
+	// 		value: v => v.author,
+	// 		sortable: true
+	// 	},
+	// 	{
+	// 		key: "comment", 
+	// 		title: "Comment", 
+	// 		value: v => v.comment, 
+	// 		sortable: false
+	// 	},
+	// 	{
+	// 		key: "date", 
+	// 		title: "Date Posted", 
+	// 		value: v => v.date, 
+	// 		sortable: true,
+	// 	}
+	// ]
 </script>
 
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.0/css/all.css" />
@@ -88,7 +87,7 @@
 
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
-	<h4>Post a comment <i class="fas fa-pencil-alt" /></h4>
+	<!-- <h4>Post a comment <i class="fas fa-pencil-alt" /></h4>
 	<div class="post">
 		<input
 			placeholder="Enter name"
@@ -97,7 +96,6 @@
 			maxlength="15"
 		/>
 		<input
-			on:keypress={onKeyPress}
 			bind:value={newComment}
 			placeholder="Post a comment..."
 			style="background-color: white;"
@@ -109,21 +107,47 @@
 	<div class="comments_table">
 		<SvelteTable columns="{columns}" rows="{comments}"></SvelteTable>
 	</div>
-</div>
-	<!--
+</div> -->
+	<h4>Post a comment <i class="fas fa-pencil-alt" /></h4>
+	<div class="post">
+		<input
+			placeholder="Enter name"
+			style="width: 15%; margin-right: .5rem; background-color: white;"
+			bind:value={commenter}
+			maxlength="15"
+		/>
+		<input
+			bind:value={newComment}
+			placeholder="Post a comment..."
+			style="background-color: white;"
+			maxlength="120"
+		/>
+		<button on:click={() => setComment(newComment, commenter)} style="color: black">Post</button>
+	</div>
+
+	<div style="display: flex;">
+		<div style="font-weight: bold; font-size: 18px; margin-right:2rem;">{comments.length} Comments</div>
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<div class="sort" on:click={() => sortComments()}> <i class="fa fa-sort"></i> Sort by Date</div>
+	</div>
+
+
+	<hr />
 	{#await promise}
 		<i class="fa fa-sync-alt fa-spin" style="font-size:24px" />
 	{:then data}
-		{#each comments as comment}
+		<div class="comments">
+			{#each comments as comment}
 			<div>
-				<span style="font-weight: 600; font-size: 17px;">{comment.author}</span> - {comment.date}
+				<span style="font-weight: 600; font-size: 15px;">@{comment.author}</span> - <span style="font-size: 13px; color:grey"> {(comment.date).split(',')[0]}</span>
 			</div>
-			<p>{comment.comment}</p>
+			<p class="comment">{comment.comment}</p>
 		{/each}
+		</div>
 	{:catch error}
 		<p style="color: red">{error.message}</p>
 	{/await}
-</div> -->
+</div>
 
 <style>
 	.comment_section {
@@ -132,7 +156,7 @@
 		padding: 2rem;
 	}
 
-	:global(.comments_table){
+	/* :global(.comments_table){
         table-layout: fixed;
         padding: 10px;
         margin: 1rem;
@@ -157,7 +181,7 @@
 
 	:global(.comments_table thead:nth-child(1)){
 		font-size: 18px;
-	}
+	} */
 
 	h4 {
 		margin: 0 0 0.5rem 0;
@@ -194,6 +218,7 @@
 	.post {
 		display: flex;
 		align-items: start;
+		margin-bottom: 1rem;
 	}
 
 	.commentsTitle {
@@ -207,5 +232,19 @@
 		flex: 1 1;
 		border-bottom: 2px solid darkgray;
 		margin: auto;
+	}
+
+	.comment{
+		margin-top:5px;
+	}
+
+	.comments{
+		margin-top: 1rem;
+		height: 400px;
+  		overflow: auto;
+	}
+
+	.sort:hover{
+		cursor: pointer;
 	}
 </style>
