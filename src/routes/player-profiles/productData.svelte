@@ -6,7 +6,7 @@
 		{
 			name: 'Sandy Jiang',
 			grip: 'Penhold',
-			record: '5-0',
+			record: '9-2',
 			strength: 'She just good',
 			weakness: 'Reece',
 			picture: sandy,
@@ -16,7 +16,7 @@
 		{
 			name: 'Alden Aspiras',
 			grip: 'Handshake',
-			record: '2-2',
+			record: '3-4',
 			strength: 'Content creation',
 			weakness: 'Tired from traveling 2hrs to office',
 			picture: alden,
@@ -48,9 +48,9 @@
 		{
 			name: 'Suresh Padhiary',
 			grip: 'Handshake',
-			record: '0-0',
+			record: '0-1',
 			strength: 'Humble and humorous',
-			weakness: '',
+			weakness: 'Had a doctor\'s appoitment during week 2 and had to drop out',
 			picture:'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsuresh.jpeg?alt=media&token=4e3bbb68-2d93-4467-8a7d-3349456746f1',
 			reverse: '',
 			margin: ''
