@@ -1,5 +1,6 @@
 <script>
     import SvelteTable from "svelte-table";
+    import {fade, scale} from "svelte/transition";
 
     const DATA = {
 
@@ -89,7 +90,7 @@
     <button on:click={getWinner}>Get Winner</button>
 
     {#if visible}
-        <div id="result">&#127881 Winner is {winner} &#127881</div>
+        <div id="result" in:scale out:fade>&#127881 Winner is {winner} &#127881</div>
     {/if}
 
     <div class="my-svelte-table">
@@ -110,6 +111,10 @@
 		padding: 4rem 6rem 4rem 6rem;
 		text-align: center;
 	}
+
+    #result{
+
+    }
 
     :global(.my-svelte-table){
         table-layout: fixed;

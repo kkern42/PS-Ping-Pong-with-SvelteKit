@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import SvelteTable from "svelte-table";
 
 	/**
 	 * @type {any[]}
@@ -21,7 +22,7 @@
 			.then((response) => response.json())
 			.then((data) => {
 				comments = data.response;
-				console.log(data.response);
+				//console.log(data.response);
 			})
 			.catch((error) => {
 				console.log(error);
@@ -57,9 +58,33 @@
 	onMount(async () => {
 		promise = getComments();
 	});
+
+	console.log(JSON.stringify(comments))
+
+	const columns = [
+		{
+			key: "name", 
+			title: "", 
+			value: v => v.author,
+			sortable: true
+		},
+		{
+			key: "comment", 
+			title: "Comment", 
+			value: v => v.comment, 
+			sortable: false
+		},
+		{
+			key: "date", 
+			title: "Date Posted", 
+			value: v => v.date, 
+			sortable: true,
+		}
+	]
 </script>
 
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.3.0/css/all.css" />
+
 
 <div class="commentsTitle"><h3 style="padding: 0 1rem 0 1rem;">Comments</h3></div>
 <div class="comment_section">
@@ -81,6 +106,11 @@
 		<button on:click={() => setComment(newComment, commenter)} style="color: black">Post</button>
 	</div>
 	<hr />
+	<div class="comments_table">
+		<SvelteTable columns="{columns}" rows="{comments}"></SvelteTable>
+	</div>
+</div>
+	<!--
 	{#await promise}
 		<i class="fa fa-sync-alt fa-spin" style="font-size:24px" />
 	{:then data}
@@ -93,7 +123,7 @@
 	{:catch error}
 		<p style="color: red">{error.message}</p>
 	{/await}
-</div>
+</div> -->
 
 <style>
 	.comment_section {
@@ -102,9 +132,31 @@
 		padding: 2rem;
 	}
 
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 1rem;
+	:global(.comments_table){
+        table-layout: fixed;
+        padding: 10px;
+        margin: 1rem;
+		overflow: auto;
+		display: block;
+		height: 450px;
+    }
+
+	:global(.comments_table td){
+		font-size: 16px;
+		padding: 10px;
+	}
+
+	:global(.comments_table td:nth-child(1)){
+		font-weight: bold;
+		width: 15%;
+	}
+
+	:global(.comments_table td:nth-child(2)){
+		width: 70%
+	}
+
+	:global(.comments_table thead:nth-child(1)){
+		font-size: 18px;
 	}
 
 	h4 {
