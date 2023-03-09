@@ -7,6 +7,24 @@
 
 	let champions = [
 		{
+			date: 'Winter 2023',
+			tier: '1',
+			winner: 'Vinit Prabhu',
+			runnerUp: 'Omer Ercan',
+			score: '21-19',
+			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fvinit.png?alt=media&token=18467270-9a10-4837-9871-4340d8061371",
+			link: 'https://marcel.ai/reeceberhardt'
+		},
+		{
+			date: 'Winter 2023',
+			tier: '2',
+			winner: 'Nia Washington',
+			runnerUp: 'Jim Gulsen',
+			score: '23-21',
+			picture: nia,
+			link: 'https://marcel.ai/niawashington'
+		},
+		{
 			date: 'Fall 2022',
 			tier: '1',
 			winner: 'Reece Eberhardt',
