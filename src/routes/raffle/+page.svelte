@@ -16,7 +16,7 @@
         {"name": "Kevin Garlepp", "entries": 1},
         {"name": "Jennifer He", "entries": 3},
         {"name": "Kelly Buchanan", "entries": 2},
-        {"name": "Vinit Prabhu", "entries": 5},
+        {"name": "Vinit Prabhu", "entries": 6},
         {"name": "Suresh Padhiary", "entries": 1},
         {"name": "Jacob Lagmay", "entries": 3},
         {"name": "SJ Clarke", "entries": 2},
