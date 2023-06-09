@@ -195,7 +195,7 @@
 			record: '3-2',
 			strength: 'Always willing to try THAT shot',
 			weakness: 'Adhering to the PS PP serving rules',
-			picture: '',
+			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsamuel.png?alt=media&token=16c818c8-3da6-49bc-b7b4-7a55847c540f',
 			reverse: '',
 			margin: ''
 		},

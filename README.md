@@ -2,7 +2,7 @@
 
 To get started after cloning rep:
 
-    npm install 
+    npm install
     npm run dev
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
