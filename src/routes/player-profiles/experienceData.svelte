@@ -83,7 +83,7 @@
 			grip: 'handshake',
 			record: '2-2',
 			strength: 'Giving career advice during games',
-			weakness: 'Has meeting all day',
+			weakness: 'Has meetings all day every day',
 			picture:
 				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FaveryK.jpeg?alt=media&token=6f2bc9a8-e298-49e1-a3b0-8302748b9eec',
 			reverse: '',
@@ -114,7 +114,7 @@
             name: 'Omer Ercan',
 			grip: 'Handshake',
 			record: '5-0',
-			strength: 'Overseas knowledge',
+			strength: 'Hoboken represent!',
 			weakness: 'Forgetting to bring his own paddle',
 			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fomer.jpeg?alt=media&token=9b552e1e-69ab-41f5-8dc6-693641bf52ec',
 			reverse: '',
