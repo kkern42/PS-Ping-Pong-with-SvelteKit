@@ -4,16 +4,37 @@
 	import sandy from '$lib/images/profile-pictures/sandy2.png';
 	import nia from '$lib/images/profile-pictures/nia.png';
 	import reece from '$lib/images/profile-pictures/Reece.png';
+	import sj from '$lib/images/profile-pictures/sj.png';
+	import jd from '$lib/images/profile-pictures/jdfit.png';
 
 	let champions = [
+		{
+			date: 'Spring 2023',
+			tier: '2',
+			winner: 'JD Pablo',
+			runnerUp: 'Kevin Kern',
+			score: '21-10',
+			picture: jd,
+			link: 'https://marcel.ai/jdpablo'
+		},
+		{
+			date: 'Spring 2023',
+			tier: '3',
+			winner: 'SJ',
+			runnerUp: 'Elias Eberman',
+			score: '21-19',
+			picture: sj,
+			link: 'https://marcel.ai/app/person/8058692'
+		},
 		{
 			date: 'Winter 2023',
 			tier: '1',
 			winner: 'Vinit Prabhu',
 			runnerUp: 'Omer Ercan',
 			score: '21-19',
-			picture: "https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fvinit.png?alt=media&token=18467270-9a10-4837-9871-4340d8061371",
-			link: 'https://marcel.ai/reeceberhardt'
+			picture:
+				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fvinit.png?alt=media&token=18467270-9a10-4837-9871-4340d8061371',
+			link: 'https://marcel.ai/app/person/6579585'
 		},
 		{
 			date: 'Winter 2023',

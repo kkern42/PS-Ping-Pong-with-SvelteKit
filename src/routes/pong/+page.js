@@ -1,12 +1,11 @@
 export const prerender = true;
 
-
 // // arrow keys are locked from scrolling
 // window.addEventListener("keydown", function(e) {
 //     if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
 //         e.preventDefault();
 //     }
-// }, false);    
+// }, false);
 
 // // modal vars
 // var modal = document.getElementById("myModal");
@@ -14,7 +13,6 @@ export const prerender = true;
 // var submitButton = document.getElementById("submitScore");
 // let yourScore = document.querySelector('.yourscore');
 // let list = document.getElementById("leaderboard");
-
 
 // // fixed values
 // var scorer;
@@ -100,14 +98,14 @@ export const prerender = true;
 //         dxd = 1;
 //         dx = Math.floor(Math.random() * ballSpeed) + 3;
 //         dy = Math.floor(Math.random() * ballSpeed) + 3;
-        
+
 //     }
 //     //if hits right paddle/paddle 2
 //     if(ball_coord.right >= paddle_2_coord.left && ball_coord.top >= paddle_2_coord.top && ball_coord.bottom <= paddle_2_coord.bottom && ball_coord.left <= paddle_2_coord.right) {
 //         dxd = 0;
 //         dx = Math.floor(Math.random() * ballSpeed) + 3;
 //         dy = Math.floor(Math.random() * ballSpeed) + 3;
-        
+
 //     }
 //     //hits out of play
 //     if(ball_coord.left <= board_coord.left || ball_coord.right >= board_coord.right) {
@@ -119,7 +117,7 @@ export const prerender = true;
 //         displayLeaderBoard();
 //         return;
 //     }
-    
+
 //     ball.style.top = ball_coord.top + dy * (dyd == 0 ? -1 : 1) + 'px';
 //     ball.style.left = ball_coord.left + dx * (dxd == 0 ? -1 : 1) + 'px';
 //     ball_coord = ball.getBoundingClientRect();
@@ -128,7 +126,7 @@ export const prerender = true;
 //     });
 // }
 
-// //Contorls the scoring 
+// //Contorls the scoring
 // function scoreTimer(){
 //     scorer = setInterval(function() {
 //         seconds = seconds + 1;
@@ -167,8 +165,8 @@ export const prerender = true;
 //     await displayLeaderBoard();
 // }
 
-// //calaucate if score is in top ten then give option to enter there score so we just need to know the lowest score then 
-// //needs formaitng and needs like 1 2 3 4 5 
+// //calaucate if score is in top ten then give option to enter there score so we just need to know the lowest score then
+// //needs formaitng and needs like 1 2 3 4 5
 // const displayLeaderBoard = async () =>{
 //     removeChildern(list);
 //     await getLeaderBoard();
@@ -191,7 +189,7 @@ export const prerender = true;
 //     removeChildern(list);
 // }
 
-// // closes modal when u click any where 
+// // closes modal when u click any where
 // window.onclick = function(event) {
 //     if (event.target == modal) {
 //         modal.style.display = "none";

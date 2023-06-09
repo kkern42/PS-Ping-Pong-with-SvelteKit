@@ -26,7 +26,7 @@
 		},
 		{
 			name: 'JD Pablo',
-			grip: 'Penhold',
+			grip: 'Weird',
 			record: '6-6',
 			strength: 'Scales with equipment quality',
 			weakness: 'Gets nervous',
@@ -89,7 +89,7 @@
 			grip: 'Handshake',
 			record: '4-1',
 			strength: 'Vast experience',
-			weakness: 'No warmup & Reece',
+			weakness: 'Relocated to Texas',
 			picture: ayush,
 			reverse: '',
 			margin: ''
@@ -99,7 +99,7 @@
 			grip: 'Handshake',
 			record: '3-4',
 			strength: 'Enthusiasm',
-			weakness: 'Shots with spin',
+			weakness: 'Went with Ayush',
 			picture:
 				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Ftushar.png?alt=media&token=64eb4088-41e8-479e-a615-661ef25ca30d',
 			reverse: '',
@@ -195,7 +195,7 @@
 			record: '3-2',
 			strength: 'Always willing to try THAT shot',
 			weakness: 'Adhering to the PS PP serving rules',
-			picture: '',
+			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsamuel.png?alt=media&token=16c818c8-3da6-49bc-b7b4-7a55847c540f',
 			reverse: '',
 			margin: ''
 		},

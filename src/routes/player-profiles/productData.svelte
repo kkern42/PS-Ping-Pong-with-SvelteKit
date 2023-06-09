@@ -50,7 +50,7 @@
 			grip: 'Handshake',
 			record: '0-1',
 			strength: 'Humble and humorous',
-			weakness: 'Had a doctor\'s appoitment during week 2 and had to drop out',
+			weakness: 'Dropping out for a doctor\'s appointment',
 			picture:'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsuresh.jpeg?alt=media&token=4e3bbb68-2d93-4467-8a7d-3349456746f1',
 			reverse: '',
 			margin: ''
