@@ -10,6 +10,15 @@
 	let champions = [
 		{
 			date: 'Spring 2023',
+			tier: '1',
+			winner: 'TBD',
+			runnerUp: 'TBD',
+			score: 'TBD',
+			picture: '',
+			link: 'https://marcel.ai/'
+		},
+		{
+			date: 'Spring 2023',
 			tier: '2',
 			winner: 'JD Pablo',
 			runnerUp: 'Kevin Kern',

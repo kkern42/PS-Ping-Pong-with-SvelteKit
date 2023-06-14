@@ -6,17 +6,14 @@
 			key: '1',
 			question: 'How do I join a tournament?',
 			answer:
-				'Fill out ' +
-				'<a href="https://docs.google.com/forms/d/e/1FAIpQLScKCQGcEkON_31BSsaIYkFdUgEPsbu-NLFUGR_HQY0PS2vgLA/viewform"><u>this Google Form</u></a>' +
-				' by EOD 2/10!'
+				'Fill out the form on the front page of this website, join our Teams channel, or contact any of the committee members!'
 		},
 
 		{
 			key: '2',
 			question: 'What tier should I be in?',
 			answer:
-				"Tiers are based off your prior ping pong experience. If you are more experienced, \
-		sign up for Tier 1. If you haven't played a lot before, join Tier 2!"
+				"Tiers are based off your prior ping pong experience. If you are more experienced, sign up for Tier 1. If you haven't played a lot before, join Tier 3! If you're somewhere in between, join Tier 2. In any case, the committee will try our best to place everyone where they should be."
 		},
 
 		{
@@ -24,10 +21,10 @@
 			question: 'What are the rules?',
 			answer:
 				'Older player serves first. Matches are played to 21 points and you must win by at \
-		least 2 points. If you win your point, you serve next. You get 2 chances to serve. A serve is\
+		least 2 points. Switch serves after every 2 points. You get 2 chances to serve. A serve is\
 		considered a let if it touches the net and this attempt does not count as one of your 2 chances. \
 		Read the full set of rules ' +
-				'<a href="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Ping%20Pong%20Tournament%20Rules.pdf?alt=media&token=8e79d99e-a7dd-4b0c-a33f-0a06bfa0f95c"><u>HERE</u></a>.'
+				'<a href="https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Ping%20Pong%20Tournament%20Rules.pdf?alt=media&token=8e79d99e-a7dd-4b0c-a33f-0a06bfa0f95c"><u>here</u></a>.'
 		},
 
 		{
@@ -48,9 +45,8 @@
 			key: '6',
 			question: 'What is the bracket format?',
 			answer:
-				"You will be placed in either Tier 1 or Tier 2 based on your experience level. \
-		Everyone starts in their respective tier's winner's bracket. If you lose a match, you are\
-		moved to the loser's bracket for your tier. If you lose again in the loser's bracket, you are eliminated."
+				"You will be placed in either Tier 1, 2, or 3 based on your experience level. \
+		Depending on which tier you're in, you will play either a round robin into a single elimination bracket, or a double elimination bracket."
 		},
 
 		{
@@ -62,7 +58,7 @@
 		{
 			key: '8',
 			question: "Who's the best player in the tournament?",
-			answer: "Come on. You know we can't answer that..."
+			answer: "Come on. You know we can't answer that (but you can check out our Player Profiles and run some analysis yourself!)."
 		}
 	];
 </script>

@@ -67,10 +67,10 @@
 	<h1>About Us</h1>
 	<pre><div style="padding: 0 1rem 0 1rem;">Meet the PS Ping Pong Commitee</div></pre>
 	<p>
-		The PS Ping Pong Commitee (PSPPC) is the governing body for all Publicis Sapient Ping Pong
+		The PS Ping Pong Commitee (PSPPC) is the governing body for all New York Publicis Sapient ping pong
 		events. The PSPPC was born out of a need to have a little more fun in the office :) The PSPPC is
 		responsible for the organization of office-wide competitions, including quarterly office Ping
-		Pong Championships that have continued since the Summer of 2022. The PSPPC oversees all rules
+		Pong Tournaments that have continued since the Summer of 2022. The PSPPC oversees all rules
 		and regulations pertaining to competitions held in-office.
 	</p>
 	<p>Remember to have fun!</p>

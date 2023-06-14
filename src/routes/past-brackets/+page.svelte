@@ -4,6 +4,26 @@
 
 	let brackets = [
 		{
+			title: 'Spring 2023 - Tier 1',
+			src: 'https://brackethq.com/b/ammib/embed/'
+		},
+		{
+			title: 'Spring 2023 - Tier 2',
+			src: 'https://brackethq.com/b/2lmib/embed/'
+		},
+		{
+			title: 'Spring 2023 - Tier 3',
+			src: 'https://brackethq.com/b/immib/embed/'
+		},
+		{
+			title: 'Winter 2023 - Tier 1',
+			src: 'https://brackethq.com/b/vdycb/embed/'
+		},
+		{
+			title: 'Winter 2023 - Tier 2',
+			src: 'https://brackethq.com/b/0srcb/embed/'
+		},
+		{
 			title: 'Fall 2022 - Tier 1',
 			src: 'https://brackethq.com/b/k4n6/embed/'
 		},
@@ -12,7 +32,7 @@
 			src: 'https://brackethq.com/b/x6n6/embed/'
 		},
 		{
-			title: 'Summer 2022 - Tier 1',
+			title: 'Summer 2022',
 			src: 'https://brackethq.com/b/0om5/embed/'
 		}
 	];
