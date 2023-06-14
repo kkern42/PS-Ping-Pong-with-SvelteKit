@@ -14,7 +14,7 @@
         {
             name: 'Elias Eberman',
 			grip: 'Handshake',
-			record: '0-2',
+			record: '2-5',
 			strength: 'Making it into tier 1 for his debut tournament',
 			weakness: 'Not winning a single tier 1 match',
 			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Felias.jpeg?alt=media&token=348bff10-41a8-410a-bd0a-7bd365897e73',

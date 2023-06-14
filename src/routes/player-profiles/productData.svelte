@@ -6,7 +6,7 @@
 		{
 			name: 'Sandy Jiang',
 			grip: 'Penhold',
-			record: '9-2',
+			record: '11-3',
 			strength: 'She just good',
 			weakness: 'Reece',
 			picture: sandy,
@@ -16,7 +16,7 @@
 		{
 			name: 'Alden Aspiras',
 			grip: 'Handshake',
-			record: '3-4',
+			record: '3-6',
 			strength: 'Content creation',
 			weakness: 'Tired from traveling 2hrs to office',
 			picture: alden,

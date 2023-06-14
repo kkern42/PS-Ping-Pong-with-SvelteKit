@@ -17,7 +17,7 @@
 		{
 			name: 'Ashley Kim',
 			grip: 'Handshake',
-			record: '11-5',
+			record: '11-8',
 			strength: 'Tennis forehand',
 			weakness: 'The slanted floors and furniture surrounding the table',
 			picture: ashley,
@@ -27,7 +27,7 @@
 		{
 			name: 'JD Pablo',
 			grip: 'Weird',
-			record: '6-6',
+			record: '11-6',
 			strength: 'Scales with equipment quality',
 			weakness: 'Gets nervous',
 			picture: jd,
@@ -37,7 +37,7 @@
 		{
 			name: 'Kevin Kern',
 			grip: 'Handshake',
-			record: '7-6',
+			record: '10-8',
 			strength: 'Playing the angles',
 			weakness: 'Top competition',
 			picture: kevin,
@@ -57,7 +57,7 @@
 		{
 			name: 'Kevin Garlepp',
 			grip: 'Handshake',
-			record: '2-6',
+			record: '4-7',
 			strength: 'The will to win',
 			weakness: 'Crumbling under the lights',
 			picture: keving,
@@ -77,7 +77,7 @@
 		{
 			name: 'SJ Clarke',
 			grip: 'Handshake',
-			record: '4-6',
+			record: '8-6',
 			strength: 'Beating Kevin G.',
 			weakness: 'John playing as Katie',
 			picture: sj,
@@ -119,7 +119,7 @@
 		{
 			name: 'Reece Eberhardt',
 			grip: 'Handshake',
-			record: '7-1',
+			record: '8-3',
 			strength: 'Saying "Reece" after every point',
 			weakness: 'Losing',
 			picture: reece,
@@ -182,7 +182,7 @@
 		{
 			name: 'Etai Barash',
 			grip: 'Handshake',
-			record: '3-2',
+			record: '5-4',
 			strength: 'Backhand flick',
 			weakness: 'Has too much work',
 			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fetai.jpeg?alt=media&token=fca90b54-3085-4330-afef-ad9a5c031283',
@@ -192,7 +192,7 @@
 		{
 			name: 'Samuel Niakan',
 			grip: 'Handshake',
-			record: '3-2',
+			record: '6-2',
 			strength: 'Always willing to try THAT shot',
 			weakness: 'Adhering to the PS PP serving rules',
 			picture: 'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fsamuel.png?alt=media&token=16c818c8-3da6-49bc-b7b4-7a55847c540f',
