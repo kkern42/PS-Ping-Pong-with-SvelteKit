@@ -56,9 +56,12 @@
 			</a>
 		</div>
 		<h1>PS {title} Tournament</h1>
-		<p>
+		<!-- <p>
 			Sign up <a href="https://forms.gle/ZJPPoKWaxWMr86Yx6" target=""><u>HERE</u></a> to be a part of
-			the Winter Tournament!
+			the Summer Tournament!
+		</p> -->
+		<p>
+			Get ready for the Summer Tournament! Details coming soon.
 		</p>
 		<p class="read-the-docs">
 			Reach out to Ashley Kim, JD Pablo or Kevin Kern to learn more or join our
