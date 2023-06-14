@@ -6,7 +6,7 @@
 		{
 			name: 'Nia Washington',
 			grip: 'Handshake',
-			record: '11-2',
+			record: '11-4',
 			strength: 'Consistent smart play',
 			weakness: 'Crowd noise',
 			picture: nia,
@@ -16,7 +16,7 @@
 		{
 			name: 'Jacob Lagmay',
 			grip: 'Handshake',
-			record: '4-6',
+			record: '5-8',
 			strength: 'Pressure makes diamonds',
 			weakness: 'Being ahead',
 			picture: jacob,
@@ -37,7 +37,7 @@
 		{
 			name: 'Katie So',
 			grip: 'Handshake',
-			record: '1-4',
+			record: '2-6',
 			strength: 'Fast shots',
 			weakness: 'Playing JD',
 			picture:
@@ -70,7 +70,7 @@
 		{
 			name: 'Sophie Reck',
 			grip: 'Handshake',
-			record: '9-6',
+			record: '9-9',
 			strength: 'Talking while playing',
 			weakness: 'Playing Nia',
 			picture:

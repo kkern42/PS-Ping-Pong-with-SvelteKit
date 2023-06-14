@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import SvelteTable from "svelte-table";
     import {fade, scale} from "svelte/transition";
 
@@ -132,4 +132,4 @@
     }
 
 
-</style>
+</style> -->
