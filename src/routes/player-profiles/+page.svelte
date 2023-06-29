@@ -4,13 +4,15 @@
 	import { product } from './productData.svelte';
 	import { engineering } from './engineeringData.svelte';
 	import { experience } from './experienceData.svelte';
-	import {marketing } from './marketingData.svelte';
+	import { marketing } from './marketingData.svelte';
+	import { intern } from './internData.svelte';
 
 	let players = engineering;
 	let enginClass = 'underline';
 	let prodClass = '';
 	let expClass = '';
 	let markClass = '';
+	let internClass = '';
 
 	/**
 	 * @param {{name: string;grip: string;record: string;strength: string;weakness: string;picture: string;margin: string;reverse: string;}[]} capList
@@ -24,21 +26,31 @@
 			prodClass = 'underline';
 			expClass = '';
 			markClass = '';
+			internClass = '';
 		} else if (name == 'exp') {
 			enginClass = '';
 			prodClass = '';
 			expClass = 'underline';
 			markClass = '';
+			internClass = '';
 		} else if (name == 'engin') {
 			enginClass = 'underline';
 			prodClass = '';
 			expClass = '';
 			markClass = '';
-		}else{
+			internClass = '';
+		} else if (name == 'mark'){
 			enginClass = '';
 			prodClass = '';
 			expClass = '';
+			internClass = '';
 			markClass = 'underline';
+		} else if (name == 'int') {
+			enginClass = '';
+			prodClass = '';
+			expClass = '';
+			markClass = '';
+			internClass = 'underline';
 		}
 	}
 </script>
@@ -51,7 +63,7 @@
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css" />
 
 <Hero
-	title={'Player Profiles'}
+	title={'Player Profiles!'}
 	subContent={'Know thine enemy.'}
 	imageRef={heroImage}
 	videoLink={'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/Videos%2FIMG_1255.mp4?alt=media&token=1bbc65d6-0e07-49d1-abe3-8b02836500b2'}
@@ -70,6 +82,9 @@
 		<h2 style="color: darkgrey; border-bottom: 4px solid white;">|</h2>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<h2 on:click={() => switchPLayers(marketing, 'mark')} class={markClass}>Marketing</h2>
+		<h2 style="color: darkgrey; border-bottom: 4px solid white;">|</h2>
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<h2 on:click={() => switchPLayers(intern, 'int')} class={internClass}>Interns</h2>
 
 	</div>
 
@@ -131,25 +146,26 @@
 	.capabilities {
 		display: flex;
 		justify-content: center;
-		padding: 1rem 0rem 1.5rem 0rem;
-		flex-wrap: wrap;
+		margin: 1rem 1rem 1.5rem 1rem;
+		flex-wrap: nowrap;
 	}
 
 	.capabilities h2 {
-		margin: 0rem 1.5rem 1rem 1.5rem;
+		margin: 0vw .9vw 1vw 1.1vw;
+		font-size: 2.5vw;
 	}
 
 	.capabilities h2:hover {
 		cursor: pointer;
-		border-bottom: 4px solid #fe414d;
+		border-bottom: .25rem solid #fe414d;
 	}
 
 	.capabilities .underline {
-		border-bottom: 4px solid #fe414d;
+		border-bottom: .25rem solid #fe414d;
 	}
 
 	.capabilities:hover > :not(:hover) {
-		border-bottom: 4px solid transparent;
+		border-bottom: .25rem solid transparent;
 	}
 
 	.reverse {
@@ -189,7 +205,7 @@
 		background-color: darkgrey;
 		margin: auto;
 	}
-
+/*
 	@media screen and (max-width: 1000px) {
 		.img-container {
 			width: 60%;
@@ -252,5 +268,5 @@
 		.capabilities h2 {
 			margin: 0rem 0.4rem 1rem 0.4rem;
 		}
-	}
+	}*/
 </style>
