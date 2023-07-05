@@ -5,7 +5,7 @@
 	import { engineering } from './engineeringData.svelte';
 	import { experience } from './experienceData.svelte';
 	import { marketing } from './marketingData.svelte';
-	import { intern } from './internData.svelte';
+	import { interns } from './internData.svelte';
 
 	let players = engineering;
 	let enginClass = 'underline';
@@ -53,6 +53,7 @@
 			internClass = 'underline';
 		}
 	}
+
 </script>
 
 <svelte:head>
@@ -84,7 +85,7 @@
 		<h2 on:click={() => switchPLayers(marketing, 'mark')} class={markClass}>Marketing</h2>
 		<h2 style="color: darkgrey; border-bottom: 4px solid white;">|</h2>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
-		<h2 on:click={() => switchPLayers(intern, 'int')} class={internClass}>Interns</h2>
+		<h2 on:click={() => switchPLayers(interns, 'int')} class={internClass}>Interns</h2>
 
 	</div>
 
