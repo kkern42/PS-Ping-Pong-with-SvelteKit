@@ -1,7 +1,9 @@
 <script context="module">
 
+	//holds api response
 	let internProfiles = [];
 
+	//holds formatted api response
 	export let interns = [];
 
 	/*export let intern = [
@@ -39,6 +41,7 @@
 		},
 	];*/
 
+	//fetches api response and populates interns obj with formatted data
 	const getInterns = async() => {
 
 			await fetch(
