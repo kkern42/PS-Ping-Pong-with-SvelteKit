@@ -1,5 +1,12 @@
 <script context="module">
-	export let intern = [
+
+	//holds api response
+	let internProfiles = [];
+
+	//holds formatted api response
+	export let interns = [];
+
+	/*export let intern = [
 		{
 			name: 'Andrew Mao',
 			grip: 'Handshake',
@@ -32,5 +39,51 @@
 			reverse: '',
 			margin: ''
 		},
-	];
+	];*/
+
+	//fetches api response and populates interns obj with formatted data
+	const getInterns = async() => {
+
+			await fetch(
+				'https://firestore.googleapis.com/v1/projects/pspp-e8218/databases/(default)/documents/InternProfiles'
+			)
+				.then((response) => response.json())
+				.then((data) => {
+					internProfiles = data.documents;
+				})
+				.catch((error) => {
+					console.log(error);
+					return [];
+				});
+
+
+			/*scoreList.forEach((item, index) => {
+				let rank = index + 1;
+				let li = document.createElement('p');
+				li.innerText = rank + '. ' + item.name + ': ' + item.score + '   (' + item.date + ')';
+				//li.innerText = rank + ". " +  item.name + ": " + item.score;
+				list.appendChild(li);
+			});*/
+
+			internProfiles.forEach((item, index) => {
+				
+				let tempObj = [];
+				tempObj['name'] = item.fields.name.stringValue;
+				tempObj['grip'] = item.fields.grip.stringValue;
+				tempObj['picture'] = item.fields.pfp.stringValue;
+				tempObj['strength'] = item.fields.strength.stringValue;
+				tempObj['weakness'] = item.fields.weakness.stringValue;
+				tempObj['reverse'] = "";
+				tempObj['margin'] = "";
+				tempObj['record'] = (String)(item.fields.wins.integerValue) + "-" + (String)(item.fields.losses.integerValue);
+
+				interns[index] = tempObj;
+
+			})
+
+		};
+
+	getInterns();
+
+
 </script>
