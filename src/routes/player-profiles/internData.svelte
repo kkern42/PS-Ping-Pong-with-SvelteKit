@@ -45,11 +45,12 @@
 	const getInterns = async() => {
 
 			await fetch(
-				'https://firestore.googleapis.com/v1/projects/pspp-e8218/databases/(default)/documents/InternProfiles'
+				'https://firestore.googleapis.com/v1/projects/pspp-e8218/databases/(default)/documents/InternProfiles?pageSize=1000'
 			)
 				.then((response) => response.json())
 				.then((data) => {
 					internProfiles = data.documents;
+					console.log(internProfiles)
 				})
 				.catch((error) => {
 					console.log(error);
@@ -80,6 +81,7 @@
 				interns[index] = tempObj;
 
 			})
+		
 
 		};
 
@@ -87,3 +89,17 @@
 
 
 </script>
+
+/*
+research on generative AI
+vertex AI / vision api (image generation)
+openAI API / Dall E
+
+getting openAI access in progress
+have access to vertex ai but doesn't generate images
+
+looking into capabilities. generating images (prompt engineering)
+                           editing images (replace a part of an image with AI)
+
+*/
+
