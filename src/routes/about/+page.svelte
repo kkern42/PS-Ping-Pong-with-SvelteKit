@@ -38,11 +38,11 @@
 			marcel: 'https://marcel.ai/app/person/8065868'
 		},
 		{
-			name: 'Ensar Dogrusoz',
+			name: 'Yuvraj Thakur',
 			picture:
-				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2FensarIntern.jpeg?alt=media&token=fc4db587-2fbe-4d65-8966-474c3a758a60',
-			title: 'Logistics Management Intern',
-			job: 'Associate Software Engineer',
+				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fyuvi-intern.png?alt=media&token=782c816b-defb-40d2-ba27-ae6e2652014d',
+			title: 'Intern',
+			job: 'Software Engineer Intern',
 			marcel: 'https://marcel.ai/ensardogrusoz'
 		},
 		{
@@ -148,7 +148,6 @@
 	.profile {
 		padding: 3rem;
 	}
-
 	@media screen and (min-width: 1400px) {
 		.profile {
 			padding: 5rem;

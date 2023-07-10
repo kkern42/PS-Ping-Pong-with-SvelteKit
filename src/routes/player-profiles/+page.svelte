@@ -183,6 +183,7 @@
 
 	.img-container {
 		width: 25%;
+		height: 25%;
 	}
 
 	.record {
