@@ -89,17 +89,3 @@
 
 
 </script>
-
-/*
-research on generative AI
-vertex AI / vision api (image generation)
-openAI API / Dall E
-
-getting openAI access in progress
-have access to vertex ai but doesn't generate images
-
-looking into capabilities. generating images (prompt engineering)
-                           editing images (replace a part of an image with AI)
-
-*/
-
