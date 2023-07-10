@@ -43,7 +43,7 @@
 				'https://firebasestorage.googleapis.com/v0/b/pspp-e8218.appspot.com/o/profile-images%2Fyuvi-intern.png?alt=media&token=782c816b-defb-40d2-ba27-ae6e2652014d',
 			title: 'Intern',
 			job: 'Software Engineer Intern',
-			marcel: 'https://marcel.ai/ensardogrusoz'
+			marcel: 'https://marcel.ai/app/person/8578381'
 		},
 		{
 			name: 'Alden Aspiras',
